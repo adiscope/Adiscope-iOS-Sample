@@ -56,22 +56,8 @@ $ pod install --repo-update
 	<string></string>
 	```
 
-- **(Admob)** info.plist 에 "GADIsAdManagerApp" 설정
 
-	```
-	<key>GADIsAdManagerApp</key>
-	<true/>
-	```
-
-- **(AppLovin)** info.plist 에 Key 설정
-
-	```
-	<key>AppLovinSdkKey</key>
-	<string>URhay2tKwCEd5D15ONJFui9Z7RfNKG0piiOemF-fSDHXRJdqhx3ZeD8mfo8-39omtAPcPOHscZO2t0sTyw7a8G</string>
-	```
-	
-- **(Optional)** Xcode 12.0 이상일 경우 SKAdNetwork 추가 ([Download](https://s3-ap-northeast-1.amazonaws.com/file.adiscope.com/AdiscopeSkAdNetworks.plist))
-
+- Xcode 12.0 이상일 경우 SKAdNetwork 추가 ([Download](https://s3-ap-northeast-1.amazonaws.com/file.adiscope.com/AdiscopeSkAdNetworks.plist))
 
   ```
   <dict>
@@ -84,5 +70,22 @@ $ pod install --repo-update
 			</array>
   </dict>
   ```
+
+
+- **(Admob)** info.plist 에 "GADIsAdManagerApp" 설정
+
+	```
+	<key>GADIsAdManagerApp</key>
+	<true/>
+	```
+
+
+- **(AppLovin)** info.plist 에 Key 설정
+
+	```
+	<key>AppLovinSdkKey</key>
+	<string>URhay2tKwCEd5D15ONJFui9Z7RfNKG0piiOemF-fSDHXRJdqhx3ZeD8mfo8-39omtAPcPOHscZO2t0sTyw7a8G</string>
+	```
+	
 
 
