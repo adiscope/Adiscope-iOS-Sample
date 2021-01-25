@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52A2300825BE58FF00FACCC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A2300725BE58FF00FACCC8 /* AppDelegate.swift */; };
+		52A2300C25BE58FF00FACCC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A2300B25BE58FF00FACCC8 /* ViewController.swift */; };
+		52A2300F25BE58FF00FACCC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A2300D25BE58FF00FACCC8 /* Main.storyboard */; };
+		52A2301125BE590000FACCC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A2301025BE590000FACCC8 /* Assets.xcassets */; };
+		52A2301425BE590000FACCC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A2301225BE590000FACCC8 /* LaunchScreen.storyboard */; };
+		EA307AB55017DAF533DA81A9 /* Pods_Adiscope_iOS_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1278EFB58875315BB3F04A17 /* Pods_Adiscope_iOS_Sample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1278EFB58875315BB3F04A17 /* Pods_Adiscope_iOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adiscope_iOS_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F5FD398D0FB0F07F089BBF /* Pods-Adiscope-iOS-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adiscope-iOS-Sample.release.xcconfig"; path = "Target Support Files/Pods-Adiscope-iOS-Sample/Pods-Adiscope-iOS-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		52A2300425BE58FF00FACCC8 /* Adiscope-iOS-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adiscope-iOS-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A2300725BE58FF00FACCC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52A2300B25BE58FF00FACCC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52A2300E25BE58FF00FACCC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52A2301025BE590000FACCC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52A2301325BE590000FACCC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52A2301525BE590000FACCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F468A5A128256191F55D3F0 /* Pods-Adiscope-iOS-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adiscope-iOS-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Adiscope-iOS-Sample/Pods-Adiscope-iOS-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52A2300125BE58FF00FACCC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA307AB55017DAF533DA81A9 /* Pods_Adiscope_iOS_Sample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A4F0AEA0ED3AFAB8EFE73B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1278EFB58875315BB3F04A17 /* Pods_Adiscope_iOS_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BD1B144E91DD58E65C52972 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F468A5A128256191F55D3F0 /* Pods-Adiscope-iOS-Sample.debug.xcconfig */,
+				19F5FD398D0FB0F07F089BBF /* Pods-Adiscope-iOS-Sample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		52A22FFB25BE58FF00FACCC8 = {
+			isa = PBXGroup;
+			children = (
+				52A2300625BE58FF00FACCC8 /* Adiscope-iOS-Sample */,
+				52A2300525BE58FF00FACCC8 /* Products */,
+				4BD1B144E91DD58E65C52972 /* Pods */,
+				3A4F0AEA0ED3AFAB8EFE73B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52A2300525BE58FF00FACCC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52A2300425BE58FF00FACCC8 /* Adiscope-iOS-Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52A2300625BE58FF00FACCC8 /* Adiscope-iOS-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				52A2300725BE58FF00FACCC8 /* AppDelegate.swift */,
+				52A2300B25BE58FF00FACCC8 /* ViewController.swift */,
+				52A2301025BE590000FACCC8 /* Assets.xcassets */,
+				52A2300D25BE58FF00FACCC8 /* Main.storyboard */,
+				52A2301225BE590000FACCC8 /* LaunchScreen.storyboard */,
+				52A2301525BE590000FACCC8 /* Info.plist */,
+			);
+			path = "Adiscope-iOS-Sample";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52A2300325BE58FF00FACCC8 /* Adiscope-iOS-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A2301825BE590000FACCC8 /* Build configuration list for PBXNativeTarget "Adiscope-iOS-Sample" */;
+			buildPhases = (
+				55E9D593167E7784264A5C73 /* [CP] Check Pods Manifest.lock */,
+				52A2300025BE58FF00FACCC8 /* Sources */,
+				52A2300125BE58FF00FACCC8 /* Frameworks */,
+				52A2300225BE58FF00FACCC8 /* Resources */,
+				A23DBA22EDEDF918BBE1126E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Adiscope-iOS-Sample";
+			productName = "Adiscope-iOS-Sample";
+			productReference = 52A2300425BE58FF00FACCC8 /* Adiscope-iOS-Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52A22FFC25BE58FF00FACCC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					52A2300325BE58FF00FACCC8 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 52A22FFF25BE58FF00FACCC8 /* Build configuration list for PBXProject "Adiscope-iOS-Sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52A22FFB25BE58FF00FACCC8;
+			productRefGroup = 52A2300525BE58FF00FACCC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52A2300325BE58FF00FACCC8 /* Adiscope-iOS-Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52A2300225BE58FF00FACCC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A2301425BE590000FACCC8 /* LaunchScreen.storyboard in Resources */,
+				52A2301125BE590000FACCC8 /* Assets.xcassets in Resources */,
+				52A2300F25BE58FF00FACCC8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55E9D593167E7784264A5C73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adiscope-iOS-Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23DBA22EDEDF918BBE1126E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adiscope-iOS-Sample/Pods-Adiscope-iOS-Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adiscope-iOS-Sample/Pods-Adiscope-iOS-Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Adiscope-iOS-Sample/Pods-Adiscope-iOS-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52A2300025BE58FF00FACCC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A2300C25BE58FF00FACCC8 /* ViewController.swift in Sources */,
+				52A2300825BE58FF00FACCC8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52A2300D25BE58FF00FACCC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52A2300E25BE58FF00FACCC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52A2301225BE590000FACCC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52A2301325BE590000FACCC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52A2301625BE590000FACCC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52A2301725BE590000FACCC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52A2301925BE590000FACCC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F468A5A128256191F55D3F0 /* Pods-Adiscope-iOS-Sample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JP86SWNN93;
+				INFOPLIST_FILE = "Adiscope-iOS-Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.adiscope.Adiscope-iOS-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52A2301A25BE590000FACCC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19F5FD398D0FB0F07F089BBF /* Pods-Adiscope-iOS-Sample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JP86SWNN93;
+				INFOPLIST_FILE = "Adiscope-iOS-Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.adiscope.Adiscope-iOS-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52A22FFF25BE58FF00FACCC8 /* Build configuration list for PBXProject "Adiscope-iOS-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A2301625BE590000FACCC8 /* Debug */,
+				52A2301725BE590000FACCC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A2301825BE590000FACCC8 /* Build configuration list for PBXNativeTarget "Adiscope-iOS-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A2301925BE590000FACCC8 /* Debug */,
+				52A2301A25BE590000FACCC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52A22FFC25BE58FF00FACCC8 /* Project object */;
+}
