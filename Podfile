@@ -6,14 +6,14 @@ target 'Adiscope-iOS-Sample' do
   use_frameworks!
   inhibit_all_warnings!
 
-  pod 'Adiscope', '1.6.4.1'
+  pod 'Adiscope', '1.6.6.0'
   # pod 'AdiscopeMediaAppLovin', '1.6.0.0'
   # pod 'AdiscopeMediaAdMob', '1.6.0.0'
   # pod 'AdiscopeMediaAdColony', '1.6.0.0'
   # pod 'AdiscopeMediaFAN', '1.6.1.0'
   # pod 'AdiscopeMediaMobVista', '1.6.4.0'
-  pod 'AdiscopeMediaUnityAds', '1.6.0.0'
-  # pod 'AdiscopeMediaVungle', '1.6.0.0'
+  # pod 'AdiscopeMediaUnityAds', '1.6.6.0'
+  # pod 'AdiscopeMediaVungle', '1.6.6.0'
 
 end
 

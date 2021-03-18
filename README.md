@@ -31,7 +31,7 @@ target '<Your Target Name>' do
     # pod 'AdiscopeMediaFAN', '1.6.1.0'
     # pod 'AdiscopeMediaMobVista', '1.6.4.0'
     # pod 'AdiscopeMediaUnityAds', '1.6.6.0'
-    # pod 'AdiscopeMediaVungle', '1.6.0.0'
+    # pod 'AdiscopeMediaVungle', '1.6.6.0'
 end
 ```
 
