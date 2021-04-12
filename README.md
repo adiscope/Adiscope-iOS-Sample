@@ -57,7 +57,7 @@ $ pod install --repo-update
 	```
 
 
-- Xcode 12.0 이상일 경우 SKAdNetwork 추가 ([Download](https://s3-ap-northeast-1.amazonaws.com/file.adiscope.com/AdiscopeSkAdNetworks.plist))
+- Xcode 12.0 이상일 경우 SKAdNetwork 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/1.6.6.0/AdiscopeSkAdNetworks.plist))
 
   ```
   <dict>
