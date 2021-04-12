@@ -24,14 +24,14 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '1.6.6.0'
-    # pod 'AdiscopeMediaAppLovin', '1.6.0.0'
-    # pod 'AdiscopeMediaAdMob', '1.6.0.0'
-    # pod 'AdiscopeMediaAdColony', '1.6.0.0'
-    # pod 'AdiscopeMediaFAN', '1.6.1.0'
-    # pod 'AdiscopeMediaMobVista', '1.6.4.0'
-    # pod 'AdiscopeMediaUnityAds', '1.6.6.0'
-    # pod 'AdiscopeMediaVungle', '1.6.6.0'
+    pod 'Adiscope', '1.6.6.1'
+    # pod 'AdiscopeMediaAppLovin', '1.6.0.1'
+    # pod 'AdiscopeMediaAdMob', '1.6.0.1'
+    # pod 'AdiscopeMediaAdColony', '1.6.0.1'
+    # pod 'AdiscopeMediaFAN', '1.6.4.1'
+    # pod 'AdiscopeMediaMobVista', '1.6.4.2'
+    # pod 'AdiscopeMediaUnityAds', '1.6.6.1'
+    # pod 'AdiscopeMediaVungle', '1.6.6.1'
 end
 ```
 
