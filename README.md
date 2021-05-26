@@ -9,6 +9,7 @@ Xcode 11.0 +
 
 ## Installation
 
+### CocoaPods
 CocoaPods는 Cocoa projects의 Dependency를 관리할 수 있습니다. 다음과 같은 명령어를 사용하여 설치를 진행합니다.
 ```
 $ gem install cocoapods
@@ -29,7 +30,7 @@ target '<Your Target Name>' do
     # pod 'AdiscopeMediaAdMob', '1.6.0.1'
     # pod 'AdiscopeMediaAdColony', '1.6.0.1'
     # pod 'AdiscopeMediaFAN', '1.6.4.1'
-    # pod 'AdiscopeMediaMobVista', '1.6.4.2'
+    # pod 'AdiscopeMediaMobVista', '1.6.4.4'
     # pod 'AdiscopeMediaUnityAds', '1.6.6.1'
     # pod 'AdiscopeMediaVungle', '1.6.6.1'
 end
@@ -42,6 +43,12 @@ end
 ```
 $ pod install --repo-update
 ```
+
+
+
+### Manual
+
+* Native Manual 설치는 해당 [문서](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/Installation_manual.md)를 참고 해 주세요.
 
 
 
@@ -61,13 +68,13 @@ $ pod install --repo-update
 
   ```
   <dict>
-		<key>SKAdNetworkItems</key>
-			<array>
-				<dict>
-					<key>SKAdNetworkIdentifier</key>
-					<string></string>
-				</dict>
-			</array>
+	  <key>SKAdNetworkItems</key>
+	    <array>
+	      <dict>
+	        <key>SKAdNetworkIdentifier</key>
+	        <string></string>
+	      </dict>
+	    </array>
   </dict>
   ```
 
@@ -84,8 +91,5 @@ $ pod install --repo-update
 
 	```
 	<key>AppLovinSdkKey</key>
-	<string>URhay2tKwCEd5D15ONJFui9Z7RfNKG0piiOemF-fSDHXRJdqhx3ZeD8mfo8-39omtAPcPOHscZO2t0sTyw7a8G</string>
+	<string></string>
 	```
-	
-
-
