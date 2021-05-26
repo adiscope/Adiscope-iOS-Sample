@@ -48,7 +48,7 @@ $ pod install --repo-update
 
 ### Manual
 
-* Native Manual 설치는 해당 [문서](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/Installation_manual.md)를 참고 해 주세요.
+* Native Manual 설치는 해당 [문서](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/Installation_manual.md)
 
 
 

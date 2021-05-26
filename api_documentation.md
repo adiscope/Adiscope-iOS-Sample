@@ -2,8 +2,8 @@
 
 <br>
 
-- [Interface](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#interface)
-  - [Core](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#core)
+- [Interface](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#interface)
+  - [Core](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#core)
     - sharedInstance
     - initialize:mediaId:mediaSecret:callBackTag
     - setMainDelegate:delegate
@@ -12,38 +12,38 @@
     - setUseOfferWallWarningPopup:useOfferWallWarningPopup
     - setUseCloudFrontProxy:useCloudFrontProxy
     - getSDKVersion
-  - [Offerwall](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#offerwall)
+  - [Offerwall](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#offerwall)
     - showOfferWall:unitID
-  - [RwardedVideo](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#rwardedvideo)
+  - [RwardedVideo](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#rwardedvideo)
     - load:unitID
     - isLoaded:unitID
     - show
-  - [Interstitial](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#interstitial)
+  - [Interstitial](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#interstitial)
     - loadInterstitial:unitID
     - isLoadedInterstitialUnitID:unitID
     - showInterstitial
-- [Delegate](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#delegate)
-  - [Core](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#core-1)
+- [Delegate](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#delegate)
+  - [Core](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#core-1)
     - onInitializedCallback:isSuccess
     - onGetUnitStatus:unitStatus
-  - [Offerwall](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#offerwall-1)
+  - [Offerwall](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#offerwall-1)
     - onOfferwallAdOpened:unitId
     - onOfferwallAdClosed:unitId
     - onOfferwallAdFailedToShow:unitId:error
-  - [RewardedVideo](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#rewardedvideo)
+  - [RewardedVideo](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#rewardedvideo)
     - onRewardedVideoAdLoaded:unitID
     - onRewardedVideoAdFailedToLoad:unitID:error
     - onRewardedVideoAdOpened:unitId
     - onRewardedVideoAdClosed:unitId
     - onRewarded:item
     - onRewardedVideoAdFailedToShow:unitId:error
-  - [Interstitial](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#interstitial-1)
+  - [Interstitial](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#interstitial-1)
     - onInterstitialAdLoaded:unitID
     - onInterstitialAdFailedToLoad:unitID:error
     - onInterstitialAdOpened:unitId
     - onInterstitialAdClosed:unitId
     - onInterstitialAdFailedToShow:unitId:error
-- [Model](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#model)
+- [Model](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#model)
   - AdiscopeUnitStatus
   - AdiscopeError
   - AdiscopeRewardItem
