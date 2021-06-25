@@ -28,7 +28,7 @@ target '<Your Target Name>' do
     pod 'Adiscope', '2.0.2.0'
     # pod 'AdiscopeMediaAppLovin', '2.0.2.0'
     # pod 'AdiscopeMediaAdMob', '2.0.2.0'
-    # pod 'AdiscopeMediaAdColony', '2.0.2.0'
+    # pod 'AdiscopeMediaAdColony', '2.0.2.0' # 현재 배포문제로 딜레이 되었습니다. 다른 네트워크를 사용 해 주세요.
     # pod 'AdiscopeMediaFAN', '2.0.2.0'
     # pod 'AdiscopeMediaMobVista', '2.0.2.0'
     # pod 'AdiscopeMediaUnityAds', '2.0.2.0'

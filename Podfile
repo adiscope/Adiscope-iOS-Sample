@@ -9,7 +9,6 @@ target 'Adiscope-iOS-Sample' do
   pod 'Adiscope', '2.0.2.0'
   # pod 'AdiscopeMediaAppLovin', '2.0.2.0'
   # pod 'AdiscopeMediaAdMob', '2.0.2.0'
-  # pod 'AdiscopeMediaAdColony', '2.0.2.0'
   # pod 'AdiscopeMediaFAN', '2.0.2.0'
   # pod 'AdiscopeMediaMobVista', '2.0.2.0'
   # pod 'AdiscopeMediaUnityAds', '2.0.2.0'
