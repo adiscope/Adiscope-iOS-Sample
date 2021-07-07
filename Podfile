@@ -13,6 +13,7 @@ target 'Adiscope-iOS-Sample' do
   # pod 'AdiscopeMediaMobVista', '2.0.2.0'
   # pod 'AdiscopeMediaUnityAds', '2.0.2.0'
   # pod 'AdiscopeMediaVungle', '2.0.2.0'
+  # pod 'AdiscopeMediaChartBoost', '2.0.2.0'
 
 end
 
