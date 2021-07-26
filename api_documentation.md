@@ -14,6 +14,7 @@
     - getSDKVersion
   - [Offerwall](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#offerwall)
     - showOfferWall:unitID
+    - showOfferWall:unitID:WithFilterTabs
   - [RwardedVideo](https://github.com/adiscope/Adiscope-iOS-Sample/blob/2.0.0/api_documentation.md#rwardedvideo)
     - load:unitID
     - isLoaded:unitID
@@ -145,7 +146,7 @@ Adiscope SDK Version 을 확인합니다.
 
 #### Offerwall
 
-##### - (BOOL)showOfferWall:unitID
+##### - (BOOL)showOfferWall:unitID:WithFilterTabs
 
 Adiscope 의 Offerwall ViewController 를 Display 합니다.
 
@@ -156,6 +157,7 @@ AdiscopeDelegate의 onOfferwallAdOpened(), onOfferwallAdClosed(), onOfferwallAdF
 | Parameters |                           |
 | ---------- | ------------------------- |
 | unitId     | 보여질 Offerwall의 UnitID |
+| filterTabs(Optional)     | Filter할 Offerwall의 Item Type. |
 
 | Return     |                              |
 | ---------- | ---------------------------- |
