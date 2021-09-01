@@ -25,7 +25,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '2.0.3.0'
+    pod 'Adiscope', '2.0.4.0'
     # pod 'AdiscopeMediaAppLovin', '2.0.2.0'
     # pod 'AdiscopeMediaAdMob', '2.0.3.0'
     # pod 'AdiscopeMediaAdColony', '2.0.2.0' 
@@ -33,7 +33,7 @@ target '<Your Target Name>' do
     # pod 'AdiscopeMediaMobVista', '2.0.2.0'
     # pod 'AdiscopeMediaUnityAds', '2.0.2.0'
     # pod 'AdiscopeMediaVungle', '2.0.2.0'
-    # pod 'AdiscopeMediaChartBoost', '2.0.3.0' 
+    # pod 'AdiscopeMediaChartBoost', '2.0.4.0' 
 end
 ```
 
