@@ -96,3 +96,8 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 	<string></string>
 	```
 
+### 배포를 위한 Simulator Arch 삭제
+1. Xcode Project / Build Phase Tab 접근
+2. ＋ 버튼을 눌러 New Run Script Phase 선택
+3. 추가된 Run Script에 다음을 추가
+> "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Adiscope.framework/strip-frameworks.sh"
