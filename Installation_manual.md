@@ -19,11 +19,11 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 | ----------------------- | --------- | ------------------------------------------------------------ |
 | Adiscope                | YES       |                                                              |
 | AdiscopeMediaAdColony   | NO        | AdColony.framework                                           |
-| AdiscopeMediaAdMob      | NO        | GoogleMobileAds.xcframework, GoogleAppMeasurement.xcframework, GoogleUtilities.xcframework, nanopb.xcframework, UserMessagingPlatform.xcframework, PromiseObjC.xcframework |
-| AdiscopeMediaAdManager      | NO        | GoogleMobileAds.xcframework, GoogleAppMeasurement.xcframework, GoogleUtilities.xcframework, nanopb.xcframework, UserMessagingPlatform.xcframework, PromiseObjC.xcframework |
+| AdiscopeMediaAdMob      | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework   |
+| AdiscopeMediaAdManager  | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework   |
 | AdiscopeMediaAppLovin   | NO        | AppLovinSDK.framework                                        |
 | AdiscopeMediaChartBoost | NO        | Chartboost.framework                                         |
-| AdiscopeMediaFAN        | NO        | FBAudiencenetwork.framework, FBSDKCoreKit.framework          |
+| AdiscopeMediaFAN        | NO        | FBAudiencenetwork.framework, FBSDKCoreKit_Basics.framework   |
 | AdiscopeMediaMobVista   | NO        | MTGSDK.framework, MTGSDKReward.framework                     |
 | AdiscopeMediaTapjoy     | NO        | Tapjoy.embeddedframework                                     |
 | AdiscopeMediaUnityAds   | NO        | UnityAds.framework                                           |
@@ -39,7 +39,7 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 2. Adiscope.framework 추가
    * Xcode Project / General Tab 접근
    * Frameworks, Libraries, and Embedded Content 에 Adiscope.framework를 추가
-3. (**Optional**)RewardedVideo, Interstitial을 사용하기 위한 Framework들을 추가 (.framework, .xcframework)
+3. (**Optional**)RewardedVideo, Interstitial을 사용하기 위한 Framework들을 추가
    * Xcode Project / Build Phase Tab 접근
    * Link Binary With Libraries에 사용할 Framework들을 추가 
      * *Vungle을 사용한다고 가정시에 이하 Framework를 Link Binary With Libraries에 추가한다.*
@@ -66,7 +66,7 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 	```
 
 
-- Xcode 12.0 이상일 경우 SKAdNetwork 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/2.0.3.0/AdiscopeSkAdNetworks.plist))
+- Xcode 12.0 이상일 경우 SKAdNetwork 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/2.0.6.0/AdiscopeSkAdNetworks.plist))
 
   ```
   <dict>
