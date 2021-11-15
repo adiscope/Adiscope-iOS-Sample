@@ -7,14 +7,15 @@ target 'Adiscope-iOS-Sample' do
   inhibit_all_warnings!
 
   pod 'Adiscope', '2.0.6.0'
-  # pod 'AdiscopeMediaAppLovin', '2.0.2.0'
+  # pod 'AdiscopeMediaAppLovin', '2.0.7.0'
   # pod 'AdiscopeMediaAdMob', '2.0.6.0'
   # pod 'AdiscopeMediaAdManager', '2.0.6.0'
-  # pod 'AdiscopeMediaFAN', '2.0.6.0'
+  # pod 'AdiscopeMediaAdColony', '2.0.7.0' 
+  # pod 'AdiscopeMediaFAN', '2.0.7.0'
   # pod 'AdiscopeMediaMobVista', '2.0.6.0'
-  # pod 'AdiscopeMediaUnityAds', '2.0.2.0'
-  # pod 'AdiscopeMediaVungle', '2.0.6.0'
-  # pod 'AdiscopeMediaChartBoost', '2.0.2.0'
+  # pod 'AdiscopeMediaUnityAds', '2.0.7.0'
+  # pod 'AdiscopeMediaVungle', '2.0.7.0'
+  # pod 'AdiscopeMediaChartBoost', '2.0.7.0' 
 
 end
 
