@@ -34,16 +34,16 @@
   - [RewardedVideo](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#rewardedvideo)
     - onRewardedVideoAdLoaded:unitID
     - onRewardedVideoAdFailedToLoad:unitID:error
-    - onRewardedVideoAdOpened:unitId
-    - onRewardedVideoAdClosed:unitId
-    - onRewarded:item
-    - onRewardedVideoAdFailedToShow:unitId:error
+    - onRewardedVideoAdOpened:unitID
+    - onRewardedVideoAdClosed:unitID
+    - onRewarded:unitID:Item
+    - onRewardedVideoAdFailedToShow:unitID:error
   - [Interstitial](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#interstitial-1)
     - onInterstitialAdLoaded:unitID
     - onInterstitialAdFailedToLoad:unitID:error
-    - onInterstitialAdOpened:unitId
-    - onInterstitialAdClosed:unitId
-    - onInterstitialAdFailedToShow:unitId:error
+    - onInterstitialAdOpened:unitID
+    - onInterstitialAdClosed:unitID
+    - onInterstitialAdFailedToShow:unitID:error
 - [Model](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#model)
   - AdiscopeUnitStatus
   - AdiscopeError
@@ -294,27 +294,27 @@ UnitID에 대한 정보를 가져 왔을때 발생됩니다.
 
 #### Offerwall
 
-##### onOfferwallAdOpened:unitId
+##### onOfferwallAdOpened:unitID
 
 Offerwall이 open 되었을 때 발생됩니다.
 
 | Parameters |                         |
 | :--------- | ----------------------- |
-| unitId     | Open된 UnitID           |
+| unitID     | Open된 UnitID           |
 
 <br>
 
-##### onOfferwallAdClosed:unitId
+##### onOfferwallAdClosed:unitID
 
 Offerwall이 close 되었을 때 발생됩니다.
 
 | Parameters |                |
 | :--------- | -------------- |
-| unitId     | Close된 UnitID |
+| unitID     | Close된 UnitID |
 
 <br>
 
-##### onOfferwallAdFailedToShow:unitId:error
+##### onOfferwallAdFailedToShow:unitID:error
 
 Offerwall이 open 되었을 때 발생됩니다.
 
@@ -333,7 +333,7 @@ Rewarded Video 가 Load 되었을 때 발생됩니다.
 
 | Parameters |               |
 | :--------- | ------------- |
-| unitId     | Load된 UnitID |
+| unitID     | Load된 UnitID |
 
 <br>
 
@@ -351,37 +351,38 @@ Rewarded Video 가 Load 되었을 때 발생됩니다.
 
 <br>
 
-##### onRewardedVideoAdOpened:unitId
+##### onRewardedVideoAdOpened:unitID
 
 Rewarded Video 를 재생한 ViewController 가 open 되었을 때 발생됩니다.
 
 | Parameters |               |
 | :--------- | ------------- |
-| unitId     | Open된 UnitID |
+| unitID     | Open된 UnitID |
 
 <br>
 
-##### onRewardedVideoAdClosed:unitId
+##### onRewardedVideoAdClosed:unitID
 
 Rewarded Video 를 재생한 ViewController 가 close 되었을 때 발생됩니다.
 
 | Parameters |                |
 | :--------- | -------------- |
-| unitId     | Close된 UnitID |
+| unitID     | Close된 UnitID |
 
 <br>
 
-##### onRewarded:item
+##### onRewarded:unitID:item
 
 Rewarded Video 의 보상을 받을 수 있을 때, 발생됩니다.
 
 | Parameters |                         |
 | :--------- | ----------------------- |
+| unitID       | 수신된 Rewarded UnitID |
 | item       | AdiscopeRewardItem 참조 |
 
 <br>
 
-##### onRewardedVideoAdFailedToShow:unitId:error
+##### onRewardedVideoAdFailedToShow:unitID:error
 
 Rewarded Video 를 재생할 수 없을 경우 발생됩니다.
 
@@ -400,7 +401,7 @@ Interstitial 가 Load 되었을 때 발생됩니다.
 
 | Parameters |               |
 | :--------- | ------------- |
-| unitId     | Load된 UnitID |
+| unitID     | Load된 UnitID |
 
 <br>
 
@@ -418,27 +419,27 @@ Interstitial 가 Load 되었을 때 발생됩니다.
 
 <br>
 
-##### onInterstitialAdOpened:unitId
+##### onInterstitialAdOpened:unitID
 
 Interstitial 를 재생한 ViewController 가 open 되었을 때 발생됩니다.
 
 | Parameters |               |
 | :--------- | ------------- |
-| unitId     | Open된 UnitID |
+| unitID     | Open된 UnitID |
 
 <br>
 
-##### onInterstitialAdClosed:unitId
+##### onInterstitialAdClosed:unitID
 
 Interstitial 를 재생한 ViewController 가 close 되었을 때 발생됩니다.
 
 | Parameters |                |
 | :--------- | -------------- |
-| unitId     | Close된 UnitID |
+| unitID     | Close된 UnitID |
 
 <br>
 
-##### onInterstitialAdFailedToShow:unitId:error
+##### onInterstitialAdFailedToShow:unitID:error
 
 Interstitial 를 재생할 수 없을 경우 발생됩니다.
 
