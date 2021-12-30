@@ -468,6 +468,7 @@ Interstitial 를 재생할 수 없을 경우 발생됩니다.
 | :---------- | -------------------------------- |
 | code        | error's code (AdiscopeErrorCode) |
 | description | error's description              |
+| xb3TraceID  | 추적을 위한 xb3 traceID Token    |
 
 | Error Code       | Cause |
 | ---------------- | ----- |
