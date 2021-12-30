@@ -31,7 +31,7 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 
 
 
-1. (**Swift**) Bridge 추가
+1. (**Swift**)Bridge 추가
    * 새로운 헤더 파일 생성 (My-Awesome-Project-Bridging-Header.h)
    * Xcode Project / Build Settings Tab 접근
    * Objective-C Bridging Header에 생성한 헤더를 입력
