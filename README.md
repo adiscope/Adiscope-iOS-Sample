@@ -97,7 +97,7 @@ $ pod install --repo-update
 	```
 
 ## Adiscope Error
-Adiscope Error에 대한 구조는 (여기)[https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#model]에서 확인 할 수 있습니다. 
+Adiscope Error에 대한 구조는 [여기](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#model) 에서 확인 할 수 있습니다. 
 
 ### 에러메세지 가이드
 사용자가 광고 재생을 시도 했으나, 실패하여 CS가 인입된 경우에 빠른 대응을 위해서 사용자에게 제공된 알림메세지에 에러코드를 추가할 것을 권장드립니다.
