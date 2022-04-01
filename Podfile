@@ -6,7 +6,7 @@ target 'Adiscope-iOS-Sample' do
   use_frameworks!
   inhibit_all_warnings!
 
-  pod 'Adiscope', '2.0.9.1'
+  pod 'Adiscope', '2.1.0.0'
   # pod 'AdiscopeMediaAppLovin', '2.0.7.0'
   # pod 'AdiscopeMediaAdMob', '2.0.6.0'
   # pod 'AdiscopeMediaAdManager', '2.0.6.0'

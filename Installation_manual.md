@@ -25,7 +25,7 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 | AdiscopeMediaChartBoost | NO        | Chartboost.framework                                         |
 | AdiscopeMediaFAN        | NO        | FBAudiencenetwork.framework, FBSDKCoreKit_Basics.framework   |
 | AdiscopeMediaMobVista   | NO        | MTGSDK.framework, MTGSDKReward.framework                     |
-| AdiscopeMediaTapjoy     | NO        | Tapjoy.embeddedframework                                     |
+| AdiscopeMediaTapjoy     | NO        | Tapjoy.framework                                             |
 | AdiscopeMediaUnityAds   | NO        | UnityAds.framework                                           |
 | AdiscopeMediaVungle     | NO        | VungleSDK.framework                                          |
 
