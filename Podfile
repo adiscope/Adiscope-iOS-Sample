@@ -12,8 +12,10 @@ target 'Adiscope-iOS-Sample' do
   # pod 'AdiscopeMediaAdManager', '2.0.6.0'
   # pod 'AdiscopeMediaAdColony', '2.0.7.0' 
   # pod 'AdiscopeMediaFAN', '2.0.7.0'
-  # pod 'AdiscopeMediaMobVista', '2.0.6.0'
-  # pod 'AdiscopeMediaUnityAds', '2.0.7.0'
+  # pod 'AdiscopeMediaMobVista', '2.1.1.0'
+  # pod 'AdiscopeMediaUnityAds', '2.1.1.0'
+  # pod 'AdiscopeMediaTapjoy', '2.1.1.0'
+  # pod 'AdiscopeMediaIronsource', '2.1.0.0'
   # pod 'AdiscopeMediaVungle', '2.0.7.0'
   # pod 'AdiscopeMediaChartBoost', '2.0.7.0' 
 
