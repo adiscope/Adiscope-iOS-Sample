@@ -2,7 +2,7 @@
 ## 준비하기 
 * Adiscope의 Admin페이지에서 `Media ID`와 `Secret Key`를 생성합니다. (외부 사용자는 담당자를 통해서 할당 받습니다.)
 * Rewarded Video나 Offerwall을 사용하기 위해서는 `지면`에 해당하는 `Unit ID`가 필요합니다. Adiscope의 Admin페이지에서 생성하여 준비합니다. (외부 사용자는 담당자를 통해서 할당 받습니다.)
-* Adiscope.framework를 연동합니다. [(연동하기)](https://github.com/...)
+* Adiscope.framework를 연동합니다. [(연동하기)](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/Installation_manual.md#installation)
 <br><br>
 
 ## Initialize
@@ -24,7 +24,7 @@ if let adiscopeSDK = AdiscopeInterface.sharedInstance() {
 
 ## Rewarded Video
 * <span style='color: #fff5b1'><주의> 먼저 Initialize와 Set UserID를 진행을 완료해야 합니다.</span>
-* <span style='color: #fff5b1'><주의> Adiscope.framework외에 사용할 Network를 연동해야 합니다. [(연동하기)](https://abcdefg.com)</span>
+* <span style='color: #fff5b1'><주의> Adiscope.framework외에 사용할 Network를 연동해야 합니다. [(연동하기)](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/Installation_manual.md#installation)</span>
 * 다음의 코드로 광고를 요청 할 수 있습니다. 
 ```swift
 adiscopeSDK.load(rewardedVideoUnitID)
