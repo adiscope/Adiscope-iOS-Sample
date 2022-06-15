@@ -23,7 +23,7 @@ if let adiscopeSDK = AdiscopeInterface.sharedInstance() {
 <br><br>
 
 ## Rewarded Video
-* <span style='color: #fff5b1'><주의> 먼저 Initialize와 Set UserID를 진행을 완료해야 합니다.</span>
+* <font style='color: #fff5b1'><주의> 먼저 Initialize와 Set UserID를 진행을 완료해야 합니다.</font>
 * <span style='color: #fff5b1'><주의> Adiscope.framework외에 사용할 Network를 연동해야 합니다. [(연동하기)](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/Installation_manual.md#installation)</span>
 * 다음의 코드로 광고를 요청 할 수 있습니다. 
 ```swift
