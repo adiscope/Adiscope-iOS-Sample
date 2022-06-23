@@ -7,6 +7,7 @@
 
 ## Initialize
 * Adiscope의 서비스를 이용하기 위해서는 초기화 과정이 필요합니다. iOS는 다음과 같이 초기화를 진행 할 수 있습니다.
+* <span style='color: #fff5b1'><주의> setUserId는 64자까지 설정 할 수 있습니다.</span>
 ```swift
 if let adiscopeSDK = AdiscopeInterface.sharedInstance() {
     adiscopeSDK.setMainDelegate(self)
