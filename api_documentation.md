@@ -89,7 +89,7 @@ AdiscopeDelegate callbacks을 위한 delegate 설정합니다.
 
 Application 사용자의 Unique Id를 설정. 이 정보는 reward 지급 등에 있어 사용자를 구분하는데 사용합니다.
 
-⚠️ UserID의 최대 길이는 32자 입니다.
+⚠️ UserID의 최대 길이는 64자 입니다.
 
 | Parameters |                     |
 | ---------- | ------------------- |
