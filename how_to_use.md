@@ -29,6 +29,7 @@ if let adiscopeSDK = AdiscopeInterface.sharedInstance() {
 
 ### 광고 요청 및 재생
 * 다음의 코드로 광고를 요청 할 수 있습니다. 
+* <span style='color: #fff5b1'><주의> Load이후 setUserID를 호출할 경우 isLoaded Flag가 False로 반환됩니다. </span>
 ```swift
 adiscopeSDK.load(rewardedVideoUnitID)
 ```
