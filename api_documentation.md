@@ -88,6 +88,8 @@ AdiscopeDelegate callbacks을 위한 delegate 설정합니다.
 ##### - (BOOL)setUserId:userID
 
 Application 사용자의 Unique Id를 설정. 이 정보는 reward 지급 등에 있어 사용자를 구분하는데 사용합니다.
+※ 만일 서비스에서 한 사람당 N개의 계정 사용이 가능한 경우, 계정 변경 시 `setUserId` 호출로 애디스콥에 변경 정보를 전달해주어야 합니다.
+그렇지 않을 경우 변경된 계정 정보로 보상 지급이 되지 않으니 유의해주세요.
 
 ⚠️ UserID의 최대 길이는 64자 입니다.
 
