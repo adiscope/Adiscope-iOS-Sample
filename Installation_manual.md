@@ -18,7 +18,6 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 | Framework               | Essential | Third-party Frameworks                                       |
 | ----------------------- | --------- | ------------------------------------------------------------ |
 | Adiscope                | YES       |                                                              |
-| AdiscopeMediaAdColony   | NO        | AdColony.framework                                           |
 | AdiscopeMediaAdMob      | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework   |
 | AdiscopeMediaAdManager  | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework   |
 | AdiscopeMediaAppLovin   | NO        | AppLovinSDK.framework                                        |
