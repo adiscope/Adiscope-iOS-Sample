@@ -15,7 +15,10 @@
   - [Offerwall](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#offerwall)
     - showOfferWall:unitID
     - showOfferWall:unitID:WithFilterTabs
-  - [RwardedVideo](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#rwardedvideo)
+    - showOfferwallDetail:unitID:offerwallItemId
+    - showOfferwallDetail:unitID:offerwallItemId:offerwallFilterTabs
+    - showOfferwallDetail:url
+  - [RewardedVideo](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#rwardedvideo)
     - load:unitID
     - isLoaded:unitID
     - show
@@ -167,7 +170,47 @@ AdiscopeDelegate의 onOfferwallAdOpened(), onOfferwallAdClosed(), onOfferwallAdF
 
 <br>
 
-#### RwardedVideo
+##### - (BOOL)showOfferwallDetail:unitID:offerwallItemId
+##### - (BOOL)showOfferwallDetail:unitID:offerwallItemId:offerwallFilterTabs
+
+Adiscope 의 Offerwall ViewController 를 Display 하고 특정 Offerwall SponsorItem 화면으로 이동한다.
+
+AdiscopeDelegate의 onOfferwallAdOpened(), onOfferwallAdClosed(), onOfferwallAdFailedToShow() callbacks을 통해 Offerwall ViewController 의 Open, Close, Fail 정보를 얻습니다.
+
+⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
+
+| Parameters |                          |
+| ---------- |--------------------------|
+| unitId     | 보여질 Offerwall의 UnitID    |
+| offerwallItemId     | 바로 이동할 특정 Offerwall Item |
+| offerwallFilterTabs(Optional)     | 바로 이동할 특정 Offerwall Item |
+
+| Return     |                              |
+| ---------- | ---------------------------- |
+| isSuccesss | UnitID이 잘못 되었을 경우 NO |
+
+<br>
+
+##### - (BOOL)showOfferwallDetail:url
+
+Adiscope 의 Offerwall ViewController 를 Display 하고 특정 Offerwall SponsorItem 화면으로 이동한다. *URL 로 부터 호출하는 함수
+
+AdiscopeDelegate의 onOfferwallAdOpened(), onOfferwallAdClosed(), onOfferwallAdFailedToShow() callbacks을 통해 Offerwall ViewController 의 Open, Close, Fail 정보를 얻습니다.
+
+⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
+
+| Parameters |                                                                                      |
+|------------|--------------------------------------------------------------------------------------|
+| unitId     | 보여질 Offerwall의 UnitID                                                                |
+| url        | url + /{media_id}/{offerwall_unit_id}/exclude_type/offerwall_item_id 형태를 param 으로 호출 |
+* https://link.adiscope.com/86/API_OFFERWALL/0/1234 -> 이런식의 url 을 그대로 파람으로 전달한다.
+| Return     |                              |
+| ---------- | ---------------------------- |
+| isSuccesss | UnitID이 잘못 되었을 경우 NO |
+
+<br>
+
+#### RewardedVideo
 
 ##### - (void)load:unitID
 
