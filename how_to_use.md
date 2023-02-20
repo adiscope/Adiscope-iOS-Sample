@@ -67,6 +67,14 @@ adiscopeSDK.show()
 ```swift
 adiscopeSDK.showOfferwall(offerwallUnitID)
 ```
+### Offerwall 특정 아이템 보여주기
+
+```
+* 다음의 코드로 Offerwall 특정 아이템 페이지를  보여 줄 수 있습니다.
+adiscopeSDK.showOfferwallDetail(offerwallUnitID, offerwallItemId)
+adiscopeSDK.showOfferwallDetail(url)
+```
+
 * Offerwall을 보여 줄 때, 다른 옵션을 사용하고자 한다면 [다음](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#offerwall)을 참조 해 주세요.
 
 <br>
