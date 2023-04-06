@@ -92,6 +92,12 @@ adiscopeSDK.showOfferwallDetail(url)
 * <span style='color: #fff5b1'>https://developer.apple.com/ios/universal-links/</span>
 * <span style='color: #fff5b1'>https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app</span>
 
+### 함수 호출 방식
+* 아래 링크 참조 하시면 됩니다.
+  * #### https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#offerwall
+  
+  
+  
 ### URL Scheme 방식
 
 * #### URL Scheme 을 선언 하여 앱이 해당 url 에 대해서 응답 받을수 있도록 하는 부분
