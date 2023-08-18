@@ -35,7 +35,9 @@ target '<Your Target Name>' do
     # pod 'AdiscopeMediaTapjoy', '3.1.0'
     # pod 'AdiscopeMediaIronsource', '3.1.0'
     # pod 'AdiscopeMediaVungle', '3.1.0'
-    # pod 'AdiscopeMediaChartBoost', '3.1.0' 
+
+    # pod 'AdiscopeMediaChartBoost', '3.1.0'
+    # pod 'ChartboostSDK', '8.5.0'
 end
 ```
 
