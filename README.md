@@ -21,23 +21,22 @@ CocoaPods의 Xcode project내에 Podfile에서 기술합니다.
 
 ```
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '10.0'
+platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.1.0'
-    # pod 'AdiscopeMediaAppLovin', '3.1.0'
-    # pod 'AdiscopeMediaAdMob', '3.1.0'
-    # pod 'AdiscopeMediaAdManager', '3.1.0'
-    # pod 'AdiscopeMediaFAN', '3.1.0'
-    # pod 'AdiscopeMediaMobVista', '3.1.0'
-    # pod 'AdiscopeMediaUnityAds', '3.1.0'
-    # pod 'AdiscopeMediaTapjoy', '3.1.0'
-    # pod 'AdiscopeMediaIronsource', '3.1.0'
-    # pod 'AdiscopeMediaVungle', '3.1.0'
-
-    # pod 'AdiscopeMediaChartBoost', '3.1.0'
-    # pod 'ChartboostSDK', '8.5.0'
+    pod 'Adiscope', '3.2.0'
+    # pod 'AdiscopeMediaAdManager', '3.2.0'
+    # pod 'AdiscopeMediaAdMob', '3.2.0'
+    # pod 'AdiscopeMediaAppLovin', '3.2.0'
+    # pod 'AdiscopeMediaChartBoost', '3.2.0'
+    # pod 'AdiscopeMediaFAN', '3.2.0'
+    # pod 'AdiscopeMediaIronsource', '3.2.0'
+    # pod 'AdiscopeMediaMax', '3.2.0'
+    # pod 'AdiscopeMediaMobVista', '3.2.0'
+    # pod 'AdiscopeMediaPangle', '3.2.0'
+    # pod 'AdiscopeMediaUnityAds', '3.2.0'
+    # pod 'AdiscopeMediaVungle', '3.2.0'
 end
 ```
 
@@ -69,7 +68,7 @@ $ pod install --repo-update
 	```
 
 
-- Xcode 12.0 이상일 경우 SKAdNetwork 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/2.0.6.0/AdiscopeSkAdNetworks.plist))
+- Xcode 12.0 이상이거나 Max를 사용하면 SKAdNetwork 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.2.0/AdiscopeSkAdNetworks.plist))
 
   ```
   <dict>
@@ -89,6 +88,8 @@ $ pod install --repo-update
 	```
 	<key>GADIsAdManagerApp</key>
 	<true/>
+	<key>GADApplicationIdentifier</key>
+    	<string></string>
 	```
 
 
