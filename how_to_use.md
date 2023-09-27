@@ -16,6 +16,21 @@ if let adiscopeSDK = AdiscopeInterface.sharedInstance() {
 }
 ```
 
+* info.plist에 AdiscopeMediaId, AdiscopeMediaSecret를 넣었으면 아래도 사용 할 수 있습니다.
+```swift
+    <key>AdiscopeMediaId</key>
+    <string></string>
+    <key>AdiscopeMediaSecret</key>
+    <string></string>
+```
+```swift
+if let adiscopeSDK = AdiscopeInterface.sharedInstance() {
+    adiscopeSDK.setMainDelegate(self)
+    adiscopeSDK.setUserId("MyUserID")
+    adiscopeSDK.initialize(callBackTag)
+}
+```
+
 * Callback Tag는 각 Server-Side에서 오는 Callback을 구분 할 수 있도록 하는 **Tag**입니다. 사용하지 않는다면 빈값으로 설정합니다.
 * 이후 `initialize`의 성공관련 응답은 `setMainDelegate`를 통한 Delegate로 확인 할 수 있습니다.
 ```swift
