@@ -89,7 +89,7 @@ $ pod install --repo-update
 	<key>GADIsAdManagerApp</key>
 	<true/>
 	<key>GADApplicationIdentifier</key>
-    	<string></string>
+	<string></string>
 	```
 
 
