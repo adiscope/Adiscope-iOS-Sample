@@ -18,15 +18,17 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 | Framework               | Essential | Third-party Frameworks                                       |
 | ----------------------- | --------- | ------------------------------------------------------------ |
 | Adiscope                | YES       |                                                              |
-| AdiscopeMediaAdMob      | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework   |
-| AdiscopeMediaAdManager  | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework   |
+| AdiscopeMediaAdMob      | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework<br/>FBLPromises.framework, GoogleAppMeasurement.framework<br/>nanopb.framework, GoogleUtilities.framework   |
+| AdiscopeMediaAdManager  | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework<br/>FBLPromises.framework, GoogleAppMeasurement.framework<br/>nanopb.framework, GoogleUtilities.framework   |
 | AdiscopeMediaAppLovin   | NO        | AppLovinSDK.framework                                        |
-| AdiscopeMediaChartBoost | NO        | Chartboost.framework                                         |
-| AdiscopeMediaFAN        | NO        | FBAudiencenetwork.framework, FBSDKCoreKit_Basics.framework   |
+| AdiscopeMediaChartBoost | NO        | ChartboostSDK.framework                                      |
+| AdiscopeMediaFAN        | NO        | FBAudiencenetwork.framework                                  |
+| AdiscopeMediaIronsource | NO        | IronSource.framework                                         |
+| AdiscopeMediaMax        | NO        | AppLovinSDK.framework, InMobiSDK.framework<br/>FBAudiencenetwork.framework, VungleAdsSDK.framework<br/>GoogleMobileAds.framework, UserMessagingPlatform.framework<br/>FBLPromises.framework, GoogleAppMeasurement.framework<br/>nanopb.framework, GoogleUtilities.framework<br/>BURelyAdSDK.framework, BURelyFoundation_Global.framework<br/>PAGAdSDK.framework, PAGAdSDK.bundle<br/>MTGSDK.framework, MTGSDKReward.framework<br/>MTGSDKBanner.framework, MTGSDKBidding.framework<br/>MTGSDKInterstitialVideo.framework, MTGSDKSplash.framework<br/>MTGSDKNewInterstitial.framework   |
 | AdiscopeMediaMobVista   | NO        | MTGSDK.framework, MTGSDKReward.framework                     |
-| AdiscopeMediaTapjoy     | NO        | Tapjoy.framework                                             |
+| AdiscopeMediaPangle     | NO        | BURelyAdSDK.framework, BURelyFoundation_Global.framework<br/>PAGAdSDK.framework, PAGAdSDK.bundle  |
 | AdiscopeMediaUnityAds   | NO        | UnityAds.framework                                           |
-| AdiscopeMediaVungle     | NO        | VungleSDK.framework                                          |
+| AdiscopeMediaVungle     | NO        | VungleAdsSDK.framework                                       |
 
 
 
@@ -65,7 +67,7 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 	```
 
 
-- Xcode 12.0 이상일 경우 SKAdNetwork 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/2.0.6.0/AdiscopeSkAdNetworks.plist))
+- Xcode 12.0 이상일 경우 SKAdNetwork 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.2.0/AdiscopeSkAdNetworks.plist))
 
   ```
   <dict>
@@ -85,10 +87,12 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 	```
 	<key>GADIsAdManagerApp</key>
 	<true/>
+ 	<key>GADApplicationIdentifier</key>
+ 	<string></string>
 	```
 
 
-- **(AppLovin)** info.plist 에 Key 설정
+- **(Max, AppLovin)** info.plist 에 Key 설정
 
 	```
 	<key>AppLovinSdkKey</key>
