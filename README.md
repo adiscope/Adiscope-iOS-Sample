@@ -93,7 +93,7 @@ $ pod install --repo-update
 	```
 
 
-- **(AppLovin)** info.plist 에 Key 설정
+- **(Max, AppLovin)** info.plist 에 Key 설정
 
 	```
 	<key>AppLovinSdkKey</key>
