@@ -30,8 +30,9 @@ class ViewController: UIViewController {
         secretKeyTextField.font = textFont
         secretKeyTextField.text = mediaSecretKey
         
-//        adiscope.setMainDelegate(self)
-//        adiscope.initialize(mediaID, mediaSecret: mediaSecretKey, callBackTag: "")
+        adiscope.setMainDelegate(self)
+        adiscope.setUserId("test")
+        adiscope.initialize(mediaID, mediaSecret: mediaSecretKey, callBackTag: "")
     }
     
     // MARK: - Events
@@ -50,6 +51,32 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: AdiscopeDelegate {
+    func onInitialized(_ isSuccess: Bool) {
+        print("initialized: \(isSuccess)")
+    }
+
+    func onRewardedVideoAdLoaded(_ unitID: String!) {
+        print("onRewardedVideoAdLoaded: \(unitID!)")
+    }
     
+    func onRewardedVideoAdFailed(toLoad unitID: String!, error: AdiscopeError!) {
+        print("onRewardedVideoAdFailed: \(error.description) TraceID: \(error.getXB3TraceID() ?? "-")")
+    }
+    
+    func onRewardedVideoAdOpened(_ unitID: String!) {
+        print("onRewardedVideoAdOpened: \(unitID!)")
+    }
+    
+    func onRewardedVideoAdClosed(_ unitID: String!) {
+        print("onRewardedVideoAdClosed: \(unitID!)")
+    }
+    
+    func onRewardedVideoAdFailed(toShow unitID: String!, error: AdiscopeError!) {
+        print("onRewardedVideoAdFailed: \(unitID!), error: \(error.description) TraceID: \(error.getXB3TraceID() ?? "-")")
+    }
+    
+    func onRewarded(_ unitID: String!, item: AdiscopeRewardItem!) {
+        print("onRewarded: \(item.unit ?? ""), Amount: \(item.amount)")
+    }
 }
 
