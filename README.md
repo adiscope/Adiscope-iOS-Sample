@@ -100,6 +100,13 @@ $ pod install --repo-update
 	<string></string>
 	```
 
+### AppDelegate 추가
+- **(Max)** AppDelegate 에 window 추가
+  
+	```
+ 	var window: UIWindow?
+ 	```
+
 ## Adiscope Error
 Adiscope Error에 대한 구조는 [여기](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#model) 에서 확인 할 수 있습니다. 
 
