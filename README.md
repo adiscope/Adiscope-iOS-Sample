@@ -20,6 +20,7 @@ $ gem install cocoapods
 CocoaPods의 Xcode project내에 Podfile에서 기술합니다.
 
 ```
+# source 'https://github.com/CocoaPods/Specs.git' // 제한망 or install error시 추가
 platform :ios, '12.0'
 use_frameworks!
 
