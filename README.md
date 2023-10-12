@@ -113,10 +113,10 @@ Adiscope Error에 대한 구조는 [여기](https://github.com/adiscope/Adiscope
 ## Adiscope Server [연동하기](https://github.com/adiscope/Adiscope-Android-Sample/blob/2.1.2.0/docs/reward_callback_info.md)
 
 ## MAX Ad Review
-### 1. 목적: MAX 노출 소재에 대한 지표 확인하여, 수익화 증대
-### 2. 내용: MAX 노출 소재에 대한 imp, 클릭수, eCPM 등의 지표 확인이 필요
-### 3. 기대효과: 소재 별 지표를 다른 네트워크에 공유하여, 더 높은 eCPM으로 해당 소재 광고를 받을 수 있게 하는 것이 기대효과, 아직 한번도 진행해 보지 않아서, 목표 기대효과는 측정하지 못함
-### 4. 개발방법
+#### 1. 목적: MAX 노출 소재에 대한 지표 확인하여, 수익화 증대
+#### 2. 내용: MAX 노출 소재에 대한 imp, 클릭수, eCPM 등의 지표 확인이 필요
+#### 3. 기대효과: 소재 별 지표를 다른 네트워크에 공유하여, 더 높은 eCPM으로 해당 소재 광고를 받을 수 있게 하는 것이 기대효과, 아직 한번도 진행해 보지 않아서, 목표 기대효과는 측정하지 못함
+#### 4. 개발방법
 [AppLovinQualityServiceSetup-ios.rb 파일 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.2.0/AppLovinQualityServiceSetup-ios.rb)
 - 다운로드 받은 파일을 iOS 프로젝트의 xcodeproj 파일이 있는 곳에 옮김
 - 터미널로 접속해서 다운받은 파일로 이동 후 아래 명령어 실행
