@@ -22,6 +22,10 @@
 	<string>1</string>
 	<key>GADApplicationIdentifier</key>
 	<string></string>
+    <key>GADIsAdManagerApp</key>
+    <true/>
+    <key>GADApplicationIdentifier</key>
+    <string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSUserTrackingUsageDescription</key>
@@ -401,6 +405,10 @@
         </dict>
         <dict>
             <key>SKAdNetworkIdentifier</key>
+            <string>g6gcrrvk4p.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
             <string>ggvn48r87g.skadnetwork</string>
         </dict>
         <dict>
@@ -414,10 +422,6 @@
         <dict>
             <key>SKAdNetworkIdentifier</key>
             <string>gta9lk7p23.skadnetwork</string>
-        </dict>
-        <dict>
-            <key>SKAdNetworkIdentifier</key>
-            <string>gvmwg8q7h5.skadnetwork</string>
         </dict>
         <dict>
             <key>SKAdNetworkIdentifier</key>
@@ -485,6 +489,10 @@
         </dict>
         <dict>
             <key>SKAdNetworkIdentifier</key>
+            <string>mqn7fxpca7.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
             <string>mtkv5xtk9e.skadnetwork</string>
         </dict>
         <dict>
@@ -518,10 +526,6 @@
         <dict>
             <key>SKAdNetworkIdentifier</key>
             <string>prcb7njmu6.skadnetwork</string>
-        </dict>
-        <dict>
-            <key>SKAdNetworkIdentifier</key>
-            <string>pu4na253f3.skadnetwork</string>
         </dict>
         <dict>
             <key>SKAdNetworkIdentifier</key>
@@ -653,23 +657,11 @@
         </dict>
         <dict>
             <key>SKAdNetworkIdentifier</key>
-            <string>yrqqpx2mcb.skadnetwork</string>
-        </dict>
-        <dict>
-            <key>SKAdNetworkIdentifier</key>
-            <string>z4gj7hsk7h.skadnetwork</string>
-        </dict>
-        <dict>
-            <key>SKAdNetworkIdentifier</key>
             <string>zmvfpc5aq8.skadnetwork</string>
         </dict>
         <dict>
             <key>SKAdNetworkIdentifier</key>
             <string>zq492l623r.skadnetwork</string>
-        </dict>
-        <dict>
-            <key>SKAdNetworkIdentifier</key>
-            <string>f38h382jlk.skadnetwork</string>
         </dict>
     </array>
 </dict>
