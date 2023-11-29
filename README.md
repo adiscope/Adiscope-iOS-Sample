@@ -25,18 +25,18 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.2.0'
-    # pod 'AdiscopeMediaAdManager', '3.2.0'
-    # pod 'AdiscopeMediaAdMob', '3.2.0'
-    # pod 'AdiscopeMediaAppLovin', '3.2.0'
-    # pod 'AdiscopeMediaChartBoost', '3.2.0'
-    # pod 'AdiscopeMediaFAN', '3.2.0'
-    # pod 'AdiscopeMediaIronsource', '3.2.0'
-    # pod 'AdiscopeMediaMax', '3.2.0'
-    # pod 'AdiscopeMediaMobVista', '3.2.0'
-    # pod 'AdiscopeMediaPangle', '3.2.0'
-    # pod 'AdiscopeMediaUnityAds', '3.2.0'
-    # pod 'AdiscopeMediaVungle', '3.2.0'
+    pod 'Adiscope', '3.3.0'
+    pod 'AdiscopeMediaAdManager', '3.3.0'
+    pod 'AdiscopeMediaAdMob', '3.3.0'
+    pod 'AdiscopeMediaAppLovin', '3.3.0'
+    pod 'AdiscopeMediaChartBoost', '3.3.0'
+    pod 'AdiscopeMediaFAN', '3.3.0'
+    pod 'AdiscopeMediaIronsource', '3.3.0'
+    pod 'AdiscopeMediaMax', '3.3.0'
+    pod 'AdiscopeMediaMobVista', '3.3.0'
+    pod 'AdiscopeMediaPangle', '3.3.0'
+    pod 'AdiscopeMediaUnityAds', '3.3.0'
+    pod 'AdiscopeMediaVungle', '3.3.0'
 end
 ```
 
@@ -59,6 +59,17 @@ $ pod install --repo-update
 ## Setup Xcode
 
 ### info.plist 수정
+
+- AdiscopeMediaId, AdiscopeMediaSecret 추가
+
+	```
+	<key>AdiscopeMediaId</key>
+	<string></string>
+	<key>AdiscopeMediaSecret</key>
+	<string></string>
+	```
+
+
 
 - App Tracking Permission 추가
 
@@ -83,7 +94,7 @@ $ pod install --repo-update
   ```
 
 
-- **(Admob)** info.plist 에 "GADIsAdManagerApp" 설정
+- **(Admob)** info.plist 에 "GADIsAdManagerApp" 설정 및 GADApplicationIdentifier의 Key 설정
 
 	```
 	<key>GADIsAdManagerApp</key>
@@ -93,7 +104,7 @@ $ pod install --repo-update
 	```
 
 
-- **(Max, AppLovin)** info.plist 에 Key 설정
+- **(Max, AppLovin)** info.plist 에 AppLovinSdkKey의 Key 설정
 
 	```
 	<key>AppLovinSdkKey</key>

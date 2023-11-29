@@ -2,8 +2,8 @@
 
 <br>
 
-- [Interface](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#interface)
-  - [Core](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#core)
+- [Interface](#interface)
+  - [Core](#core)
     - sharedInstance
     - initialize:mediaId:mediaSecret:callBackTag
     - setMainDelegate:delegate
@@ -12,42 +12,53 @@
     - setUseOfferWallWarningPopup:useOfferWallWarningPopup
     - setUseCloudFrontProxy:useCloudFrontProxy
     - getSDKVersion
-  - [Offerwall](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#offerwall)
+  - [Offerwall](#offerwall)
     - showOfferWall:unitID
     - showOfferWall:unitID:WithFilterTabs
     - showOfferwallDetail:unitID:offerwallItemId
     - showOfferwallDetail:unitID:offerwallItemId:offerwallFilterTabs
     - showOfferwallDetail:url
-  - [RewardedVideo](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#rwardedvideo)
+  - [RewardedVideo](#rewardedvideo)
     - load:unitID
     - isLoaded:unitID
     - show
-  - [Interstitial](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#interstitial)
+  - [Interstitial](#interstitial)
     - loadInterstitial:unitID
     - isLoadedInterstitialUnitID:unitID
     - showInterstitial
-- [Delegate](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#delegate)
-  - [Core](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#core-1)
+  - [RewardedInterstitial](#rewardedinterstitial)
+    - preLoadAllRewardedInterstitial  
+    - preLoadRewardedInterstitial:unitIDs
+    - getRewardedInterstitialUnitStatus:unitID
+    - showRewardedInterstitial:unitID
+- [Delegate](#delegate)
+  - [Core](#core-1)
     - onInitializedCallback:isSuccess
     - onGetUnitStatus:unitStatus
-  - [Offerwall](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#offerwall-1)
+  - [Offerwall](#offerwall-1)
     - onOfferwallAdOpened:unitId
     - onOfferwallAdClosed:unitId
     - onOfferwallAdFailedToShow:unitId:error
-  - [RewardedVideo](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#rewardedvideo)
+  - [RewardedVideo](#rewardedvideo-1)
     - onRewardedVideoAdLoaded:unitID
     - onRewardedVideoAdFailedToLoad:unitID:error
     - onRewardedVideoAdOpened:unitID
     - onRewardedVideoAdClosed:unitID
     - onRewarded:unitID:Item
     - onRewardedVideoAdFailedToShow:unitID:error
-  - [Interstitial](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#interstitial-1)
+  - [Interstitial](#interstitial-1)
     - onInterstitialAdLoaded:unitID
     - onInterstitialAdFailedToLoad:unitID:error
     - onInterstitialAdOpened:unitID
     - onInterstitialAdClosed:unitID
     - onInterstitialAdFailedToShow:unitID:error
-- [Model](https://github.com/adiscope/Adiscope-iOS-Sample/blob/main/api_documentation.md#model)
+  - [RewardedInterstitial](#rewardedinterstitial-1)
+    - onRewardedInterstitialAdSkip:unitID
+    - onRewardedInterstitialAdOpened:unitID
+    - onRewardedInterstitialAdClosed:unitID
+    - onRewardedInterstitialRewarded:unitID:Item
+    - onRewardedInterstitialAdFailedToShow:unitID:error
+- [Model](#model)
   - AdiscopeUnitStatus
   - AdiscopeError
   - AdiscopeRewardItem
@@ -214,7 +225,7 @@ AdiscopeDelegate의 onOfferwallAdOpened(), onOfferwallAdClosed(), onOfferwallAdF
 
 ##### - (void)load:unitID
 
-Application 에서 사용할 수 있는 모든 Rewarded Video 관련 Framework 를 load 하며, unitId 에 해당하는 광고를 Pre-load 합니다.
+unitId 에 해당하는 광고를 load 합니다.
 AdiscopeDelegate의 onRewardedVideoAdLoaded(), onRewardedVideoAdFailedToLoad() callbacks을 통해 Rewarded Video 의 load 상태 정보를 얻습니다.
 
 ⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
@@ -263,7 +274,7 @@ AdiscopeDelegate의 onRewardedVideoAdOpened(), onRewardedVideoAdClosed(), onRewa
 
 ##### - (void)loadInterstitial:unitID
 
-Application 에서 사용할 수 있는 모든 Interstitial 관련 Framework 를 load 하며, unitId 에 해당하는 광고를 Pre-load 합니다.
+unitId 에 해당하는 광고를 load 합니다.
 AdiscopeDelegate의 onInterstitialAdLoaded(), onInterstitialAdFailedToLoad() callbacks을 통해 Rewarded Video 의 load 상태 정보를 얻습니다.
 
 ⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
@@ -305,6 +316,55 @@ AdiscopeDelegate의 onRewardedVideoAdOpened(), onRewardedVideoAdClosed(), onRewa
 | BOOL   | 로드된 광고가 가용할 수 없을 경우 NO |
 
 <br>
+
+#### RewardedInterstitial
+
+##### - (void)preLoadAllRewardedInterstitial
+
+사용할 수 있는 모든 unit들의 광고를 pre-load 합니다.
+
+⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
+
+<br>
+
+##### - (void)preLoadRewardedInterstitial:unitIDs
+
+unitIds 에 해당하는 광고들를 pre-load 합니다.
+
+| Parameters  |                               |
+| ----------- | ----------------------------- |
+| unitIDs     | 로드 할 Interstitial의 UnitIDs |
+
+<br>
+
+##### - (void)getRewardedInterstitialUnitStatus:unitID
+
+유닛의 상태 정보를 구한다.
+
+⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
+
+| Parameters |                                                    |
+| ---------- | -------------------------------------------------- |
+| unitId     | 얻고자 하는 RewardedInterstitial의 UnitID |
+
+<br>
+
+##### - (BOOL)showRewardedInterstitial:unitID
+
+unitId 에 해당하는 광고가 보여줍니다.
+
+AdiscopeDelegate의 onRewardedInterstitialAdSkip(), onRewardedInterstitialAdOpened(), onRewardedInterstitialAdClosed(), onRewardedInterstitialRewarded(), onRewardedInterstitialAdFailedToShow() callbacks을 통해 Rewarded Video 의 show 상태 정보를 얻습니다.
+
+⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
+
+⚠️ RewardedInterstitial 의 정확한 보상정보 처리를 위해 `setUserId:userID` 를 미리 설정해야 합니다.
+
+| Return |                                      |
+| :----- | ------------------------------------ |
+| BOOL   | 로드된 광고가 가용할 수 없을 경우 NO |
+
+<br>
+
 
 <br>
 
@@ -487,6 +547,60 @@ Interstitial 를 재생한 ViewController 가 close 되었을 때 발생됩니�
 ##### onInterstitialAdFailedToShow:unitID:error
 
 Interstitial 를 재생할 수 없을 경우 발생됩니다.
+
+| Parameters |                      |
+| :--------- | -------------------- |
+| unitID     | Show를 요청한 UnitID |
+| error      | AdiscopeError 참조   |
+
+<br>
+
+#### RewardedInterstitial
+
+##### onRewardedInterstitialAdSkip:unitID
+
+RewardedInterstitial 가 Skip 되었을 때 발생됩니다.
+
+| Parameters |               |
+| :--------- | ------------- |
+| unitID     | Show된 UnitID |
+
+<br>
+
+##### onRewardedInterstitialAdOpened:unitID
+
+RewardedInterstitial 를 재생한 ViewController 가 open 되었을 때 발생됩니다.
+
+| Parameters |               |
+| :--------- | ------------- |
+| unitID     | Open된 UnitID |
+
+<br>
+
+##### onRewardedInterstitialAdClosed:unitID
+
+RewardedInterstitial 를 재생한 ViewController 가 close 되었을 때 발생됩니다.
+
+| Parameters |                |
+| :--------- | -------------- |
+| unitID     | Close된 UnitID |
+
+<br>
+
+##### onRewardedInterstitialRewarded:unitID:item
+
+RewardedInterstitial 의 보상을 받을 수 있을 때, 발생됩니다.
+
+| Parameters |                         |
+| :--------- | ----------------------- |
+| unitID       | 수신된 Rewarded UnitID |
+| item       | AdiscopeRewardItem 참조 |
+
+<br>
+
+##### onRewardedInterstitialAdFailedToShow:unitID:error
+
+RewardedInterstitial 를 재생할 수 없을 경우 발생됩니다.
 
 | Parameters |                      |
 | :--------- | -------------------- |
