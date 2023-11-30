@@ -165,7 +165,6 @@ adiscopeSDK.showOfferwallDetail(url)
 
 ## Offerwall 상세화면 바로 가기
 [참고 link]
-* <span style='color: #fff5b1'>https://developer.apple.com/ios/universal-links/</span>
 * <span style='color: #fff5b1'>https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app</span>
 
 ### 함수 호출 방식
