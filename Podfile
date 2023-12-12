@@ -5,18 +5,18 @@ target 'Adiscope-iOS-Sample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'Adiscope', '3.2.0'
-#  pod 'AdiscopeMediaAdManager', '3.2.0'
-#  pod 'AdiscopeMediaAdMob', '3.2.0'
-#  pod 'AdiscopeMediaAppLovin', '3.2.0'
-#  pod 'AdiscopeMediaChartBoost', '3.2.0'
-#  pod 'AdiscopeMediaFAN', '3.2.0'
-#  pod 'AdiscopeMediaIronsource', '3.2.0'
-#  pod 'AdiscopeMediaMax', '3.2.0'
-#  pod 'AdiscopeMediaMobVista', '3.2.0'
-#  pod 'AdiscopeMediaPangle', '3.2.0'
-#  pod 'AdiscopeMediaUnityAds', '3.2.0'
-#  pod 'AdiscopeMediaVungle', '3.2.0'
+  pod 'Adiscope', '3.3.1'
+  pod 'AdiscopeMediaAdManager', '3.3.0'
+  pod 'AdiscopeMediaAdMob', '3.3.0'
+  pod 'AdiscopeMediaAppLovin', '3.3.0'
+  pod 'AdiscopeMediaChartBoost', '3.3.0'
+  pod 'AdiscopeMediaFAN', '3.3.0'
+  pod 'AdiscopeMediaIronsource', '3.3.0'
+  pod 'AdiscopeMediaMax', '3.3.0'
+  pod 'AdiscopeMediaMobVista', '3.3.0'
+  pod 'AdiscopeMediaPangle', '3.3.0'
+  pod 'AdiscopeMediaUnityAds', '3.3.0'
+  pod 'AdiscopeMediaVungle', '3.3.0'
 
 end
 
