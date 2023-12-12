@@ -44,7 +44,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.3.0'
+    pod 'Adiscope', '3.3.1'
     pod 'AdiscopeMediaAdManager', '3.3.0'
     pod 'AdiscopeMediaAdMob', '3.3.0'
     pod 'AdiscopeMediaAppLovin', '3.3.0'
