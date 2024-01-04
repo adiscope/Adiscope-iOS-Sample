@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/Unity-3.3.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Android-3.3.1-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/iOS-3.3.1-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-3.3.3-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Android-3.3.2-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-3.3.3-blue)](../../releases)
 
-- iOS 12.0 + / iPadOS 13.0 + / Xcode 11.0 +
+- iOS 12.0 + / iPadOS 13.0 + / Xcode 14.3 + (Ironsource 제외하면 Xcode 14.1 + )
 <br/>
 
 ## Contents
@@ -44,7 +44,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.3.1'
+    pod 'Adiscope', '3.3.3'
     pod 'AdiscopeMediaAdManager', '3.3.0'
     pod 'AdiscopeMediaAdMob', '3.3.0'
     pod 'AdiscopeMediaAppLovin', '3.3.0'
