@@ -22,9 +22,9 @@
 - [5. RewardedVideo](#5-rewardedvideo)
 - [6. Interstitial](#6-interstitial)
 - [7. RewardedInterstitial](#7-rewardedinterstitial)
-#### [Adiscope Error Information](./blob/main/api_documentation.md#model)
+#### [Adiscope Error Information](./api_documentation.md#model)
 #### [Adiscope Server 연동하기](https://github.com/adiscope/Adiscope-Android-Sample/blob/2.1.2.0/docs/reward_callback_info.md)
-#### [Adiscope Old Release Note](./blob/main/old_release_note.md)
+#### [Adiscope Old Release Note](./old_release_note.md)
 <br/><br/><br/>
 
 ## Installation
@@ -70,7 +70,7 @@ $ pod install --repo-update
 <br/><br/><br/>
 
 ### 2. Manual Installation
-- [Manual Installation Guide](./blob/main/Installation_manual.md)
+- [Manual Installation Guide](./Installation_manual.md)
 <br/><br/><br/><br/>
 
 ## Setup Xcode
@@ -232,7 +232,7 @@ let OFFERWALL_URL = "";          // 관리자를 통해 확인
 AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_UNIT_ID, OFFERWALL_ITEM_ID)
 AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_URL)
 ```
-- [기타 옵션](./blob/main/api_documentation.md#offerwall)
+- [기타 옵션](./api_documentation.md#offerwall)
 <br/><br/>
 
 ### D. Offerwall for URL Scheme 적용
@@ -484,11 +484,11 @@ func onRewardedInterstitialAdFailed(toShow unitID: String!, error: AdiscopeError
 <br/><br/><br/>
 
 # Adiscope Error Information
-- [Error 정보](./blob/main/api_documentation.md#model)
+- [Error 정보](./api_documentation.md#model)
 <br/><br/><br/>
 
 # [Adiscope Server 연동하기](https://github.com/adiscope/Adiscope-Android-Sample/blob/2.1.2.0/docs/reward_callback_info.md)
 <br/><br/><br/>
 
 # Adiscope Old Release Note
-- [Version 정보](./blob/main/old_release_note.md)
+- [Version 정보](./old_release_note.md)
