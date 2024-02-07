@@ -24,6 +24,7 @@
 - [7. RewardedInterstitial](#7-rewardedinterstitial)
 #### [Adiscope Error Information](./blob/main/api_documentation.md#model)
 #### [Adiscope Server 연동하기](https://github.com/adiscope/Adiscope-Android-Sample/blob/2.1.2.0/docs/reward_callback_info.md)
+#### [Adiscope Old Release Note](./blob/main/old_release_note.md)
 <br/><br/><br/>
 
 ## Installation
@@ -487,3 +488,7 @@ func onRewardedInterstitialAdFailed(toShow unitID: String!, error: AdiscopeError
 <br/><br/><br/>
 
 # [Adiscope Server 연동하기](https://github.com/adiscope/Adiscope-Android-Sample/blob/2.1.2.0/docs/reward_callback_info.md)
+<br/><br/><br/>
+
+# Adiscope Old Release Note
+- [Version 정보](./blob/main/old_release_note.md)
