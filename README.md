@@ -13,6 +13,7 @@
 #### [Setup Xcode](#setup-xcode-1)
 - [1. info.plist 수정](#1-infoplist-수정)
 - [2. AppDelegate 추가](2-appdelegate-추가)
+- [3. Privacy Manifest 정책 적용](#3-privacy-manifest-정책-적용)
 #### [MAX Ad Review](#max-ad-review-1)
 #### [Adiscope Overview](#adiscope-overview-1)
 - [1. Import](#1-import)
@@ -130,6 +131,11 @@ $ pod install --repo-update
 var window: UIWindow?
 ```
 - window 추가
+<br/><br/><br/>
+
+### 3. Privacy Manifest 정책 적용
+- 2024년 5월 1일부터 출시/업데이트 되는 앱에 대해 3rd Party Framework의 개인정보를 추가해야 합니다.
+- [참고](https://developer.apple.com/videos/play/wwdc2023/10060)
 <br/><br/><br/>
 
 ## MAX Ad Review
