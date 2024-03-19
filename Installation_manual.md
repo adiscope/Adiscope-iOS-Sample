@@ -2,7 +2,7 @@
 
 ## Requirements
 iOS 12.0 + / iPadOS 13.0 +
-Xcode 11.0 +
+Xcode 14.1 +
 
 ## Installation
 ### Manual

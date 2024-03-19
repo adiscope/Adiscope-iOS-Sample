@@ -12,6 +12,8 @@
     - setUseOfferWallWarningPopup:useOfferWallWarningPopup
     - setUseCloudFrontProxy:useCloudFrontProxy
     - getSDKVersion
+    - setVolumeOff
+    - setVolumeOn
   - [Offerwall](#offerwall)
     - showOfferWall:unitID
     - showOfferWall:unitID:WithFilterTabs
@@ -157,6 +159,18 @@ Adiscope SDK Version 을 확인합니다.
 | Return     |                              |
 | :--------- | ---------------------------- |
 | NSString * | Adiscope.framework의 Version |
+
+<br>
+
+##### - (void)setVolumeOff
+
+Admob, AppLovin, Mintegral 에서 광고 소리를 제거 합니다.
+
+<br>
+
+##### - (void)setVolumeOn
+
+Admob, AppLovin, Mintegral 에서 광고 소리를 노출 합니다.
 
 <br>
 

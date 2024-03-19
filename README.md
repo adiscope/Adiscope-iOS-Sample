@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/Unity-3.5.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Android-3.5.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/iOS-3.5.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-3.5.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Android-3.5.1-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-3.5.1-blue)](../../releases)
 
-- iOS 12.0 + / iPadOS 13.0 + / Xcode 14.3 + (Ironsource 제외하면 Xcode 14.1 + )
+- iOS 12.0 + / iPadOS 13.0 + / Xcode 15.3 +
 <br/>
 
 ## Contents
@@ -46,18 +46,18 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.5.0'
-    pod 'AdiscopeMediaAdManager', '3.3.0'
-    pod 'AdiscopeMediaAdMob', '3.3.0'
-    pod 'AdiscopeMediaAppLovin', '3.4.0'
-    pod 'AdiscopeMediaChartBoost', '3.4.0'
-    pod 'AdiscopeMediaFAN', '3.3.0'
-    pod 'AdiscopeMediaIronsource', '3.5.0'
-    pod 'AdiscopeMediaMax', '3.5.0'
-    pod 'AdiscopeMediaMobVista', '3.4.0'
-    pod 'AdiscopeMediaPangle', '3.5.0'
-    pod 'AdiscopeMediaUnityAds', '3.3.0'
-    pod 'AdiscopeMediaVungle', '3.5.0'
+    pod 'Adiscope', '3.5.1'
+    pod 'AdiscopeMediaAdManager', '3.5.1'
+    pod 'AdiscopeMediaAdMob', '3.5.1'
+    pod 'AdiscopeMediaAppLovin', '3.5.1'
+    pod 'AdiscopeMediaChartBoost', '3.5.1'
+    pod 'AdiscopeMediaFAN', '3.5.1'
+    pod 'AdiscopeMediaIronsource', '3.5.1'
+    pod 'AdiscopeMediaMax', '3.5.1'
+    pod 'AdiscopeMediaMobVista', '3.5.1'
+    pod 'AdiscopeMediaPangle', '3.5.1'
+    pod 'AdiscopeMediaUnityAds', '3.5.1'
+    pod 'AdiscopeMediaVungle', '3.5.1'
 end
 ```
 - CocoaPods의 Xcode Project내에 Podfile에서 기술
@@ -134,7 +134,7 @@ var window: UIWindow?
 <br/><br/><br/>
 
 ### 3. Privacy Manifest 정책 적용
-- 2024년 5월 1일부터 출시/업데이트 되는 앱에 대해 3rd Party Framework의 개인정보를 추가해야 합니다.
+- 2024년 5월 1일부터 출시/업데이트 되는 앱에 대해 3rd Party Framework의 개인정보 추가
 - [참고](https://developer.apple.com/videos/play/wwdc2023/10060)
 <br/><br/><br/>
 
