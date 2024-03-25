@@ -5,7 +5,7 @@ target 'Adiscope-iOS-Sample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'Adiscope', '3.5.1'
+  pod 'Adiscope', '3.5.2'
   pod 'AdiscopeMediaAdManager', '3.5.1'
   pod 'AdiscopeMediaAdMob', '3.5.1'
   pod 'AdiscopeMediaAppLovin', '3.5.1'
