@@ -1,7 +1,7 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/Unity-3.5.2-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Android-3.5.1-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/iOS-3.5.2-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-3.6.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Android-3.6.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-3.6.0-blue)](../../releases)
 
 - iOS 12.0 + / iPadOS 13.0 + / Xcode 15.1 +
 <br/>
@@ -25,6 +25,7 @@
 - [7. RewardedInterstitial](#7-rewardedinterstitial)
 #### [Adiscope Error Information](./api_documentation.md#model)
 #### [Adiscope Server 연동하기](https://github.com/adiscope/Adiscope-Android-Sample/blob/2.1.2.0/docs/reward_callback_info.md)
+#### [iOS 16+ Offerwall 세로 모드 전환 적용 방법(가로모드 전용일 경우)](./apple_orientations.md)
 #### [Adiscope Old Release Note](./old_release_note.md)
 <br/><br/><br/>
 
@@ -46,18 +47,18 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.5.2'
-    pod 'AdiscopeMediaAdManager', '3.5.1'
-    pod 'AdiscopeMediaAdMob', '3.5.1'
-    pod 'AdiscopeMediaAppLovin', '3.5.1'
-    pod 'AdiscopeMediaChartBoost', '3.5.1'
-    pod 'AdiscopeMediaFAN', '3.5.1'
-    pod 'AdiscopeMediaIronsource', '3.5.1'
-    pod 'AdiscopeMediaMax', '3.5.1'
-    pod 'AdiscopeMediaMobVista', '3.5.1'
-    pod 'AdiscopeMediaPangle', '3.5.1'
-    pod 'AdiscopeMediaUnityAds', '3.5.1'
-    pod 'AdiscopeMediaVungle', '3.5.1'
+    pod 'Adiscope', '3.6.0'
+    pod 'AdiscopeMediaAdManager', '3.6.0'
+    pod 'AdiscopeMediaAdMob', '3.6.0'
+    pod 'AdiscopeMediaAppLovin', '3.6.0'
+    pod 'AdiscopeMediaChartBoost', '3.6.0'
+    pod 'AdiscopeMediaFAN', '3.6.0'
+    pod 'AdiscopeMediaIronsource', '3.6.0'
+    pod 'AdiscopeMediaMax', '3.6.0'
+    pod 'AdiscopeMediaMobVista', '3.6.0'
+    pod 'AdiscopeMediaPangle', '3.6.0'
+    pod 'AdiscopeMediaUnityAds', '3.6.0'
+    pod 'AdiscopeMediaVungle', '3.6.0'
 end
 ```
 - CocoaPods의 Xcode Project내에 Podfile에서 기술
@@ -497,6 +498,9 @@ func onRewardedInterstitialAdFailed(toShow unitID: String!, error: AdiscopeError
 <br/><br/><br/>
 
 # [Adiscope Server 연동하기](https://github.com/adiscope/Adiscope-Android-Sample/blob/2.1.2.0/docs/reward_callback_info.md)
+<br/><br/><br/>
+
+# [iOS 16+ Offerwall 세로 모드 전환 적용 방법(가로모드 전용일 경우)](./apple_orientations.md)
 <br/><br/><br/>
 
 # Adiscope Old Release Note
