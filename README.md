@@ -1,7 +1,7 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/Unity-3.6.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-3.6.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
 [![GitHub package.json version](https://img.shields.io/badge/Android-3.6.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/iOS-3.6.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-3.6.1-blue)](../../releases)
 
 - iOS 12.0 + / iPadOS 13.0 + / Xcode 15.1 +
 <br/>
@@ -47,14 +47,14 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.6.0'
+    pod 'Adiscope', '3.6.1'
     pod 'AdiscopeMediaAdManager', '3.6.0'
     pod 'AdiscopeMediaAdMob', '3.6.0'
-    pod 'AdiscopeMediaAppLovin', '3.6.0'
+    pod 'AdiscopeMediaAppLovin', '3.6.1'
     pod 'AdiscopeMediaChartBoost', '3.6.0'
     pod 'AdiscopeMediaFAN', '3.6.0'
     pod 'AdiscopeMediaIronsource', '3.6.0'
-    pod 'AdiscopeMediaMax', '3.6.0'
+    pod 'AdiscopeMediaMax', '3.6.1'
     pod 'AdiscopeMediaMobVista', '3.6.0'
     pod 'AdiscopeMediaPangle', '3.6.0'
     pod 'AdiscopeMediaUnityAds', '3.6.0'
