@@ -4,10 +4,10 @@
 
 ## 코드 적용
 - AppDelegate 에서 추가
-```cpp
+```objectivec
 #import <Adiscope/Adiscope.h>
 ```
-```cpp    
+```objectivec
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
 
     //***** Adiscope Start *****//

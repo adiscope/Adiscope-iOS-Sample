@@ -1,7 +1,8 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/Unity-3.6.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Android-3.6.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/iOS-3.6.1-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-3.7.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-3.7.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/Android-3.7.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-3.7.0-blue)](../../releases)
 
 - iOS 12.0 + / iPadOS 13.0 + / Xcode 15.1 +
 <br/>
@@ -14,7 +15,6 @@
 - [1. info.plist 수정](#1-infoplist-수정)
 - [2. AppDelegate 추가](2-appdelegate-추가)
 - [3. Privacy Manifest 정책 적용](#3-privacy-manifest-정책-적용)
-#### [MAX Ad Review](#max-ad-review-1)
 #### [Adiscope Overview](#adiscope-overview-1)
 - [1. Import](#1-import)
 - [2. Initialize](#2-initialize)
@@ -34,26 +34,25 @@
 - CocoaPods는 Cocoa Projects의 Dependency를 관리할 수 있음
 
 #### A. CocoaPods Install
-```csharp
-$ gem install cocoapods
+```ruby
+gem install cocoapods
 ```
 - 명령어를 사용하여 설치 진행
 <br/><br/>
 
 #### B. Podfile
-```csharp
+```ruby
 # source 'https://github.com/CocoaPods/Specs.git' // 제한망 or install error시 추가
 platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.6.1'
+    pod 'Adiscope', '3.7.0'
     pod 'AdiscopeMediaAdManager', '3.6.0'
-    pod 'AdiscopeMediaAdMob', '3.6.0'
+    pod 'AdiscopeMediaAdMob', '3.7.0'
     pod 'AdiscopeMediaAppLovin', '3.6.1'
     pod 'AdiscopeMediaChartBoost', '3.6.0'
     pod 'AdiscopeMediaFAN', '3.6.0'
-    pod 'AdiscopeMediaIronsource', '3.6.0'
     pod 'AdiscopeMediaMax', '3.6.1'
     pod 'AdiscopeMediaMobVista', '3.6.0'
     pod 'AdiscopeMediaPangle', '3.6.0'
@@ -65,8 +64,8 @@ end
 <br/><br/>
 
 #### C. Pod Install
-```csharp
-$ pod install --repo-update
+```ruby
+pod install --repo-update
 ```
 - 다음의 명령어를 실행해서 Library를 Xcode Project로 추가
 <br/><br/><br/>
@@ -78,7 +77,7 @@ $ pod install --repo-update
 ## Setup Xcode
 ### 1. info.plist 수정
 #### A. AdiscopeMediaId, AdiscopeMediaSecret 추가
-```csharp
+```xml
 <key>AdiscopeMediaId</key>
 <string></string>
 <key>AdiscopeMediaSecret</key>
@@ -87,14 +86,14 @@ $ pod install --repo-update
 <br/>
 
 #### B. App Tracking Permission 추가
-```csharp
+```xml
 <key>NSUserTrackingUsageDescription</key>
 <string></string>
 ```
 <br/>
 
 #### C. SKAdNetwork 추가 ([Download](./releases/download/3.2.0/AdiscopeSkAdNetworks.plist))
-```csharp
+```xml
 <dict>
     <key>SKAdNetworkItems</key>
     <array>
@@ -109,7 +108,7 @@ $ pod install --repo-update
 <br/><br/>
 
 #### D. Admob 사용 시 추가
-```csharp
+```xml
 <key>GADIsAdManagerApp</key>
 <true/>
 <key>GADApplicationIdentifier</key>
@@ -119,7 +118,7 @@ $ pod install --repo-update
 <br/><br/>
 
 #### E. Max, AppLovin 사용 시 추가
-```csharp
+```xml
 <key>AppLovinSdkKey</key>
 <string></string>
 ```
@@ -128,7 +127,7 @@ $ pod install --repo-update
 
 ### 2. AppDelegate 추가
 #### A. Max 사용 시 추가
-```csharp
+```swift
 var window: UIWindow?
 ```
 - window 추가
@@ -137,19 +136,6 @@ var window: UIWindow?
 ### 3. Privacy Manifest 정책 적용
 - 2024년 5월 1일부터 출시/업데이트 되는 앱에 대해 3rd Party Framework의 개인정보 추가
 - [참고](https://developer.apple.com/videos/play/wwdc2023/10060)
-<br/><br/><br/>
-
-## MAX Ad Review
-#### 1. 목적: MAX 노출 소재에 대한 지표 확인하여, 수익화 증대
-#### 2. 내용: MAX 노출 소재에 대한 imp, 클릭수, eCPM 등의 지표 확인이 필요
-#### 3. 기대효과: 소재 별 지표를 다른 네트워크에 공유하여, 더 높은 eCPM으로 해당 소재 광고를 받을 수 있게 하는 것이 기대효과, 아직 한번도 진행해 보지 않아서, 목표 기대효과는 측정하지 못함
-#### 4. 개발방법
-[AppLovinQualityServiceSetup-ios.rb 파일 다운로드](./releases/download/3.2.0/AppLovinQualityServiceSetup-ios.rb)
-- 다운로드 받은 파일을 iOS 프로젝트의 xcodeproj 파일이 있는 곳에 옮김
-- 터미널로 접속해서 다운받은 파일로 이동 후 아래 명령어 실행
-```csharp
-ruby AppLovinQualityServiceSetup-ios.rb
-```
 <br/><br/><br/>
 
 # Adiscope Overview
