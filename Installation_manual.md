@@ -2,7 +2,7 @@
 
 ## Requirements
 iOS 12.0 + / iPadOS 13.0 +
-Xcode 14.1 +
+Xcode 15.1 +
 
 ## Installation
 ### Manual
@@ -13,13 +13,12 @@ Framework를 Project내에 옮깁니다. Adiscope.framework는 필수이며, 반
 | Framework               | Essential | Third-party Frameworks                                       |
 | ----------------------- | --------- | ------------------------------------------------------------ |
 | Adiscope                | YES       |                                                              |
-| AdiscopeMediaAdMob      | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework<br/>FBLPromises.framework, GoogleAppMeasurement.framework<br/>nanopb.framework, GoogleUtilities.framework   |
-| AdiscopeMediaAdManager  | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework<br/>FBLPromises.framework, GoogleAppMeasurement.framework<br/>nanopb.framework, GoogleUtilities.framework   |
+| AdiscopeMediaAdMob      | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework   |
+| AdiscopeMediaAdManager  | NO        | GoogleMobileAds.framework, UserMessagingPlatform.framework   |
 | AdiscopeMediaAppLovin   | NO        | AppLovinSDK.framework                                        |
 | AdiscopeMediaChartBoost | NO        | ChartboostSDK.framework                                      |
 | AdiscopeMediaFAN        | NO        | FBAudiencenetwork.framework                                  |
-| AdiscopeMediaIronsource | NO        | IronSource.framework                                         |
-| AdiscopeMediaMax        | NO        | AppLovinSDK.framework, InMobiSDK.framework<br/>FBAudiencenetwork.framework, VungleAdsSDK.framework<br/>GoogleMobileAds.framework, UserMessagingPlatform.framework<br/>FBLPromises.framework, GoogleAppMeasurement.framework<br/>nanopb.framework, GoogleUtilities.framework<br/>BURelyAdSDK.framework, BURelyFoundation_Global.framework<br/>PAGAdSDK.framework, PAGAdSDK.bundle<br/>MTGSDK.framework, MTGSDKReward.framework<br/>MTGSDKBanner.framework, MTGSDKBidding.framework<br/>MTGSDKInterstitialVideo.framework, MTGSDKSplash.framework<br/>MTGSDKNewInterstitial.framework   |
+| AdiscopeMediaMax        | NO        | AppLovinSDK.framework, InMobiSDK.framework<br/>FBAudiencenetwork.framework, VungleAdsSDK.framework<br/>GoogleMobileAds.framework, UserMessagingPlatform.framework<br/>BURelyAdSDK.framework, BURelyFoundation_Global.framework<br/>PAGAdSDK.framework, PAGAdSDK.bundle<br/>MTGSDK.framework, MTGSDKReward.framework<br/>MTGSDKBanner.framework, MTGSDKBidding.framework<br/>MTGSDKInterstitialVideo.framework, MTGSDKSplash.framework<br/>MTGSDKNewInterstitial.framework   |
 | AdiscopeMediaMobVista   | NO        | MTGSDK.framework, MTGSDKReward.framework                     |
 | AdiscopeMediaPangle     | NO        | BURelyAdSDK.framework, BURelyFoundation_Global.framework<br/>PAGAdSDK.framework, PAGAdSDK.bundle  |
 | AdiscopeMediaUnityAds   | NO        | UnityAds.framework                                           |
