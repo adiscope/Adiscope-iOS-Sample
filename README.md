@@ -92,7 +92,7 @@ pod install --repo-update
 ```
 <br/>
 
-#### C. SKAdNetwork 추가 ([Download](./releases/download/3.2.0/AdiscopeSkAdNetworks.plist))
+#### C. SKAdNetwork 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.4.0/AdiscopeSkAdNetworks.plist))
 ```xml
 <dict>
     <key>SKAdNetworkItems</key>
@@ -104,7 +104,7 @@ pod install --repo-update
     </array>
 </dict>
 ```
-- Xcode 12.0 이상이거나 Max를 사용하면 SKAdNetwork Download File 내용 추가 ([Download](./releases/download/3.2.0/AdiscopeSkAdNetworks.plist))
+- Xcode 12.0 이상이거나 Max를 사용하면 SKAdNetwork Download File 내용 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.4.0/AdiscopeSkAdNetworks.plist))
 <br/><br/>
 
 #### D. Admob 사용 시 추가
