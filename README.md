@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-3.8.3-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-3.8.1-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-3.8.3-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-3.8.3-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-3.8.3-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-3.9.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-3.9.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-3.9.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-3.9.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-3.9.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - iOS 12.0 + / iPadOS 13.0 + / Xcode 15.1 +
 <br/>
@@ -49,20 +49,21 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.8.3'
-    pod 'AdiscopeMediaAdManager', '3.8.1'
-    pod 'AdiscopeMediaAdMob', '3.8.3'
-    pod 'AdiscopeMediaAppLovin', '3.8.1'
-    pod 'AdiscopeMediaChartBoost', '3.8.1'
-    pod 'AdiscopeMediaFAN', '3.8.1'
-    pod 'AdiscopeMediaMax', '3.8.3'
-    pod 'AdiscopeMediaMobVista', '3.8.1'
-    pod 'AdiscopeMediaPangle', '3.8.3'
-    pod 'AdiscopeMediaUnityAds', '3.8.1'
-    pod 'AdiscopeMediaVungle', '3.8.1'
+    pod 'Adiscope', '3.9.0'
+    pod 'AdiscopeMediaAdManager', '3.9.0'
+    pod 'AdiscopeMediaAdMob', '3.9.0'
+    pod 'AdiscopeMediaAppLovin', '3.9.0'
+    pod 'AdiscopeMediaChartBoost', '3.9.0'
+    pod 'AdiscopeMediaFAN', '3.9.0'
+    pod 'AdiscopeMediaMax', '3.9.0'
+    pod 'AdiscopeMediaMobVista', '3.9.0'
+    pod 'AdiscopeMediaPangle', '3.9.0'
+    pod 'AdiscopeMediaVungle', '3.9.0'
 end
 ```
 - CocoaPods의 Xcode Project내에 Podfile에서 기술
+- Version이 상이할 경우 Initialize시 Log를 통해 확인 가능<br/>
+![AdapterChecked](https://github.com/user-attachments/assets/c0c4e33f-d535-45fb-8115-115e57c70522)<br/>
 <br/>
 
 #### C. Pod Install

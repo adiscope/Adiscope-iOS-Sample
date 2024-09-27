@@ -8,6 +8,7 @@
     - initialize:mediaId:mediaSecret:callBackTag
     - setMainDelegate:delegate
     - setUserId:userID
+    - setRewardedCheckParam:param
     - getUnitStatus:unitID
     - setUseOfferWallWarningPopup:useOfferWallWarningPopup
     - setUseCloudFrontProxy:useCloudFrontProxy
@@ -119,9 +120,21 @@ Application 사용자의 Unique Id를 설정. 이 정보는 reward 지급 등에
 
 <br>
 
+##### - (void)setRewardedCheckParam:param
+
+Application 사용자의 rewarded callback 시 parameters을 추가. 이 정보는 rewarded 지급 등에 있어 구분하는데 사용 할 수 있습니다.<br/>
+⚠️ 내부 설정 후 사용 가능합니다. 담당자에게 요청 부탁드립니다.<br/>
+⚠️ param은 Base64 Encoded(UTF8)를 처리 후 1000자내로 설정 해 주시기 바랍니다.
+
+| Parameters |                     |
+| ---------- | ------------------- |
+| param      | rewarded Callback시 customData에 전달 될 값 |
+
+<br>
+
 ##### - (void)getUnitStatus:unitID
 
-유닛의 상태 정보를 구한다. AdiscopeDelegate의 onGetUnitStatus() callback을 통해 결과를 받습니다.
+유닛의 상태 정보를 구한다. AdiscopeDelegate의 onGetUnitStatus() callback을 통해 결과를 받습니다.<br>
 ⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
 
 | Parameters |                                                    |

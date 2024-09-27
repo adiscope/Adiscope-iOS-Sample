@@ -1,7 +1,7 @@
 # Adiscope for iOS Integration
 
 ## SDK Download
-- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.8.3/AdiscopeIosSdk-3.8.3.zip)
+- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.9.0/AdiscopeIosSdk-3.9.0.zip)
   - Releases에 이전 버전 다운로드 가능 ([이동](../../releases))
 
 ## Requirements
@@ -17,15 +17,14 @@ Framework를 Project내에 옮깁니다. Adiscope.xcframework는 필수이며, �
 | Framework               | Essential | Third-party Frameworks                                       |
 | ----------------------- | --------- | ------------------------------------------------------------ |
 | Adiscope                | YES       |                                                              |
-| AdiscopeMediaAdMob      | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework   |
+| AdiscopeMediaAdMob      | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework<br/>LiftoffMonetizeAdapter.xcframework, MetaAdapter.xcframework<br/>MintegralAdapter.xcframework, VungleAdsSDK.xcframework<br/>FBAudiencenetwork.xcframework, MTGSDK.xcframework<br/>MTGSDKBanner.xcframework, MTGSDKBidding.xcframework<br/>MTGSDKInterstitialVideo.xcframework, MTGSDKNewInterstitial.xcframework<br/>MTGSDKReward.xcframework, MTGSDKSplash.xcframework   |
 | AdiscopeMediaAdManager  | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework   |
 | AdiscopeMediaAppLovin   | NO        | AppLovinSDK.xcframework                                        |
 | AdiscopeMediaChartBoost | NO        | ChartboostSDK.xcframework                                      |
 | AdiscopeMediaFAN        | NO        | FBAudiencenetwork.xcframework                                  |
-| AdiscopeMediaMax        | NO        | AppLovinSDK.xcframework, InMobiSDK.xcframework<br/>FBAudiencenetwork.xcframework, VungleAdsSDK.xcframework<br/>GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework<br/>BURelyFoundation_Global.xcframework, PAGAdSDK.xcframework<br/>PAGAdSDK.bundle, MTGSDK.xcframework<br/>MTGSDKReward.xcframework, MTGSDKBanner.xcframework<br/>MTGSDKBidding.xcframework, MTGSDKInterstitialVideo.xcframework<br/>MTGSDKSplash.xcframework, MTGSDKNewInterstitial.xcframework<br/>BidMachine.xcframework, DTBiOSSDK.xcframework<br/>IASDKCore.xcframework, MolocoSDK.xcframework<br/>OguryAds.xcframework, OguryChoiceManager.xcframework<br/>OguryCore.xcframework, OgurySdk.xcframework<br/>OMSDK_Appodeal.xcframework, OMSDK_Ogury.xcframework<br/>StackModules.xcframework, StackProductPresentation.xcframework<br/>StackRendering.xcframework   |
+| AdiscopeMediaMax        | NO        | AppLovinSDK.xcframework, DTBiOSSDK.xcframework<br/>FBAudienceNetwork.xcframework, GoogleMobileAds.xcframework<br/>IASDKCore.xcframework, InMobiSDK.xcframework<br/>MolocoSDK.xcframework, MTGSDK.xcframework<br/>MTGSDKBanner.xcframework, MTGSDKBidding.xcframework<br/>MTGSDKInterstitialVideo.xcframework, MTGSDKNewInterstitial.xcframework<br/>MTGSDKReward.xcframework, MTGSDKSplash.xcframework<br/>OguryAds.xcframework, OguryChoiceManager.xcframework<br/>OguryCore.xcframework, OgurySdk.xcframework<br/>OMSDK_Ogury.xcframework, UnityAds.xcframework<br/>UserMessagingPlatform.xcframework, VungleAdsSDK.xcframework   |
 | AdiscopeMediaMobVista   | NO        | MTGSDK.xcframework, MTGSDKReward.xcframework                     |
 | AdiscopeMediaPangle     | NO        | BURelyFoundation_Global.xcframework<br/>PAGAdSDK.xcframework, PAGAdSDK.bundle  |
-| AdiscopeMediaUnityAds   | NO        | UnityAds.xcframework                                           |
 | AdiscopeMediaVungle     | NO        | VungleAdsSDK.xcframework                                       |
 
 
@@ -50,5 +49,5 @@ Framework를 Project내에 옮깁니다. Adiscope.xcframework는 필수이며, �
        - *AdiscopeMediaVungle.xcframework*
        - *VungleSDK.xcframework*
 4. (**Optional**) Max 사용시 Embed & Sign 설정
-   - Xcode Project > General Tab 접근 > Frameworks, Libraries, and Embedded Content 에 Adiscope.xcframework, AppLovinSDK.xcframework, DTBiOSSDK.xcframework, MolocoSDK.xcframework, OMSDK_Appodeal.xcframework, OMSDK_Ogury.xcframework 를 추가 후 Embed & Sign 으로 변경
+   - Xcode Project > General Tab 접근 > Frameworks, Libraries, and Embedded Content 에 Adiscope.xcframework, AppLovinSDK.xcframework, ATOM.xcframework, DTBiOSSDK.xcframework, HyBid.xcframework, InMobiSDK.xcframework, MolocoSDK.xcframework, OMSDK_Ogury.xcframework, OMSDK_Pubnativenet.xcframework 를 추가 후 Embed & Sign 으로 변경
    - Xcode Project > General Tab 접근 > Frameworks, Libraries, and Embedded Content 에 libbz2.tbd, libc++.tbd, libc++abi.tbd, libiconv.tbd, libresolv.9.tbd, libsqlite3.tbd, libxml2.tbd, libz.tbd 추가
