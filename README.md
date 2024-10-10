@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-3.9.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-3.9.1-blue)](../../releases)
 [![GitHub package.json version](https://img.shields.io/badge/Android-3.9.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-3.9.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-3.9.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-3.9.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-3.9.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-3.9.1-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-3.9.1-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - iOS 12.0 + / iPadOS 13.0 + / Xcode 15.1 +
 <br/>
@@ -49,13 +49,13 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.9.0'
+    pod 'Adiscope', '3.9.1'
     pod 'AdiscopeMediaAdManager', '3.9.0'
-    pod 'AdiscopeMediaAdMob', '3.9.0'
+    pod 'AdiscopeMediaAdMob', '3.9.1'
     pod 'AdiscopeMediaAppLovin', '3.9.0'
     pod 'AdiscopeMediaChartBoost', '3.9.0'
-    pod 'AdiscopeMediaFAN', '3.9.0'
-    pod 'AdiscopeMediaMax', '3.9.0'
+    pod 'AdiscopeMediaFAN', '3.9.1'
+    pod 'AdiscopeMediaMax', '3.9.1'
     pod 'AdiscopeMediaMobVista', '3.9.0'
     pod 'AdiscopeMediaPangle', '3.9.0'
     pod 'AdiscopeMediaVungle', '3.9.0'
