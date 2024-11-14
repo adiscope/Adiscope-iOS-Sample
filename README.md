@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-3.9.1-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-3.9.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-3.9.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-3.9.1-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-3.9.1-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-3.10.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-3.10.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-3.10.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-3.10.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-3.10.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - iOS 12.0 + / iPadOS 13.0 + / Xcode 15.1 +
 <br/>
@@ -24,6 +24,7 @@
 - [5. RewardedVideo](#5-rewardedvideo)
 - [6. Interstitial](#6-interstitial)
 - [7. RewardedInterstitial](#7-rewardedinterstitial)
+- [8. AdEvent](#8-adevent)
 #### [Adiscope Error Information](./api_documentation.md#model)
 #### [Adiscope Server 연동하기](./reward_callback_info.md)
 #### [iOS 16+ Offerwall 세로 모드 전환 적용 방법(가로모드 전용일 경우)](./apple_orientations.md)
@@ -49,16 +50,25 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.9.1'
-    pod 'AdiscopeMediaAdManager', '3.9.0'
-    pod 'AdiscopeMediaAdMob', '3.9.1'
-    pod 'AdiscopeMediaAppLovin', '3.9.0'
-    pod 'AdiscopeMediaChartBoost', '3.9.0'
-    pod 'AdiscopeMediaFAN', '3.9.1'
-    pod 'AdiscopeMediaMax', '3.9.1'
-    pod 'AdiscopeMediaMobVista', '3.9.0'
-    pod 'AdiscopeMediaPangle', '3.9.0'
-    pod 'AdiscopeMediaVungle', '3.9.0'
+    pod 'Adiscope', '3.10.0'
+    pod 'AdiscopeMediaAdManager', '3.10.0'
+    pod 'AdiscopeMediaAdMob', '3.10.0'
+    pod 'AdiscopeMediaChartBoost', '3.10.0'
+    pod 'AdiscopeMediaPangle', '3.10.0'
+    pod 'AdiscopeMediaVungle', '3.10.0'
+    pod 'AdiscopeMediaMax', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterAdMob', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterAmazon', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterBidMachine', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterDTExchange', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterFan', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterInMobi', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterMobVista', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterMoloco', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterOgury', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterPangle', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterUnityAds', '3.10.0'
+    pod 'AdiscopeMediaMaxAdapterVungle', '3.10.0'
 end
 ```
 - CocoaPods의 Xcode Project내에 Podfile에서 기술
@@ -108,10 +118,10 @@ pod install --repo-update
     </array>
 </dict>
 ```
-- Xcode 12.0 이상이거나 Max를 사용하면 SKAdNetwork Download File 내용 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.8.0/AdiscopeSkAdNetworks.plist))
+- Xcode 12.0 이상이면 SKAdNetwork Download File 내용 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.8.0/AdiscopeSkAdNetworks.plist))
 <br/>
 
-#### D. Admob 사용 시 추가
+#### D. Admob, Max의 Admob 사용 시 추가
 ```xml
 <key>GADIsAdManagerApp</key>
 <true/>
@@ -121,7 +131,7 @@ pod install --repo-update
 - "GADIsAdManagerApp" 설정 및 GADApplicationIdentifier의 Key 설정
 <br/>
 
-#### E. Max, AppLovin 사용 시 추가
+#### E. Max 사용 시 추가
 ```xml
 <key>AppLovinSdkKey</key>
 <string></string>
@@ -130,7 +140,7 @@ pod install --repo-update
 <br/><br/><br/>
 
 ### 2. AppDelegate 추가
-#### A. Max 사용 시 추가
+#### A. Max의 InMobi 사용 시 추가
 ```swift
 var window: UIWindow?
 ```
@@ -493,6 +503,32 @@ func onRewardedInterstitialAdFailed(toShow unitID: String!, error: AdiscopeError
 - Show 성공 후 Skip 시 `onRewardedInterstitialAdSkip`가 호출
 - Show 성공 후 영상 시청 시 `onRewardedInterstitialAdOpened`, `onRewardedInterstitialAdClosed`가 순차적으로 호출되고, 실패 시 `onRewardedInterstitialAdFailedToShow`가 호출
 - `onRewardedInterstitialAdFailedToShow`시 [AdiscopeError 참고](./api_documentation.md#model)
+<br/><br/><br/>
+
+## 8. AdEvent
+### A. Show
+```swift
+let ADEVENT_UNIT_ID = "";	// 관리자를 통해 발급
+AdiscopeInterface.sharedInstance().showAdEvent(ADEVENT_UNIT_ID)
+```
+- `Show`가 실행되면 (return값이 True일 경우) `onAdEventOpened`와 `onAdEventFailedToShow` 중 하나가 항상 호출되고, `onAdEventOpened`가 호출되었다면 이후 `onAdEventClosed`가 항상 호출
+<br/>
+
+### B. Callbacks
+```swift
+func onAdEventOpened(_ unitID: String!) {
+    // AdEvent가 열림
+}
+func onAdEventClosed(_ unitID: String!) {
+    // AdEvent가 닫힘
+}
+func onAdEventFailed(toShow unitID: String!, error: AdiscopeError!) {
+    // AdEvent가 Fail
+}
+```
+- `setMainDelegate(_:)`를 진행했다면 다음과 같은 응답을 수신 받을 수 있음
+- Show 성공 시 `onAdEventOpened`, `onAdEventClosed` callback이 순차적으로 호출
+- `onAdEventFailed`시 [AdiscopeError 참고](./api_documentation.md#model)
 <br/><br/><br/>
 
 # Adiscope Error Information

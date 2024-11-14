@@ -15,6 +15,8 @@
     - getSDKVersion
     - setVolumeOff
     - setVolumeOn
+  - [AdEvent](#adevent)
+    - showAdEvent:unitID
   - [Offerwall](#offerwall)
     - showOfferWall:unitID
     - showOfferWall:unitID:WithFilterTabs
@@ -184,6 +186,26 @@ Admob, AppLovin, Mintegral 에서 광고 소리를 제거 합니다.
 ##### - (void)setVolumeOn
 
 Admob, AppLovin, Mintegral 에서 광고 소리를 노출 합니다.
+
+<br>
+
+#### AdEvent
+
+##### - (BOOL)showAdEvent:unitID
+
+Adiscope 의 AdEvent ViewController 를 Display 합니다.
+
+AdiscopeDelegate의 onAdEventOpened(), onAdEventClosed(), onAdEventFailedToShow() callbacks을 통해 AdEvent ViewController 의 Open, Close, Fail 정보를 얻습니다.
+
+⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
+
+| Parameters |                           |
+| ---------- | ------------------------- |
+| unitId     | 보여질 AdEvent UnitID |
+
+| Return     |                              |
+| ---------- | ---------------------------- |
+| isSuccesss | UnitID이 잘못 되었을 경우 NO |
 
 <br>
 
