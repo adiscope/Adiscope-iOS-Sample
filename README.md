@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-3.10.3-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-3.10.3-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-3.10.3-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-3.10.3-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-3.10.3-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-4.0.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-4.0.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-4.0.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-4.0.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-4.0.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - iOS 12.0 + / iPadOS 13.0 + / Xcode 15.1 +
 <br/>
@@ -50,25 +50,26 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '3.10.3'
-    pod 'AdiscopeMediaAdManager', '3.10.3'
-    pod 'AdiscopeMediaAdMob', '3.10.3'
-    pod 'AdiscopeMediaChartBoost', '3.10.3'
-    pod 'AdiscopeMediaPangle', '3.10.3'
-    pod 'AdiscopeMediaVungle', '3.10.3'
-    pod 'AdiscopeMediaMax', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterAdMob', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterAmazon', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterBidMachine', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterDTExchange', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterFan', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterInMobi', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterMobVista', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterMoloco', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterOgury', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterPangle', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterUnityAds', '3.10.3'
-    pod 'AdiscopeMediaMaxAdapterVungle', '3.10.3'
+    pod 'Adiscope', '4.0.0'
+    pod 'AdiscopeMediaAdManager', '4.0.0'
+    pod 'AdiscopeMediaAdMob', '4.0.0'
+    pod 'AdiscopeMediaChartBoost', '4.0.0'
+    pod 'AdiscopeMediaPangle', '4.0.0'
+    pod 'AdiscopeMediaVungle', '4.0.0'
+    pod 'AdiscopeMediaMax', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterAdManager', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterAdMob', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterAmazon', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterBidMachine', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterDTExchange', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterFan', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterInMobi', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterMobVista', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterMoloco', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterOgury', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterPangle', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterUnityAds', '4.0.0'
+    pod 'AdiscopeMediaMaxAdapterVungle', '4.0.0'
 end
 ```
 - CocoaPods의 Xcode Project내에 Podfile에서 기술

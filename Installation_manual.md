@@ -1,7 +1,7 @@
 # Adiscope for iOS Integration
 
 ## SDK Download
-- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.10.3/AdiscopeIosSdk-3.10.3.zip)
+- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.0.0/AdiscopeIosSdk-4.0.0.zip)
   - Releases에 이전 버전 다운로드 가능 ([이동](../../releases))
 
 ## Requirements
@@ -23,6 +23,7 @@ Framework를 Project내에 옮깁니다. Adiscope.xcframework는 필수이며, �
 | AdiscopeMediaPangle                | NO        | PAGAdSDK.xcframework, BURelyFoundation_Global.xcframework<br/>PAGAdSDK.bundle  |
 | AdiscopeMediaVungle                | NO        | VungleAdsSDK.xcframework  |
 | AdiscopeMediaMax                   | NO        | AppLovinSDK.xcframework  |
+| AdiscopeMediaMaxAdapterAdManager   | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
 | AdiscopeMediaMaxAdapterAdMob       | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
 | AdiscopeMediaMaxAdapterAmazon      | NO        | DTBiOSSDK.xcframework  |
 | AdiscopeMediaMaxAdapterBidMachine  | NO        | BidMachine.xcframework, StackModules.xcframework<br/>StackProductPresentation.xcframework, StackRendering.xcframework<br/>OMSDK_Appodeal.xcframework  |
