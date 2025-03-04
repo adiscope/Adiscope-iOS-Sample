@@ -1,11 +1,12 @@
 # Adiscope for iOS Integration
 [![GitHub package.json version](https://img.shields.io/badge/iOS-4.0.0-blue)](../../releases)
 [![GitHub package.json version](https://img.shields.io/badge/Android-4.1.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-4.1.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-4.1.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
 [![GitHub package.json version](https://img.shields.io/badge/Flutter-4.1.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
 [![GitHub package.json version](https://img.shields.io/badge/ReactNative-4.1.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - iOS 12.0 + / iPadOS 13.0 + / Xcode 15.1 +
+- **${\color{red}SPM(Swift}$** **${\color{red}Package}$** **${\color{red}Manager)}$** **${\color{red}지원 불가}$** - 수동 설치만 가능([가이드](./Installation_manual.md))
 <br/>
 
 ## Contents
