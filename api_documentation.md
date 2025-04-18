@@ -6,6 +6,7 @@
   - [Core](#core)
     - sharedInstance
     - initialize:mediaId:mediaSecret:callBackTag
+    - isInitialized
     - setMainDelegate:delegate
     - setUserId:userID
     - setRewardedCheckParam:param
@@ -91,6 +92,12 @@ Adiscope SDK 초기화를 진행합니다.
 | mediaId     | Amdin page에서 등록한 해당 application에 대한 ID             |
 | mediaSecret | mediaId에 대응되는 Secret key                                |
 | callBackTag | 보상 콜백을 복수 개로 등록해서 사용할시에 어떤 보상 콜백을 사용할지 지정. 지정하지 않을시에는 기본 보상콜백이 사용. |
+
+<br>
+
+##### - (BOOL)isInitialized
+
+Adiscope SDK 초기화 상태를 확인 할 수 있습니다.
 
 <br>
 

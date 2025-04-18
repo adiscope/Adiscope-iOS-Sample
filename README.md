@@ -1,18 +1,41 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-4.0.0-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-4.1.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-4.1.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-4.1.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-4.1.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-4.2.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-4.2.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-4.2.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-4.2.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-4.2.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
-- iOS 12.0 + / iPadOS 13.0 + / Xcode 15.1 +
+- iOS 12.0 + / iPadOS 13.0 + / Xcode 16.0 +
 - **${\color{red}SPM(Swift}$** **${\color{red}Package}$** **${\color{red}Manager)}$** **${\color{red}지원 불가}$** - 수동 설치만 가능([가이드](./Installation_manual.md))
+<details>
+<summary>Networks Version</summary>
+<div markdown="1">  
+
+| Ad Network          | iOS Version |
+|---------------------|-------------|
+| AdMob               | 12.2.0      |
+| Amazon              | 5.1.0       |
+| AppLovin            | 13.1.0      |
+| BidMachine          | 3.2.1       |
+| Chartboost          | 9.8.1       |
+| DT Exchange         | 8.3.5       |
+| InMobi              | 10.8.2      |
+| Liftoff(Vungle)     | 7.4.4       |
+| Meta(Fan)           | 6.17.1      |
+| Mintegral(Mobvista) | 7.7.7       |
+| Moloco              | 3.7.2       |
+| Ogury               | 5.0.2       |
+| Pangle              | 6.5.0.9     |
+| Unity Ads           | 4.14.0      |
+
+</div>
+</details>
 <br/>
 
 ## Contents
 #### [Installation](#installation-1)
 - [1. CocoaPods](#1-cocoapods)
-- [2. Manual Installation](#2-manual-installation)
+- [2. Manual Installation](./Installation_manual.md)
 #### [Setup Xcode](#setup-xcode-1)
 - [1. info.plist 수정](#1-infoplist-수정)
 - [2. AppDelegate 추가](#2-appdelegate-추가)
@@ -51,26 +74,27 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '4.0.0'
-    pod 'AdiscopeMediaAdManager', '4.0.0'
-    pod 'AdiscopeMediaAdMob', '4.0.0'
-    pod 'AdiscopeMediaChartBoost', '4.0.0'
-    pod 'AdiscopeMediaPangle', '4.0.0'
-    pod 'AdiscopeMediaVungle', '4.0.0'
-    pod 'AdiscopeMediaMax', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterAdManager', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterAdMob', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterAmazon', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterBidMachine', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterDTExchange', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterFan', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterInMobi', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterMobVista', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterMoloco', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterOgury', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterPangle', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterUnityAds', '4.0.0'
-    pod 'AdiscopeMediaMaxAdapterVungle', '4.0.0'
+    pod 'Adiscope', '4.2.0'
+    pod 'AdiscopeAdEvent', '4.2.0'
+    pod 'AdiscopeMediaAdManager', '4.2.0'
+    pod 'AdiscopeMediaAdMob', '4.2.0'
+    pod 'AdiscopeMediaChartBoost', '4.2.0'
+    pod 'AdiscopeMediaPangle', '4.2.0'
+    pod 'AdiscopeMediaVungle', '4.2.0'
+    pod 'AdiscopeMediaMax', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterAdManager', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterAdMob', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterAmazon', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterBidMachine', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterDTExchange', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterFan', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterInMobi', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterMobVista', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterMoloco', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterOgury', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterPangle', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterUnityAds', '4.2.0'
+    pod 'AdiscopeMediaMaxAdapterVungle', '4.2.0'
 end
 ```
 - CocoaPods의 Xcode Project내에 Podfile에서 기술
@@ -132,17 +156,17 @@ pod install --repo-update
 <string></string>
 ```
 - "GADIsAdManagerApp" 설정 및 GADApplicationIdentifier의 Key 설정
-<br/>
-
-#### E. Max 사용 시 추가
-```xml
-<key>AppLovinSdkKey</key>
-<string></string>
-```
-- AppLovinSdkKey의 Key 설정    
 <br/><br/><br/>
 
-### 2. AppDelegate 추가
+### 2. Build Settings 확인
+#### A. Max의 Meta(Fan) 사용 시 확인 사항
+![Image](https://github.com/user-attachments/assets/13aa9be9-30d7-419d-ad32-84bfa1d7f962)
+- iOS 버전 12.2 이하에서 Swift를 지원하려면
+  - Xcode 프로젝트의 주요 대상에서 파일 > 빌드 설정을 선택
+  - Always Embed Swift Standard Libraries를 YES 로 변경
+<br/><br/><br/>
+
+### 3. AppDelegate 추가
 #### A. Max의 InMobi 사용 시 추가
 ```swift
 var window: UIWindow?
@@ -247,35 +271,6 @@ AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_UNIT_ID, OFFERW
 AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_URL)
 ```
 - [기타 옵션](./api_documentation.md#offerwall)
-<br/>
-
-### D. Offerwall for URL Scheme 적용
-#### 가. Scheme 등록
-<img width="812" alt="image" src="https://user-images.githubusercontent.com/60415962/230042908-96e13047-8cf4-4050-99dc-5717b5882887.png">   
-- 위 이미지를 참고 하여 애디스콥 담당자에게 전달 받은 URL_Scheme를 기입    
-<br/><br/>
-
-#### 나. URL Scheme 처리
-```swift
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        // 스킴을 통한 일반 딥링크 방식 진입점
-        let urlStr = url.absoluteString
-        AdiscopeInterface.sharedInstance().showOfferwallDetail(urlStr)
-        return true
-    }
-}
-```
-<br/>
-
-#### 다. 기능별 장단점
-|  | showDetail() | Url-Scheme                                                                                                                                                                                     |
-| --- | --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 사용 용도 | 앱 내에서 특정 오퍼월 아이템의 상세 화면으로 이동하고자 할 때 사용 | 앱 내부/외부에서 특정 오퍼월 아이템의 상세 화면으로 이동하고자 할 때 사용                                                                                                                                                     |
-| 장점 | Url-Scheme , Universal-Link와는 다르게 소통 비용이 들지 않음. sdk 버전을 2.1.7.0 이상으로 업데이트만 한다면, 기존의 sdk 함수를 사용하던 방식처럼 오퍼월 상세 페이지 이동 기능을 적용할 수 있음 | 앱의 외부(모바일 웹, 앱)에서 오퍼월 상세 화면으로 바로 이동할 수 있고, 내부 코드에서도 규약된 url를 사용하여 오퍼월 상세 화면로 이동할 수 있음 </br> (다만, 현재로서는 앱이 실행 중인 상태에서만 Url-Scheme 가 작동되며, 앱이 구동되지 않은 상태에서 Url-Scheme 가 작동되고자 한다면 앱 구동 시점에 애디스콥 이니셜라이징이 완료되어야 함) |
-| 단점 | 고정된 광고 아이템의 상세 화면으로만 이동이 가능하므로 확장성이 없음 | 각 앱별로 고유 Url-Scheme 를 점유할 수 없으므로, 같은 uri 스킴을 사용할 시에는 충돌이 일어나 앱을 선택하는 창이 뜰 수 있음 </br> (애디스콥측에서 규정한 스킴은 각 매체마다 고유하도록 설계하였으나, 제3의 앱이 해당 Url-Scheme 를 사용할 경우 충돌이 일어날 수 있음)                                         |
-| 참고 사항 | - | 애디스콥측의 오퍼월 화면에 intent-filter를 적용하였으므로 매체에서 별도로 작업할 사항은 없음                                                                                                                                      |
 <br/>
 <br/><br/><br/>
 

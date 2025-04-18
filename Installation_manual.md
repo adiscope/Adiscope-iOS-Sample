@@ -5,8 +5,7 @@
   - Releases에 이전 버전 다운로드 가능 ([이동](../../releases))
 
 ## Requirements
-iOS 12.0 + / iPadOS 13.0 +
-Xcode 15.1 +
+iOS 12.0 + / iPadOS 13.0 + / Xcode 16.0 +
 
 ## Installation
 ### Manual
@@ -17,10 +16,10 @@ Framework를 Project내에 옮깁니다. Adiscope.xcframework는 필수이며, �
 | Framework               | Essential | Third-party Frameworks                                       |
 | ---------------------------------- | --------- | ------------------------------------------------------------ |
 | Adiscope                           | YES       |                                                              |
-| AdiscopeMediaAdMob                 | NO        | (**Essential**)<br/>GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework<br/>(**Optional**)<br/>LiftoffMonetizeAdapter.xcframework, MetaAdapter.xcframework<br/>MintegralAdapter.xcframework, PangleAdapter.xcframework<br/>VungleAdsSDK.xcframework, FBAudiencenetwork.xcframework<br/>MTGSDK.xcframework, MTGSDKBanner.xcframework<br/>MTGSDKBidding.xcframework, MTGSDKInterstitialVideo.xcframework<br/>MTGSDKNewInterstitial.xcframework, MTGSDKReward.xcframework<br/>MTGSDKSplash.xcframework, PAGAdSDK.xcframework<br/>BURelyFoundation_Global.xcframework, PAGAdSDK.bundle  |
+| AdiscopeMediaAdMob                 | NO        | (**Essential**)<br/>GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework<br/>(**Optional**)<br/>LiftoffMonetizeAdapter.xcframework, MetaAdapter.xcframework<br/>MintegralAdapter.xcframework, PangleAdapter.xcframework<br/>VungleAdsSDK.xcframework, FBAudiencenetwork.xcframework<br/>MTGSDK.xcframework, MTGSDKBanner.xcframework<br/>MTGSDKBidding.xcframework, MTGSDKInterstitialVideo.xcframework<br/>MTGSDKNewInterstitial.xcframework, MTGSDKReward.xcframework<br/>MTGSDKSplash.xcframework, PAGAdSDK.xcframework<br/>PAGAdSDK.bundle  |
 | AdiscopeMediaAdManager             | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
 | AdiscopeMediaChartBoost            | NO        | ChartboostSDK.xcframework  |
-| AdiscopeMediaPangle                | NO        | PAGAdSDK.xcframework, BURelyFoundation_Global.xcframework<br/>PAGAdSDK.bundle  |
+| AdiscopeMediaPangle                | NO        | PAGAdSDK.xcframework, PAGAdSDK.bundle  |
 | AdiscopeMediaVungle                | NO        | VungleAdsSDK.xcframework  |
 | AdiscopeMediaMax                   | NO        | AppLovinSDK.xcframework  |
 | AdiscopeMediaMaxAdapterAdManager   | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
@@ -32,8 +31,8 @@ Framework를 Project내에 옮깁니다. Adiscope.xcframework는 필수이며, �
 | AdiscopeMediaMaxAdapterInMobi      | NO        | InMobiSDK.xcframework  |
 | AdiscopeMediaMaxAdapterMobVista    | NO        | MTGSDK.xcframework, MTGSDKBanner.xcframework<br/>MTGSDKBidding.xcframework,MTGSDKInterstitialVideo.xcframework<br/>MTGSDKNewInterstitial.xcframework, MTGSDKReward.xcframework<br/>MTGSDKSplash.xcframework  |
 | AdiscopeMediaMaxAdapterMoloco      | NO        | MolocoSDK.xcframework  |
-| AdiscopeMediaMaxAdapterOgury       | NO        | OguryAds.xcframework, OguryChoiceManager.xcframework<br/>OguryCore.xcframework, OgurySdk.xcframework<br/>OMSDK_Ogury.xcframework  |
-| AdiscopeMediaMaxAdapterPangle      | NO        | PAGAdSDK.xcframework, BURelyFoundation_Global.xcframework<br/>PAGAdSDK.bundle  |
+| AdiscopeMediaMaxAdapterOgury       | NO        | OguryAds.xcframework, OguryCore.xcframework<br/>OgurySdk.xcframework, OMSDK_Ogury.xcframework  |
+| AdiscopeMediaMaxAdapterPangle      | NO        | PAGAdSDK.xcframework, PAGAdSDK.bundle  |
 | AdiscopeMediaMaxAdapterUnityAds    | NO        | UnityAds.xcframework  |
 | AdiscopeMediaMaxAdapterVungle      | NO        | VungleAdsSDK.xcframework  |
 
