@@ -6,7 +6,6 @@
 [![GitHub package.json version](https://img.shields.io/badge/ReactNative-4.2.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - iOS 12.0 + / iPadOS 13.0 + / Xcode 16.0 +
-- **${\color{red}SPM(Swift}$** **${\color{red}Package}$** **${\color{red}Manager)}$** **${\color{red}지원 불가}$** - 수동 설치만 가능([가이드](./Installation_manual.md))
 <details>
 <summary>Networks Version</summary>
 <div markdown="1">  
@@ -35,7 +34,8 @@
 ## Contents
 #### [Installation](#installation-1)
 - [1. CocoaPods](#1-cocoapods)
-- [2. Manual Installation](./Installation_manual.md)
+- [2. SPM(Swift Package Manager](./swift_package_manager.md)
+- [3. Manual Installation](./Installation_manual.md)
 #### [Setup Xcode](#setup-xcode-1)
 - [1. info.plist 수정](#1-infoplist-수정)
 - [2. AppDelegate 추가](#2-appdelegate-추가)
@@ -110,7 +110,11 @@ pod install --repo-update
 - Xcode Project에 포함시키기 위해서 Xcode 재실행
 <br/><br/><br/>
 
-### 2. Manual Installation
+### 2. SPM(Swift Package Manager)
+- [SPM(Swift Package Manager) Guide](./swift_package_manager.md)    
+<br/><br/><br/>
+
+### 3. Manual Installation
 - [Manual Installation Guide](./Installation_manual.md)    
 <br/><br/><br/><br/>
 
