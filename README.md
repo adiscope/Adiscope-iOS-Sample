@@ -34,7 +34,7 @@
 ## Contents
 #### [Installation](#installation-1)
 - [1. CocoaPods](#1-cocoapods)
-- [2. SPM(Swift Package Manager](./swift_package_manager.md)
+- [2. SPM(Swift Package Manager)](./swift_package_manager.md)
 - [3. Manual Installation](./Installation_manual.md)
 #### [Setup Xcode](#setup-xcode-1)
 - [1. info.plist 수정](#1-infoplist-수정)
