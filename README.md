@@ -5,8 +5,7 @@
 [![GitHub package.json version](https://img.shields.io/badge/Flutter-4.2.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
 [![GitHub package.json version](https://img.shields.io/badge/ReactNative-4.2.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
-- iOS 12.0 + / iPadOS 13.0 + / Xcode 16.0 +
-- **${\color{red}SPM(Swift}$** **${\color{red}Package}$** **${\color{red}Manager)}$** **${\color{red}지원 불가}$** - 수동 설치만 가능([가이드](./Installation_manual.md))
+- 지원 환경 : **iOS 12.0 + / iPadOS 13.0 + / Xcode 16.0 +**
 <details>
 <summary>Networks Version</summary>
 <div markdown="1">  
@@ -35,7 +34,8 @@
 ## Contents
 #### [Installation](#installation-1)
 - [1. CocoaPods](#1-cocoapods)
-- [2. Manual Installation](./Installation_manual.md)
+- [2. SPM(Swift Package Manager)](./swift_package_manager.md)
+- [3. Manual Installation](./Installation_manual.md)
 #### [Setup Xcode](#setup-xcode-1)
 - [1. info.plist 수정](#1-infoplist-수정)
 - [2. AppDelegate 추가](#2-appdelegate-추가)
@@ -68,6 +68,7 @@ gem install cocoapods
 <br/>
 
 #### B. Podfile
+- CocoaPods의 Xcode Project내에 Podfile에서 기술
 ```ruby
 # source 'https://github.com/CocoaPods/Specs.git' // 제한망 or install error시 추가
 platform :ios, '12.0'
@@ -97,7 +98,6 @@ target '<Your Target Name>' do
     pod 'AdiscopeMediaMaxAdapterVungle', '4.2.0'
 end
 ```
-- CocoaPods의 Xcode Project내에 Podfile에서 기술
 - Version이 상이할 경우 Initialize시 Log를 통해 확인 가능<br/>
 ![AdapterChecked](https://github.com/user-attachments/assets/c0c4e33f-d535-45fb-8115-115e57c70522)<br/>
 <br/>
@@ -110,13 +110,17 @@ pod install --repo-update
 - Xcode Project에 포함시키기 위해서 Xcode 재실행
 <br/><br/><br/>
 
-### 2. Manual Installation
-- [Manual Installation Guide](./Installation_manual.md)    
+### 2. SPM(Swift Package Manager)
+- [SPM 가이드](./swift_package_manager.md) 참고
+<br/><br/><br/>
+
+### 3. Manual Installation
+- [xcframework 직접 추가 가이드](./Installation_manual.md) 참고
 <br/><br/><br/><br/>
 
 ## Setup Xcode
 ### 1. info.plist 수정
-#### A. AdiscopeMediaId, AdiscopeMediaSecret 추가
+#### A. AdiscopeMediaId, AdiscopeMediaSecret 추가 (필수)
 ```xml
 <key>AdiscopeMediaId</key>
 <string></string>
@@ -125,7 +129,7 @@ pod install --repo-update
 ```
 <br/>
 
-#### B. App Tracking Permission 추가
+#### B. App Tracking Permission 추가 (필수)
 ```xml
 <key>NSUserTrackingUsageDescription</key>
 <string></string>
@@ -133,7 +137,8 @@ pod install --repo-update
 - ex : Some ad content may require access to the user tracking.
 <br/>
 
-#### C. SKAdNetwork 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.8.0/AdiscopeSkAdNetworks.plist))
+#### C. SKAdNetwork 추가 (필수)
+- Xcode 12.0 이상이면 SKAdNetwork Download File 내용 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.8.0/AdiscopeSkAdNetworks.plist))
 ```xml
 <dict>
     <key>SKAdNetworkItems</key>
@@ -145,33 +150,32 @@ pod install --repo-update
     </array>
 </dict>
 ```
-- Xcode 12.0 이상이면 SKAdNetwork Download File 내용 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.8.0/AdiscopeSkAdNetworks.plist))
 <br/>
 
 #### D. Admob, Max의 Admob 사용 시 추가
+- "GADIsAdManagerApp" 설정 및 GADApplicationIdentifier의 Key 설정
 ```xml
 <key>GADIsAdManagerApp</key>
 <true/>
 <key>GADApplicationIdentifier</key>
 <string></string>
 ```
-- "GADIsAdManagerApp" 설정 및 GADApplicationIdentifier의 Key 설정
 <br/><br/><br/>
 
 ### 2. Build Settings 확인
 #### A. Max의 Meta(Fan) 사용 시 확인 사항
-![Image](https://github.com/user-attachments/assets/13aa9be9-30d7-419d-ad32-84bfa1d7f962)
 - iOS 버전 12.2 이하에서 Swift를 지원하려면
   - Xcode 프로젝트의 주요 대상에서 파일 > 빌드 설정을 선택
-  - Always Embed Swift Standard Libraries를 YES 로 변경
+  - Always Embed Swift Standard Libraries를 YES 로 변경<br/>
+![Image](https://github.com/user-attachments/assets/13aa9be9-30d7-419d-ad32-84bfa1d7f962)
 <br/><br/><br/>
 
 ### 3. AppDelegate 추가
 #### A. Max의 InMobi 사용 시 추가
+- window 추가
 ```swift
 var window: UIWindow?
-```
-- window 추가    
+```    
 <br/><br/><br/>
 
 ### 3. Privacy Manifest 정책 적용
@@ -180,16 +184,13 @@ var window: UIWindow?
 <br/><br/><br/><br/>
 
 # Adiscope Overview
-- 1, 2, 3 은 필수 처리
-- 4, 5, 6, 7 은 선택 처리
-
-## 1. Import
+## 1. Import (필수)
 ```swift
 import Adiscope
 ```    
 <br/><br/><br/>
 
-## 2. Initialize
+## 2. Initialize (필수)
 ### A. Code에서 Media 없이 Initialize 방법
 ```swift
 let CALLBACK_TAG = "";    // 관리자를 통해 발급, 기본 ""
@@ -199,6 +200,7 @@ if let adiscopeSDK = AdiscopeInterface.sharedInstance() {
 }
 ```
 - Build된 Project에서 `Info.plist` 파일에서 `AdiscopeMediaId`가 있어야 함 ([Info.plist 확인](./#adiscopemediaid-adiscopemediasecret-추가))
+- CALLBACK_TAG이 없을 시, `adiscopeSDK.initialize()`로 가능
 - App 실행 시 1회 설정 권장
 <br/>
 
@@ -212,6 +214,7 @@ if let adiscopeSDK = AdiscopeInterface.sharedInstance() {
     adiscopeSDK.initialize(MEDIA_ID, mediaSecret: MEDIA_SECRET, callBackTag: CALLBACK_TAG)
 }
 ```
+- CALLBACK_TAG이 없을 시, `adiscopeSDK.initialize(MEDIA_ID, mediaSecret: MEDIA_SECRET)`로 가능
 - App 실행 시 1회 설정 권장
 <br/>
 
@@ -227,20 +230,24 @@ func onInitialized(_ isSuccess: Bool) {
 ```    
 <br/><br/><br/>
 
-## 3. 사용자 정보 설정
+## 3. 사용자 정보 설정 (필수)
+- `Offerwall`, `RewardedVideo`, `RewardedInterstitial`를 사용하기 위해 ${\color{red}필수}$ 설정
 ```swift
 let USER_ID = "";        // set unique user id to identify the user in reward information
 AdiscopeInterface.sharedInstance().SetUserId(USER_ID);
 ```
-- `Offerwall`, `RewardedVideo`, `RewardedInterstitial`를 사용하기 위해 ${\color{red}필수}$ 설정
 - 64자까지 설정 가능    
 <br/><br/><br/>
 
 ## 4. Offerwall
 ### A. Show
 ```swift
-let OFFERWALL_UNIT_ID = "";      // 관리자를 통해 발급
-AdiscopeInterface.sharedInstance().showOfferwall(OFFERWALL_UNIT_ID)
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    let OFFERWALL_UNIT_ID = "";      // 관리자를 통해 발급
+    AdiscopeInterface.sharedInstance().showOfferwall(OFFERWALL_UNIT_ID)
+} else {
+    // Initialize 재시도
+}
 ```
 - `Show`가 실행되면 (return값이 True일 경우) `onOfferwallAdOpened`와 `onOfferwallAdFailedToShow` 중 하나가 항상 호출되고, `onOfferwallAdOpened`가 호출되었다면 이후 `onOfferwallAdClosed`가 항상 호출
 <br/>
@@ -277,8 +284,12 @@ AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_URL)
 ## 5. RewardedVideo
 ### A. Load
 ```swift
-let UNIT_ID = "";      // 관리자를 통해 발급
-AdiscopeInterface.sharedInstance().load(UNIT_ID)
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    let UNIT_ID = "";      // 관리자를 통해 발급
+    AdiscopeInterface.sharedInstance().load(UNIT_ID)
+} else {
+    // Initialize 재시도
+}
 ```
 - Initialize와 사용자 정보 설정의 진행 완료 후 Load 호출
 - Load 후 사용자 정보 설정을 호출할 경우 isLoaded Flag가 False로 반환(Load 취소)
@@ -297,7 +308,7 @@ AdiscopeInterface.sharedInstance().load(UNIT_ID)
 
 ### B. IsLoaded
 ```swift
-let UNIT_ID = "";      // 관리자를 통해 발급
+let UNIT_ID = "";      // Load한 값(관리자를 통해 발급)
 if (AdiscopeInterface.sharedInstance().isLoaded(UNIT_ID)) {
     // show ad here
 } else {
@@ -309,7 +320,12 @@ if (AdiscopeInterface.sharedInstance().isLoaded(UNIT_ID)) {
 
 ### C. Show
 ```swift
-AdiscopeInterface.sharedInstance().show()
+let UNIT_ID = "";      // Load한 값(관리자를 통해 발급)
+if (AdiscopeInterface.sharedInstance().isLoaded(UNIT_ID)) {
+    AdiscopeInterface.sharedInstance().show()
+} else {
+    // do something else
+}
 ```
 - 마지막으로 Load된 광고를 사용자에게 보여줌
 - Show 호출 후에는 다시 Load를 호출 할 수 있음
@@ -362,8 +378,12 @@ func onRewardedVideoAdFailed(toShow unitID: String!, error: AdiscopeError!) {
 ## 6. Interstitial
 ### A. Load
 ```swift
-let UNIT_ID = "";      // 관리자를 통해 발급
-AdiscopeInterface.sharedInstance().loadInterstitial(UNIT_ID)
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    let UNIT_ID = "";      // 관리자를 통해 발급
+    AdiscopeInterface.sharedInstance().loadInterstitial(UNIT_ID)
+} else {
+    // Initialize 재시도
+}
 ```
 - Initialize 진행 완료 후 Load 호출
 - 해당 유닛에 속한 ad 네크워크들의 광고를 Load
@@ -377,7 +397,7 @@ AdiscopeInterface.sharedInstance().loadInterstitial(UNIT_ID)
 
 ### B. IsLoaded
 ```swift
-let UNIT_ID = "";      // 관리자를 통해 발급
+let UNIT_ID = "";      // Load한 값(관리자를 통해 발급)
 if (AdiscopeInterface.sharedInstance().isLoadedInterstitialUnitID(UNIT_ID)) {
     // show ad here
 } else {
@@ -389,7 +409,12 @@ if (AdiscopeInterface.sharedInstance().isLoadedInterstitialUnitID(UNIT_ID)) {
 
 ### C. Show
 ```swift
-AdiscopeInterface.sharedInstance().showInterstitial()
+let UNIT_ID = "";      // Load한 값(관리자를 통해 발급)
+if (AdiscopeInterface.sharedInstance().isLoadedInterstitialUnitID(UNIT_ID)) {
+    AdiscopeInterface.sharedInstance().showInterstitial()
+} else {
+    // do something else
+}
 ```
 - 마지막으로 Load된 광고를 사용자에게 보여줌
 - Show 호출 후에는 다시 Load를 호출 할 수 있음
@@ -426,7 +451,11 @@ func onInterstitialAdFailed(toShow unitID: String!, error: AdiscopeError!) {
 ## 7. RewardedInterstitial
 ### A. PreLoadAll
 ```swift
-AdiscopeInterface.sharedInstance().preLoadAllRewardedInterstitial()
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    AdiscopeInterface.sharedInstance().preLoadAllRewardedInterstitial()
+} else {
+    // Initialize 재시도
+}
 ```
 - Initialize와 사용자 정보 설정의 진행 완료 후 1회 설정 권장
 - 관리자가 설정된 활성화된 모든 유닛들을 Load 진행
@@ -434,9 +463,13 @@ AdiscopeInterface.sharedInstance().preLoadAllRewardedInterstitial()
 
 ### B. Unit 지정 PreLoad
 ```swift
-let UNIT_ID1 = "";      // 관리자를 통해 발급
-let UNIT_ID2 = "";      // 관리자를 통해 발급
-AdiscopeInterface.sharedInstance().preLoadRewardedInterstitial([UNIT_ID1, UNIT_ID2, ... ])
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    let UNIT_ID1 = "";      // 관리자를 통해 발급
+    let UNIT_ID2 = "";      // 관리자를 통해 발급
+    AdiscopeInterface.sharedInstance().preLoadRewardedInterstitial([UNIT_ID1, UNIT_ID2, ... ])
+} else {
+    // Initialize 재시도
+}
 ```
 - Initialize와 사용자 정보 설정의 진행 완료 후 1회 설정 권장
 - 입력된 유닛들을 Load 진행
@@ -506,8 +539,12 @@ func onRewardedInterstitialAdFailed(toShow unitID: String!, error: AdiscopeError
 ## 8. AdEvent
 ### A. Show
 ```swift
-let ADEVENT_UNIT_ID = "";	// 관리자를 통해 발급
-AdiscopeInterface.sharedInstance().showAdEvent(ADEVENT_UNIT_ID)
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    let ADEVENT_UNIT_ID = "";	// 관리자를 통해 발급
+    AdiscopeInterface.sharedInstance().showAdEvent(ADEVENT_UNIT_ID)
+} else {
+    // Initialize 재시도
+}
 ```
 - `Show`가 실행되면 (return값이 True일 경우) `onAdEventOpened`와 `onAdEventFailedToShow` 중 하나가 항상 호출되고, `onAdEventOpened`가 호출되었다면 이후 `onAdEventClosed`가 항상 호출
 <br/>
