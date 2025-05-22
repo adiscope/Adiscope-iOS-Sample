@@ -96,10 +96,16 @@ https://github.com/adiscope/AdiscopeMediaMaxAdapterAmazon-SwiftPackageManager.gi
 https://github.com/adiscope/AdiscopeMediaMaxAdapterBidMachine-SwiftPackageManager.git
 ```
 ```html
+https://github.com/adiscope/AdiscopeMediaMaxAdapterChartBoost-SwiftPackageManager.git
+```
+```html
 https://github.com/adiscope/AdiscopeMediaMaxAdapterDTExchange-SwiftPackageManager.git
 ```
 ```html
 https://github.com/adiscope/AdiscopeMediaMaxAdapterInMobi-SwiftPackageManager.git
+```
+```html
+https://github.com/adiscope/AdiscopeMediaMaxAdapterIronSource-SwiftPackageManager.git
 ```
 ```html
 https://github.com/adiscope/AdiscopeMediaMaxAdapterMobVista-SwiftPackageManager.git

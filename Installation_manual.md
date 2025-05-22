@@ -1,11 +1,11 @@
 # Adiscope for iOS Integration
 
 ## SDK Download
-- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.2.0/AdiscopeIosSdk-4.2.0.zip)
+- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.3.0/AdiscopeIosSdk-4.3.0.zip)
   - Releases에 이전 버전 다운로드 가능 ([이동](../../releases))
 
 ## Requirements
-iOS 12.0 + / iPadOS 13.0 + / Xcode 16.0 +
+iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +
 
 ## Installation
 ### Manual
@@ -26,9 +26,11 @@ Framework를 Project내에 옮깁니다. Adiscope.xcframework는 필수이며, �
 | AdiscopeMediaMaxAdapterAdMob       | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
 | AdiscopeMediaMaxAdapterAmazon      | NO        | DTBiOSSDK.xcframework  |
 | AdiscopeMediaMaxAdapterBidMachine  | NO        | BidMachine.xcframework, StackModules.xcframework<br/>StackProductPresentation.xcframework, StackRendering.xcframework<br/>OMSDK_Appodeal.xcframework  |
+| AdiscopeMediaMaxAdapterChartBoost  | NO        | ChartboostSDK.xcframework  |
 | AdiscopeMediaMaxAdapterDTExchange  | NO        | IASDKCore.xcframework  |
 | AdiscopeMediaMaxAdapterFan         | NO        | FBAudienceNetwork.xcframework  |
 | AdiscopeMediaMaxAdapterInMobi      | NO        | InMobiSDK.xcframework  |
+| AdiscopeMediaMaxAdapterIronSource  | NO        | IronSource.xcframework  |
 | AdiscopeMediaMaxAdapterMobVista    | NO        | MTGSDK.xcframework, MTGSDKBanner.xcframework<br/>MTGSDKBidding.xcframework,MTGSDKInterstitialVideo.xcframework<br/>MTGSDKNewInterstitial.xcframework, MTGSDKReward.xcframework<br/>MTGSDKSplash.xcframework  |
 | AdiscopeMediaMaxAdapterMoloco      | NO        | MolocoSDK.xcframework  |
 | AdiscopeMediaMaxAdapterOgury       | NO        | OguryAds.xcframework, OguryCore.xcframework<br/>OgurySdk.xcframework, OMSDK_Ogury.xcframework  |

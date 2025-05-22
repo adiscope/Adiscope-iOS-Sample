@@ -1,11 +1,11 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-4.2.0-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-4.2.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-4.2.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-4.2.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-4.2.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-4.3.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-4.3.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-4.3.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-4.3.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-4.3.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
-- 지원 환경 : **iOS 12.0 + / iPadOS 13.0 + / Xcode 16.0 +**
+- 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +**
 <details>
 <summary>Networks Version</summary>
 <div markdown="1">  
@@ -19,6 +19,7 @@
 | Chartboost          | 9.8.1       |
 | DT Exchange         | 8.3.5       |
 | InMobi              | 10.8.2      |
+| ironSource	      | 8.8.0.0     |
 | Liftoff(Vungle)     | 7.4.4       |
 | Meta(Fan)           | 6.17.1      |
 | Mintegral(Mobvista) | 7.7.7       |
@@ -41,9 +42,9 @@
 - [2. AppDelegate 추가](#2-appdelegate-추가)
 - [3. Privacy Manifest 정책 적용](#3-privacy-manifest-정책-적용)
 #### [Adiscope Overview](#adiscope-overview-1)
-- [1. Import](#1-import)
-- [2. Initialize](#2-initialize)
-- [3. 사용자 정보 설정](#3-사용자-정보-설정)
+- [1. Import](#1-import-필수)
+- [2. Initialize](#2-initialize-필수)
+- [3. 사용자 정보 설정](#3-사용자-정보-설정-필수)
 - [4. Offerwall](#4-offerwall)
 - [5. RewardedVideo](#5-rewardedvideo)
 - [6. Interstitial](#6-interstitial)
@@ -71,31 +72,33 @@ gem install cocoapods
 - CocoaPods의 Xcode Project내에 Podfile에서 기술
 ```ruby
 # source 'https://github.com/CocoaPods/Specs.git' // 제한망 or install error시 추가
-platform :ios, '12.0'
+platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '4.2.0'
-    pod 'AdiscopeAdEvent', '4.2.0'
-    pod 'AdiscopeMediaAdManager', '4.2.0'
-    pod 'AdiscopeMediaAdMob', '4.2.0'
-    pod 'AdiscopeMediaChartBoost', '4.2.0'
-    pod 'AdiscopeMediaPangle', '4.2.0'
-    pod 'AdiscopeMediaVungle', '4.2.0'
-    pod 'AdiscopeMediaMax', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterAdManager', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterAdMob', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterAmazon', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterBidMachine', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterDTExchange', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterFan', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterInMobi', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterMobVista', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterMoloco', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterOgury', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterPangle', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterUnityAds', '4.2.0'
-    pod 'AdiscopeMediaMaxAdapterVungle', '4.2.0'
+    pod 'Adiscope', '4.3.0'
+    pod 'AdiscopeAdEvent', '4.3.0'
+    pod 'AdiscopeMediaAdManager', '4.3.0'
+    pod 'AdiscopeMediaAdMob', '4.3.0'
+    pod 'AdiscopeMediaChartBoost', '4.3.0'
+    pod 'AdiscopeMediaPangle', '4.3.0'
+    pod 'AdiscopeMediaVungle', '4.3.0'
+    pod 'AdiscopeMediaMax', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterAdManager', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterAdMob', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterAmazon', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterBidMachine', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterChartBoost', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterDTExchange', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterFan', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterInMobi', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterIronSource', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterMobVista', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterMoloco', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterOgury', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterPangle', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterUnityAds', '4.3.0'
+    pod 'AdiscopeMediaMaxAdapterVungle', '4.3.0'
 end
 ```
 - Version이 상이할 경우 Initialize시 Log를 통해 확인 가능<br/>
@@ -162,15 +165,7 @@ pod install --repo-update
 ```
 <br/><br/><br/>
 
-### 2. Build Settings 확인
-#### A. Max의 Meta(Fan) 사용 시 확인 사항
-- iOS 버전 12.2 이하에서 Swift를 지원하려면
-  - Xcode 프로젝트의 주요 대상에서 파일 > 빌드 설정을 선택
-  - Always Embed Swift Standard Libraries를 YES 로 변경<br/>
-![Image](https://github.com/user-attachments/assets/13aa9be9-30d7-419d-ad32-84bfa1d7f962)
-<br/><br/><br/>
-
-### 3. AppDelegate 추가
+### 2. AppDelegate 추가
 #### A. Max의 InMobi 사용 시 추가
 - window 추가
 ```swift
