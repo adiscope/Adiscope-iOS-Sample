@@ -1,7 +1,7 @@
 # Adiscope for iOS Integration
 
 ## SDK Download
-- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.4.0/AdiscopeIosSdk-4.4.0.zip)
+- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/AdiscopeIosSdk-5.0.0.zip)
   - Releases에 이전 버전 다운로드 가능 ([이동](../../releases))
 
 ## Requirements
@@ -22,21 +22,21 @@ Framework를 Project내에 옮깁니다. Adiscope.xcframework는 필수이며, �
 | AdiscopeMediaPangle                | NO        | PAGAdSDK.xcframework, PAGAdSDK.bundle  |
 | AdiscopeMediaVungle                | NO        | VungleAdsSDK.xcframework  |
 | AdiscopeMediaMax                   | NO        | AppLovinSDK.xcframework  |
-| AdiscopeMediaMaxAdapterAdManager   | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
-| AdiscopeMediaMaxAdapterAdMob       | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
-| AdiscopeMediaMaxAdapterAmazon      | NO        | DTBiOSSDK.xcframework  |
-| AdiscopeMediaMaxAdapterBidMachine  | NO        | BidMachine.xcframework, StackModules.xcframework<br/>StackProductPresentation.xcframework, StackRendering.xcframework<br/>OMSDK_Appodeal.xcframework  |
-| AdiscopeMediaMaxAdapterChartBoost  | NO        | ChartboostSDK.xcframework  |
+| AdiscopeMediaMaxAdapterAdManager   | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework<br/>AppLovinMediationGoogleAdManagerAdapter.xcframework  |
+| AdiscopeMediaMaxAdapterAdMob       | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework<br/>AppLovinMediationGoogleAdapter.xcframework  |
+| AdiscopeMediaMaxAdapterAmazon      | NO        | DTBiOSSDK.xcframework, AppLovinMediationAmazonAdMarketplaceAdapter.xcframework  |
+| AdiscopeMediaMaxAdapterBidMachine  | NO        | BidMachine.xcframework, StackModules.xcframework<br/>StackProductPresentation.xcframework, StackRendering.xcframework<br/>OMSDK_Appodeal.xcframework, AppLovinMediationBidMachineAdapter.xcframework  |
+| AdiscopeMediaMaxAdapterChartBoost  | NO        | ChartboostSDK.xcframework, AppLovinMediationChartboostAdapter.xcframework  |
 | AdiscopeMediaMaxAdapterDTExchange  | NO        | IASDKCore.xcframework  |
 | AdiscopeMediaMaxAdapterFan         | NO        | FBAudienceNetwork.xcframework  |
 | AdiscopeMediaMaxAdapterInMobi      | NO        | InMobiSDK.xcframework  |
-| AdiscopeMediaMaxAdapterIronSource  | NO        | IronSource.xcframework  |
+| AdiscopeMediaMaxAdapterIronSource  | NO        | IronSource.xcframework, AppLovinMediationIronSourceAdapter.xcframework  |
 | AdiscopeMediaMaxAdapterMobVista    | NO        | MTGSDK.xcframework, MTGSDKBanner.xcframework<br/>MTGSDKBidding.xcframework,MTGSDKInterstitialVideo.xcframework<br/>MTGSDKNewInterstitial.xcframework, MTGSDKReward.xcframework<br/>MTGSDKSplash.xcframework  |
-| AdiscopeMediaMaxAdapterMoloco      | NO        | MolocoSDK.xcframework  |
-| AdiscopeMediaMaxAdapterOgury       | NO        | OguryAds.xcframework, OguryCore.xcframework<br/>OgurySdk.xcframework, OMSDK_Ogury.xcframework  |
-| AdiscopeMediaMaxAdapterPangle      | NO        | PAGAdSDK.xcframework, PAGAdSDK.bundle  |
-| AdiscopeMediaMaxAdapterUnityAds    | NO        | UnityAds.xcframework  |
-| AdiscopeMediaMaxAdapterVungle      | NO        | VungleAdsSDK.xcframework  |
+| AdiscopeMediaMaxAdapterMoloco      | NO        | MolocoSDK.xcframework, AppLovinMediationMolocoAdapter.xcframework  |
+| AdiscopeMediaMaxAdapterOgury       | NO        | OguryAds.xcframework, OguryCore.xcframework<br/>OgurySdk.xcframework, OMSDK_Ogury.xcframework<br/>AppLovinMediationOguryPresageAdapter.xcframework  |
+| AdiscopeMediaMaxAdapterPangle      | NO        | PAGAdSDK.xcframework, PAGAdSDK.bundle<br/>AppLovinMediationByteDanceAdapter.xcframework  |
+| AdiscopeMediaMaxAdapterUnityAds    | NO        | UnityAds.xcframework, AppLovinMediationUnityAdsAdapter.xcframework  |
+| AdiscopeMediaMaxAdapterVungle      | NO        | VungleAdsSDK.xcframework, AppLovinMediationVungleAdapter.xcframework  |
 
 
 

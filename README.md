@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-4.4.0-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-4.4.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-4.4.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-4.4.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-4.4.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-5.0.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-5.0.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-5.0.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.0.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.0.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +**
 <details>
@@ -12,21 +12,21 @@
 
 | Ad Network          | iOS Version |
 |---------------------|-------------|
-| AdMob               | 12.2.0      |
-| Amazon              | 5.1.0       |
-| AppLovin            | 13.1.0      |
-| BidMachine          | 3.2.1       |
-| Chartboost          | 9.8.1       |
-| DT Exchange         | 8.3.5       |
-| InMobi              | 10.8.2      |
-| ironSource	      | 8.8.0.0     |
-| Liftoff(Vungle)     | 7.4.4       |
-| Meta(Fan)           | 6.17.1      |
-| Mintegral(Mobvista) | 7.7.7       |
-| Moloco              | 3.7.2       |
-| Ogury               | 5.0.2       |
-| Pangle              | 6.5.0.9     |
-| Unity Ads           | 4.14.0      |
+| AdMob               | 12.11.0     |
+| Amazon              | 5.3.1       |
+| AppLovin            | 13.4.0      |
+| BidMachine          | 3.4.0       |
+| Chartboost          | 9.9.2       |
+| DT Exchange         | 8.3.8       |
+| InMobi              | 10.8.6      |
+| ironSource	      | 8.10.0.0    |
+| Liftoff(Vungle)     | 7.5.2       |
+| Meta(Fan)           | 6.20.1      |
+| Mintegral(Mobvista) | 7.7.9       |
+| Moloco              | 3.12.1      |
+| Ogury               | 5.1.1       |
+| Pangle              | 7.4.1.1     |
+| Unity Ads           | 4.16.1      |
 
 </div>
 </details>
@@ -49,7 +49,6 @@
 - [5. RewardedVideo](#5-rewardedvideo)
 - [6. Interstitial](#6-interstitial)
 - [7. RewardedInterstitial](#7-rewardedinterstitial)
-- [8. AdEvent](#8-adevent)
 #### [Adiscope Error Information](./api_documentation.md#model)
 #### [Adiscope Server 연동하기](./reward_callback_info.md)
 #### [iOS 16+ Offerwall 세로 모드 전환 적용 방법(가로모드 전용일 경우)](./apple_orientations.md)
@@ -76,31 +75,44 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '4.4.0'
-    pod 'AdiscopeAdEvent', '4.3.0'
-    pod 'AdiscopeMediaAdManager', '4.3.0'
-    pod 'AdiscopeMediaAdMob', '4.3.0'
-    pod 'AdiscopeMediaChartBoost', '4.3.0'
-    pod 'AdiscopeMediaPangle', '4.3.0'
-    pod 'AdiscopeMediaVungle', '4.3.0'
-    pod 'AdiscopeMediaMax', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterAdManager', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterAdMob', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterAmazon', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterBidMachine', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterChartBoost', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterDTExchange', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterFan', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterInMobi', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterIronSource', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterMobVista', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterMoloco', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterOgury', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterPangle', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterUnityAds', '4.3.0'
-    pod 'AdiscopeMediaMaxAdapterVungle', '4.3.0'
+    pod 'Adiscope', '5.0.0'
 end
 ```
+<details>
+<summary>네트워크 선택 추가 방법</summary>
+<div markdown="1">  
+
+```ruby
+# source 'https://github.com/CocoaPods/Specs.git' // 제한망 or install error시 추가
+platform :ios, '13.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'Adiscope/AdManager', '5.0.0'
+    pod 'Adiscope/AdMob', '5.0.0'
+    pod 'Adiscope/ChartBoost', '5.0.0'
+    pod 'Adiscope/Pangle', '5.0.0'
+    pod 'Adiscope/Vungle', '5.0.0'
+    pod 'Adiscope/MaxMediaAdManager', '5.0.0'
+    pod 'Adiscope/MaxMediaAdMob', '5.0.0'
+    pod 'Adiscope/MaxMediaAmazon', '5.0.0'
+    pod 'Adiscope/MaxMediaChartBoost', '5.0.0'
+    pod 'Adiscope/MaxMediaDTExchange', '5.0.0'
+    pod 'Adiscope/MaxMediaFan', '5.0.0'
+    pod 'Adiscope/MaxMediaInMobi', '5.0.0'
+    pod 'Adiscope/MaxMediaIronSource', '5.0.0'
+    pod 'Adiscope/MaxMediaMobVista', '5.0.0'
+    pod 'Adiscope/MaxMediaMoloco', '5.0.0'
+    pod 'Adiscope/MaxMediaOgury', '5.0.0'
+    pod 'Adiscope/MaxMediaPangle', '5.0.0'
+    pod 'Adiscope/MaxMediaUnityAds', '5.0.0'
+    pod 'Adiscope/MaxMediaVungle', '5.0.0'
+end
+```
+
+</div>
+</details>
+
 - Version이 상이할 경우 Initialize시 Log를 통해 확인 가능<br/>
 ![AdapterChecked](https://github.com/user-attachments/assets/c0c4e33f-d535-45fb-8115-115e57c70522)<br/>
 <br/>
@@ -330,7 +342,51 @@ if (AdiscopeInterface.sharedInstance().isLoaded(UNIT_ID)) {
     - Load를 한 후 Show를 하고, 광고를 Show한 후에는 다시 Load를 하여 다음번 Show를 준비
 <br/>
 
-### D. Callback Reward
+### D. Show With Load
+```swift
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    let UNIT_ID = "";      // 관리자를 통해 발급
+	AdiscopeInterface.sharedInstance().show(withLoad: UNIT_ID, delegate: self)
+} else {
+    // Initialize 재시도
+}
+```
+- A(Load), C(Show)를 한번에 호출 하여 광고를 보여줌
+- `setMainDelegate(_:)`추가 호출 없이 한번에 추가 되도록 처리
+- A(Load), C(Show)와 동일하게 호출 되며, `onRewardedVideoAdFailedToLoad` 대신 `onRewardedVideoAdFailedToShow`로 호출됨
+- 기본적으로 Load동안 기본 Indicator가 동작, 오류시 기본 알림 팝업 발생
+<details>
+<summary>기본 설정 변경</summary>
+<div markdown="1">  
+
+가. Indicator가 동작되는 Background Color 설정
+```swift
+let red = "0"		// 0 ~255 String 값
+let green = "0"		// 0 ~255 String 값
+let blue = "0"		// 0 ~255 String 값
+let alpha = "0.3"	// 0 ~ 1 String 값
+AdiscopeInterface.sharedInstance().setShowWithLoad2BackgroundColor(red, green: green, blue: blue, alpha: alpha)
+```
+
+나. Indicator의 크기 변경 및 Hidden 설정
+```swift
+let isStyleMedium = false	// true : StyleMedium, false : StyleLarge
+let isHidden = false		// true : 미노출, false : 노출
+AdiscopeInterface.sharedInstance().setShowWithLoad2IndicatorStyleMedium(isStyleMedium, isHidden: isHidden)
+```
+
+다. Error Alert 메시지 설정 및 Hidden 설정
+```swift
+let msg = "현재 시청 가능한 광고가 없습니다.\n잠시 후 다시 시도해 주세요."
+let isHidden = false		// true : 미노출, false : 노출
+AdiscopeInterface.sharedInstance().setShowWithLoad2ErrorAlertMsg(alertMsgLoadingView.value, isHidden: self.loadingAlertHidden)
+```
+
+</div>
+</details>
+<br/>
+
+### E. Callback Reward
 ```swift
 func onRewarded(_ unitID: String!, item: AdiscopeRewardItem!) {
     // unitID - 해당 rewardedvideo의 UNIT_ID (Show 시 입력한 값)
@@ -346,7 +402,7 @@ func onRewarded(_ unitID: String!, item: AdiscopeRewardItem!) {
   - 이때는 Server를 통해 전달받은 정보를 기준으로 처리하고, `onRewarded`를 통해 전달받은 정보는 검증용으로 사용하거나 무시하도록 함
 <br/>
 
-### E. Callback Others
+### F. Callback Others
 ```swift
 func onRewardedVideoAdLoaded(_ unitID: String!) {
     // RewardedVideo Load Success
@@ -414,12 +470,56 @@ if (AdiscopeInterface.sharedInstance().isLoadedInterstitialUnitID(UNIT_ID)) {
 - 마지막으로 Load된 광고를 사용자에게 보여줌
 - Show 호출 후에는 다시 Load를 호출 할 수 있음
 - Show method는 중복하여 호출 할 수 없음
-- Show가 실행되면 (return값이 True일 경우) `onInterstitialAdLoaded`와 `onInterstitialAdFailedToLoad` 중 하나가 항상 호출되고, `onInterstitialAdOpened`가 호출되었다면 이후 `onInterstitialAdClosed`가 항상 호출
+- Show가 실행되면 (return값이 True일 경우) `onInterstitialAdOpened`와 `onInterstitialAdFailedToShow` 중 하나가 항상 호출되고, `onInterstitialAdOpened`가 호출되었다면 이후 `onInterstitialAdClosed`가 항상 호출
 - Rewarded Video Ad의 `Load`와 `Show`는 pair로 호출
     - Load를 한 후 Show를 하고, 광고를 Show한 후에는 다시 Load를 하여 다음번 Show를 준비
 <br/>
 
-### D. Callback
+### D. Show With Load
+```swift
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    let UNIT_ID = "";      // 관리자를 통해 발급
+	AdiscopeInterface.sharedInstance().show(withLoadInterstitial: UNIT_ID, delegate: self)
+} else {
+    // Initialize 재시도
+}
+```
+- A(Load), C(Show)를 한번에 호출 하여 광고를 보여줌
+- `setMainDelegate(_:)`추가 호출 없이 한번에 추가 되도록 처리
+- A(Load), C(Show)와 동일하게 호출 되며, `onInterstitialAdFailedToLoad` 대신 `onInterstitialAdFailedToShow`로 호출됨
+- 기본적으로 Load동안 기본 Indicator가 동작, 오류시 기본 알림 팝업 발생
+<details>
+<summary>기본 설정 변경</summary>
+<div markdown="1">  
+
+가. Indicator가 동작되는 Background Color 설정
+```swift
+let red = "0"		// 0 ~255 String 값
+let green = "0"		// 0 ~255 String 값
+let blue = "0"		// 0 ~255 String 값
+let alpha = "0.3"	// 0 ~ 1 String 값
+AdiscopeInterface.sharedInstance().setShowWithLoad2BackgroundColor(red, green: green, blue: blue, alpha: alpha)
+```
+
+나. Indicator의 크기 변경 및 Hidden 설정
+```swift
+let isStyleMedium = false	// true : StyleMedium, false : StyleLarge
+let isHidden = false		// true : 미노출, false : 노출
+AdiscopeInterface.sharedInstance().setShowWithLoad2IndicatorStyleMedium(isStyleMedium, isHidden: isHidden)
+```
+
+다. Error Alert 메시지 설정 및 Hidden 설정
+```swift
+let msg = "현재 시청 가능한 광고가 없습니다.\n잠시 후 다시 시도해 주세요."
+let isHidden = false		// true : 미노출, false : 노출
+AdiscopeInterface.sharedInstance().setShowWithLoad2ErrorAlertMsg(alertMsgLoadingView.value, isHidden: self.loadingAlertHidden)
+```
+
+</div>
+</details>
+<br/>
+
+### E. Callback
 ```swift
 func onInterstitialAdLoaded(_ unitID: String!) {
     // Interstitial Load Success
@@ -529,36 +629,6 @@ func onRewardedInterstitialAdFailed(toShow unitID: String!, error: AdiscopeError
 - Show 성공 후 Skip 시 `onRewardedInterstitialAdSkip`가 호출
 - Show 성공 후 영상 시청 시 `onRewardedInterstitialAdOpened`, `onRewardedInterstitialAdClosed`가 순차적으로 호출되고, 실패 시 `onRewardedInterstitialAdFailedToShow`가 호출
 - `onRewardedInterstitialAdFailedToShow`시 [AdiscopeError 참고](./api_documentation.md#model)
-<br/><br/><br/>
-
-## 8. AdEvent
-### A. Show
-```swift
-if (AdiscopeInterface.sharedInstance().isInitialized()) {
-    let ADEVENT_UNIT_ID = "";	// 관리자를 통해 발급
-    AdiscopeInterface.sharedInstance().showAdEvent(ADEVENT_UNIT_ID)
-} else {
-    // Initialize 재시도
-}
-```
-- `Show`가 실행되면 (return값이 True일 경우) `onAdEventOpened`와 `onAdEventFailedToShow` 중 하나가 항상 호출되고, `onAdEventOpened`가 호출되었다면 이후 `onAdEventClosed`가 항상 호출
-<br/>
-
-### B. Callbacks
-```swift
-func onAdEventOpened(_ unitID: String!) {
-    // AdEvent가 열림
-}
-func onAdEventClosed(_ unitID: String!) {
-    // AdEvent가 닫힘
-}
-func onAdEventFailed(toShow unitID: String!, error: AdiscopeError!) {
-    // AdEvent가 Fail
-}
-```
-- `setMainDelegate(_:)`를 진행했다면 다음과 같은 응답을 수신 받을 수 있음
-- Show 성공 시 `onAdEventOpened`, `onAdEventClosed` callback이 순차적으로 호출
-- `onAdEventFailed`시 [AdiscopeError 참고](./api_documentation.md#model)
 <br/><br/><br/>
 
 # Adiscope Error Information

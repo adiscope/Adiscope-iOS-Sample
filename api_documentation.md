@@ -16,8 +16,9 @@
     - getSDKVersion
     - setVolumeOff
     - setVolumeOn
-  - [AdEvent](#adevent)
-    - showAdEvent:unitID
+    - setShowWithLoad2BackgroundColor:red:green:blue:alpha
+    - setShowWithLoad2IndicatorStyleMedium:isMedium:isHidden
+    - setShowWithLoad2ErrorAlertMsg:msg:isHidden
   - [Offerwall](#offerwall)
     - showOfferWall:unitID
     - showOfferWall:unitID:WithFilterTabs
@@ -28,10 +29,12 @@
     - load:unitID
     - isLoaded:unitID
     - show
+    - showWithLoad:unitID
   - [Interstitial](#interstitial)
     - loadInterstitial:unitID
     - isLoadedInterstitialUnitID:unitID
     - showInterstitial
+    - showWithLoad:unitID
   - [RewardedInterstitial](#rewardedinterstitial)
     - preLoadAllRewardedInterstitial  
     - preLoadRewardedInterstitial:unitIDs
