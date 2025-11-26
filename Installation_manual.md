@@ -60,5 +60,5 @@ Framework를 Project내에 옮깁니다. Adiscope.xcframework는 필수이며, �
        - *AdiscopeMediaVungle.xcframework*
        - *VungleSDK.xcframework*
 4. (**Optional**) Max 사용시 Embed & Sign 설정
-   - Xcode Project > General Tab 접근 > Frameworks, Libraries, and Embedded Content 에 AppLovinSDK.xcframework, DTBiOSSDK.xcframework, InMobiSDK.xcframework, MolocoSDK.xcframework, OMSDK_Appodeal.xcframework, OMSDK_Ogury.xcframework 를 추가 후 Embed & Sign 으로 변경
+   - Xcode Project > General Tab 접근 > Frameworks, Libraries, and Embedded Content 에 AppLovinSDK.xcframework, DTBiOSSDK.xcframework, InMobiSDK.xcframework, MolocoSDK.xcframework, OguryAds.xcframework, OguryCore.xcframework, OgurySdk.xcframework, OMSDK_Appodeal.xcframework, OMSDK_Ogury.xcframework 를 추가 후 Embed & Sign 으로 변경
    - Xcode Project > General Tab 접근 > Frameworks, Libraries, and Embedded Content 에 libbz2.tbd, libc++.tbd, libc++abi.tbd, libiconv.tbd, libresolv.9.tbd, libsqlite3.tbd, libxml2.tbd, libz.tbd 추가
