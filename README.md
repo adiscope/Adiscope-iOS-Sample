@@ -154,6 +154,7 @@ pod install --repo-update
 
 #### C. SKAdNetwork 추가 (필수)
 - Xcode 12.0 이상이면 SKAdNetwork Download File 내용 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.8.0/AdiscopeSkAdNetworks.plist))
+- 2025년 12월 19일에 마지막으로 파일 내용 추가
 ```xml
 <dict>
     <key>SKAdNetworkItems</key>
