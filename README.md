@@ -97,6 +97,7 @@ target '<Your Target Name>' do
     pod 'Adiscope/MaxMediaAdMob', '5.0.0'
     pod 'Adiscope/MaxMediaAmazon', '5.0.0'
     pod 'Adiscope/MaxMediaChartBoost', '5.0.0'
+    pod 'Adiscope/MaxMediaBidMachine', '5.0.0'
     pod 'Adiscope/MaxMediaDTExchange', '5.0.0'
     pod 'Adiscope/MaxMediaFan', '5.0.0'
     pod 'Adiscope/MaxMediaInMobi', '5.0.0'
