@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-5.0.0-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-5.0.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-5.0.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.0.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.0.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-5.0.1-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-5.1.1-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-5.0.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.0.1-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.0.1-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +**
 <details>
@@ -96,6 +96,7 @@ target '<Your Target Name>' do
     pod 'Adiscope/MaxMediaAdManager', '5.0.0'
     pod 'Adiscope/MaxMediaAdMob', '5.0.0'
     pod 'Adiscope/MaxMediaAmazon', '5.0.0'
+    pod 'Adiscope/MaxMediaBidMachine', '5.0.0'
     pod 'Adiscope/MaxMediaChartBoost', '5.0.0'
     pod 'Adiscope/MaxMediaBidMachine', '5.0.0'
     pod 'Adiscope/MaxMediaDTExchange', '5.0.0'
