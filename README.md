@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
 [![GitHub package.json version](https://img.shields.io/badge/iOS-5.0.1-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-5.1.1-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Android-5.1.2-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
 [![GitHub package.json version](https://img.shields.io/badge/Unity-5.0.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
 [![GitHub package.json version](https://img.shields.io/badge/Flutter-5.0.1-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.0.1-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.0.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +**
 <details>
@@ -75,7 +75,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '5.0.0'
+    pod 'Adiscope', '5.0.1'
 end
 ```
 <details>
@@ -88,27 +88,26 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope/AdManager', '5.0.0'
-    pod 'Adiscope/AdMob', '5.0.0'
-    pod 'Adiscope/ChartBoost', '5.0.0'
-    pod 'Adiscope/Pangle', '5.0.0'
-    pod 'Adiscope/Vungle', '5.0.0'
-    pod 'Adiscope/MaxMediaAdManager', '5.0.0'
-    pod 'Adiscope/MaxMediaAdMob', '5.0.0'
-    pod 'Adiscope/MaxMediaAmazon', '5.0.0'
-    pod 'Adiscope/MaxMediaBidMachine', '5.0.0'
-    pod 'Adiscope/MaxMediaChartBoost', '5.0.0'
-    pod 'Adiscope/MaxMediaBidMachine', '5.0.0'
-    pod 'Adiscope/MaxMediaDTExchange', '5.0.0'
-    pod 'Adiscope/MaxMediaFan', '5.0.0'
-    pod 'Adiscope/MaxMediaInMobi', '5.0.0'
-    pod 'Adiscope/MaxMediaIronSource', '5.0.0'
-    pod 'Adiscope/MaxMediaMobVista', '5.0.0'
-    pod 'Adiscope/MaxMediaMoloco', '5.0.0'
-    pod 'Adiscope/MaxMediaOgury', '5.0.0'
-    pod 'Adiscope/MaxMediaPangle', '5.0.0'
-    pod 'Adiscope/MaxMediaUnityAds', '5.0.0'
-    pod 'Adiscope/MaxMediaVungle', '5.0.0'
+    pod 'Adiscope/AdManager', '5.0.1'
+    pod 'Adiscope/AdMob', '5.0.1'
+    pod 'Adiscope/ChartBoost', '5.0.1'
+    pod 'Adiscope/Pangle', '5.0.1'
+    pod 'Adiscope/Vungle', '5.0.1'
+    pod 'Adiscope/MaxMediaAdManager', '5.0.1'
+    pod 'Adiscope/MaxMediaAdMob', '5.0.1'
+    pod 'Adiscope/MaxMediaAmazon', '5.0.1'
+    pod 'Adiscope/MaxMediaBidMachine', '5.0.1'
+    pod 'Adiscope/MaxMediaChartBoost', '5.0.1'
+    pod 'Adiscope/MaxMediaDTExchange', '5.0.1'
+    pod 'Adiscope/MaxMediaFan', '5.0.1'
+    pod 'Adiscope/MaxMediaInMobi', '5.0.1'
+    pod 'Adiscope/MaxMediaIronSource', '5.0.1'
+    pod 'Adiscope/MaxMediaMobVista', '5.0.1'
+    pod 'Adiscope/MaxMediaMoloco', '5.0.1'
+    pod 'Adiscope/MaxMediaOgury', '5.0.1'
+    pod 'Adiscope/MaxMediaPangle', '5.0.1'
+    pod 'Adiscope/MaxMediaUnityAds', '5.0.1'
+    pod 'Adiscope/MaxMediaVungle', '5.0.1'
 end
 ```
 
