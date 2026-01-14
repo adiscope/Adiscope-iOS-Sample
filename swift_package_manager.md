@@ -11,6 +11,39 @@
 1. Xcode에서 File > Add Package Dependencies로 이동
 2. 아래 Adiscope Swift Package Manager GitHub 주소를 입력
 3. 사용할 패키지 버전 선택 후 설치
+<details>
+<summary>Adiscope Versions</summary>
+<div markdown="1">  
+
+| SDK                                 | 5.0.1 | 5.0.0 |
+|-------------------------------------|-------|-------|
+| Adiscope                            | 5.0.1 | 5.0.0 |
+| AdiscopeAdEvent                     | 5.0.0 | 5.0.0 |
+| AdiscopeMediaAdManager              | 5.0.0 | 5.0.0 |
+| AdiscopeMediaAdMob                  | 5.0.0 | 5.0.0 |
+| AdiscopeMediaChartBoost             | 5.0.0 | 5.0.0 |
+| AdiscopeMediaPangle                 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaVungle                 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMax                    | 5.0.1 | 5.0.0 |
+| AdiscopeMediaMaxAdapterAdManager    | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterAdMob        | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterAmazon       | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterBidMachine   | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterChartBoost   | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterDTExchange   | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterFan          | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterInMobi       | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterIronSource   | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterMobVista     | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterMoloco       | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterOgury        | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterPangle       | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterUnityAds     | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterVungle       | 5.0.0 | 5.0.0 |
+
+</div>
+</details>
+
 ```html
 https://github.com/adiscope/Adiscope-SwiftPackageManager.git
 ```
