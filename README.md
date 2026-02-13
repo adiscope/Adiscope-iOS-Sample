@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-5.0.2-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-5.0.3-blue)](../../releases)
 [![GitHub package.json version](https://img.shields.io/badge/Android-5.1.2-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-5.0.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.0.1-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.0.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-5.0.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.0.3-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.0.2-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +**
 <details>
@@ -45,10 +45,11 @@
 - [1. Import](#1-import-필수)
 - [2. Initialize](#2-initialize-필수)
 - [3. 사용자 정보 설정](#3-사용자-정보-설정-필수)
-- [4. Offerwall](#4-offerwall)
+- [4. Lucky Event](#4-lucky-event)
 - [5. RewardedVideo](#5-rewardedvideo)
 - [6. Interstitial](#6-interstitial)
 - [7. RewardedInterstitial](#7-rewardedinterstitial)
+- [8. Offerwall](#8-offerwall)
 #### [Adiscope Error Information](./api_documentation.md#model)
 #### [Adiscope Server 연동하기](./reward_callback_info.md)
 #### [iOS 16+ Offerwall 세로 모드 전환 적용 방법(가로모드 전용일 경우)](./apple_orientations.md)
@@ -75,7 +76,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '5.0.2'
+    pod 'Adiscope', '5.0.3'
 end
 ```
 <details>
@@ -88,26 +89,27 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope/AdManager', '5.0.2'
-    pod 'Adiscope/AdMob', '5.0.2'
-    pod 'Adiscope/ChartBoost', '5.0.2'
-    pod 'Adiscope/Pangle', '5.0.2'
-    pod 'Adiscope/Vungle', '5.0.2'
-    pod 'Adiscope/MaxMediaAdManager', '5.0.2'
-    pod 'Adiscope/MaxMediaAdMob', '5.0.2'
-    pod 'Adiscope/MaxMediaAmazon', '5.0.2'
-    pod 'Adiscope/MaxMediaBidMachine', '5.0.2'
-    pod 'Adiscope/MaxMediaChartBoost', '5.0.2'
-    pod 'Adiscope/MaxMediaDTExchange', '5.0.2'
-    pod 'Adiscope/MaxMediaFan', '5.0.2'
-    pod 'Adiscope/MaxMediaInMobi', '5.0.2'
-    pod 'Adiscope/MaxMediaIronSource', '5.0.2'
-    pod 'Adiscope/MaxMediaMobVista', '5.0.2'
-    pod 'Adiscope/MaxMediaMoloco', '5.0.2'
-    pod 'Adiscope/MaxMediaOgury', '5.0.2'
-    pod 'Adiscope/MaxMediaPangle', '5.0.2'
-    pod 'Adiscope/MaxMediaUnityAds', '5.0.2'
-    pod 'Adiscope/MaxMediaVungle', '5.0.2'
+    pod 'Adiscope/LuckyEvent', '5.0.3'
+    pod 'Adiscope/AdManager', '5.0.3'
+    pod 'Adiscope/AdMob', '5.0.3'
+    pod 'Adiscope/ChartBoost', '5.0.3'
+    pod 'Adiscope/Pangle', '5.0.3'
+    pod 'Adiscope/Vungle', '5.0.3'
+    pod 'Adiscope/MaxMediaAdManager', '5.0.3'
+    pod 'Adiscope/MaxMediaAdMob', '5.0.3'
+    pod 'Adiscope/MaxMediaAmazon', '5.0.3'
+    pod 'Adiscope/MaxMediaBidMachine', '5.0.3'
+    pod 'Adiscope/MaxMediaChartBoost', '5.0.3'
+    pod 'Adiscope/MaxMediaDTExchange', '5.0.3'
+    pod 'Adiscope/MaxMediaFan', '5.0.3'
+    pod 'Adiscope/MaxMediaInMobi', '5.0.3'
+    pod 'Adiscope/MaxMediaIronSource', '5.0.3'
+    pod 'Adiscope/MaxMediaMobVista', '5.0.3'
+    pod 'Adiscope/MaxMediaMoloco', '5.0.3'
+    pod 'Adiscope/MaxMediaOgury', '5.0.3'
+    pod 'Adiscope/MaxMediaPangle', '5.0.3'
+    pod 'Adiscope/MaxMediaUnityAds', '5.0.3'
+    pod 'Adiscope/MaxMediaVungle', '5.0.3'
 end
 ```
 
@@ -243,51 +245,25 @@ func onInitialized(_ isSuccess: Bool) {
 - `Offerwall`, `RewardedVideo`, `RewardedInterstitial`를 사용하기 위해 ${\color{red}필수}$ 설정
 ```swift
 let USER_ID = "";        // set unique user id to identify the user in reward information
-AdiscopeInterface.sharedInstance().SetUserId(USER_ID);
+AdiscopeInterface.sharedInstance().setUserId(USER_ID);
 ```
 - 64자까지 설정 가능    
 <br/><br/><br/>
 
-## 4. Offerwall
-### A. Show
+## 4. Lucky Event
+### A. Settings
 ```swift
-if (AdiscopeInterface.sharedInstance().isInitialized()) {
-    let OFFERWALL_UNIT_ID = "";      // 관리자를 통해 발급
-    AdiscopeInterface.sharedInstance().showOfferwall(OFFERWALL_UNIT_ID)
-} else {
-    // Initialize 재시도
-}
+let EVENT_APP_ID = "";		// 관리자를 통해 발급
+let EVENT_PUB_ID = "";		// 관리자를 통해 발급
+AdiscopeInterface.sharedInstance().setLuckyEventAppId(EVENT_APP_ID, pubId: EVENT_PUB_ID)
 ```
-- `Show`가 실행되면 (return값이 True일 경우) `onOfferwallAdOpened`와 `onOfferwallAdFailedToShow` 중 하나가 항상 호출되고, `onOfferwallAdOpened`가 호출되었다면 이후 `onOfferwallAdClosed`가 항상 호출
 <br/>
 
-### B. Callbacks
+### B. Show
 ```swift
-func onOfferwallAdOpened(_ unitID: String!) {
-    // Offerwall이 열림
-}
-func onOfferwallAdClosed(_ unitID: String!) {
-    // Offerwall이 닫힘
-}
-func onOfferwallAdFailed(toShow unitID: String!, error: AdiscopeError!) {
-    // Offerwall이 Fail
-}
+AdiscopeInterface.sharedInstance().showLuckyEvent()
 ```
-- `setMainDelegate(_:)`를 진행했다면 다음과 같은 응답을 수신 받을 수 있음
-- Show 성공 시 `onOfferwallAdOpened`, `onOfferwallAdClosed` callback이 순차적으로 호출
-- `onOfferwallAdFailed`시 [AdiscopeError 참고](./api_documentation.md#model)
-<br/>
-
-### C. Offerwall 특정 아이템 상세 페이지 이동
-```swift
-let OFFERWALL_UNIT_ID = "";      // 관리자를 통해 발급
-let OFFERWALL_ITEM_ID = "";      // 관리자를 통해 확인
-let OFFERWALL_URL = "";          // 관리자를 통해 확인
-AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_UNIT_ID, OFFERWALL_ITEM_ID)
-AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_URL)
-```
-- [기타 옵션](./api_documentation.md#offerwall)
-<br/>
+- [사용자 정보 설정](#3-사용자-정보-설정-필수)의 진행 완료 후 Show 호출
 <br/><br/><br/>
 
 ## 5. RewardedVideo
@@ -631,6 +607,47 @@ func onRewardedInterstitialAdFailed(toShow unitID: String!, error: AdiscopeError
 - Show 성공 후 Skip 시 `onRewardedInterstitialAdSkip`가 호출
 - Show 성공 후 영상 시청 시 `onRewardedInterstitialAdOpened`, `onRewardedInterstitialAdClosed`가 순차적으로 호출되고, 실패 시 `onRewardedInterstitialAdFailedToShow`가 호출
 - `onRewardedInterstitialAdFailedToShow`시 [AdiscopeError 참고](./api_documentation.md#model)
+<br/><br/><br/>
+
+## 8. Offerwall
+### A. Show
+```swift
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    let OFFERWALL_UNIT_ID = "";      // 관리자를 통해 발급
+    AdiscopeInterface.sharedInstance().showOfferwall(OFFERWALL_UNIT_ID)
+} else {
+    // Initialize 재시도
+}
+```
+- `Show`가 실행되면 (return값이 True일 경우) `onOfferwallAdOpened`와 `onOfferwallAdFailedToShow` 중 하나가 항상 호출되고, `onOfferwallAdOpened`가 호출되었다면 이후 `onOfferwallAdClosed`가 항상 호출
+<br/>
+
+### B. Callbacks
+```swift
+func onOfferwallAdOpened(_ unitID: String!) {
+    // Offerwall이 열림
+}
+func onOfferwallAdClosed(_ unitID: String!) {
+    // Offerwall이 닫힘
+}
+func onOfferwallAdFailed(toShow unitID: String!, error: AdiscopeError!) {
+    // Offerwall이 Fail
+}
+```
+- `setMainDelegate(_:)`를 진행했다면 다음과 같은 응답을 수신 받을 수 있음
+- Show 성공 시 `onOfferwallAdOpened`, `onOfferwallAdClosed` callback이 순차적으로 호출
+- `onOfferwallAdFailed`시 [AdiscopeError 참고](./api_documentation.md#model)
+<br/>
+
+### C. Offerwall 특정 아이템 상세 페이지 이동
+```swift
+let OFFERWALL_UNIT_ID = "";      // 관리자를 통해 발급
+let OFFERWALL_ITEM_ID = "";      // 관리자를 통해 확인
+let OFFERWALL_URL = "";          // 관리자를 통해 확인
+AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_UNIT_ID, OFFERWALL_ITEM_ID)
+AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_URL)
+```
+- [기타 옵션](./api_documentation.md#offerwall)
 <br/><br/><br/>
 
 # Adiscope Error Information

@@ -1,7 +1,7 @@
 # Adiscope for iOS Integration
 
 ## SDK Download
-- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.2/AdiscopeIosSdk-5.0.2.zip)
+- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.3/AdiscopeIosSdk-5.0.3.zip)
   - Releases에 이전 버전 다운로드 가능 ([이동](../../releases))
 
 ## Requirements
@@ -16,6 +16,7 @@ Framework를 Project내에 옮깁니다. Adiscope.xcframework는 필수이며, �
 | Framework               | Essential | Third-party Frameworks                                       |
 | ---------------------------------- | --------- | ------------------------------------------------------------ |
 | Adiscope                           | YES       |                                                              |
+| AdiscopeLuckyEvent                 | NO        |                                                              |
 | AdiscopeMediaAdMob                 | NO        | (**Essential**)<br/>GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework<br/>(**Optional**)<br/>LiftoffMonetizeAdapter.xcframework, MetaAdapter.xcframework<br/>MintegralAdapter.xcframework, PangleAdapter.xcframework<br/>VungleAdsSDK.xcframework, FBAudiencenetwork.xcframework<br/>MTGSDK.xcframework, MTGSDKBanner.xcframework<br/>MTGSDKBidding.xcframework, MTGSDKInterstitialVideo.xcframework<br/>MTGSDKNewInterstitial.xcframework, MTGSDKReward.xcframework<br/>MTGSDKSplash.xcframework, PAGAdSDK.xcframework<br/>PAGAdSDK.bundle  |
 | AdiscopeMediaAdManager             | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
 | AdiscopeMediaChartBoost            | NO        | ChartboostSDK.xcframework  |
