@@ -30,21 +30,25 @@ https://github.com/adiscope/Adiscope-SwiftPackageManager.git
 | AdiscopeMediaAdMob                  | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaChartBoost             | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaPangle                 | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaTnkPub                 | 5.2.0 |       |       |       |       |
 | AdiscopeMediaVungle                 | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMax                    | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.1 | 5.0.0 |
 | AdiscopeMediaMaxAdapterAdManager    | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterAdMob        | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterAmazon       | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterBidMachine   | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterBigo         | 5.2.0 |       |       |       |       |
 | AdiscopeMediaMaxAdapterChartBoost   | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterDTExchange   | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterFan          | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterInMobi       | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterIronSource   | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterLine         | 5.2.0 |       |       |       |       |
 | AdiscopeMediaMaxAdapterMobVista     | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterMoloco       | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterOgury        | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterPangle       | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterPubMatic     | 5.2.0 |       |       |       |       |
 | AdiscopeMediaMaxAdapterUnityAds     | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 | AdiscopeMediaMaxAdapterVungle       | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 
@@ -73,6 +77,9 @@ https://github.com/adiscope/AdiscopeMediaChartBoost-SwiftPackageManager.git
 https://github.com/adiscope/AdiscopeMediaPangle-SwiftPackageManager.git
 ```
 ```html
+https://github.com/adiscope/AdiscopeMediaTnkPub-SwiftPackageManager.git
+```
+```html
 https://github.com/adiscope/AdiscopeMediaVungle-SwiftPackageManager.git
 ```
 ```html
@@ -91,6 +98,9 @@ https://github.com/adiscope/AdiscopeMediaMaxAdapterAmazon-SwiftPackageManager.gi
 https://github.com/adiscope/AdiscopeMediaMaxAdapterBidMachine-SwiftPackageManager.git
 ```
 ```html
+https://github.com/adiscope/AdiscopeMediaMaxAdapterBigo-SwiftPackageManager.git
+```
+```html
 https://github.com/adiscope/AdiscopeMediaMaxAdapterChartBoost-SwiftPackageManager.git
 ```
 ```html
@@ -106,6 +116,9 @@ https://github.com/adiscope/AdiscopeMediaMaxAdapterInMobi-SwiftPackageManager.gi
 https://github.com/adiscope/AdiscopeMediaMaxAdapterIronSource-SwiftPackageManager.git
 ```
 ```html
+https://github.com/adiscope/AdiscopeMediaMaxAdapterLine-SwiftPackageManager.git
+```
+```html
 https://github.com/adiscope/AdiscopeMediaMaxAdapterMobVista-SwiftPackageManager.git
 ```
 ```html
@@ -116,6 +129,9 @@ https://github.com/adiscope/AdiscopeMediaMaxAdapterOgury-SwiftPackageManager.git
 ```
 ```html
 https://github.com/adiscope/AdiscopeMediaMaxAdapterPangle-SwiftPackageManager.git
+```
+```html
+https://github.com/adiscope/AdiscopeMediaMaxAdapterPubMatic-SwiftPackageManager.git
 ```
 ```html
 https://github.com/adiscope/AdiscopeMediaMaxAdapterUnityAds-SwiftPackageManager.git
