@@ -10,43 +10,53 @@
 ## Installation
 1. Xcode에서 File > Add Package Dependencies로 이동
 2. 아래 Adiscope Swift Package Manager GitHub 주소를 입력
-3. 사용할 패키지 버전 선택 후 설치
+3. Adisscope 모두 설치 (5.2.0부터)
+```html
+https://github.com/adiscope/Adiscope-SwiftPackageManager.git
+```
+<br/>
+
+4. 사용할 패키지 버전 선택 후 설치 (3번 설치 했으면 무시)
 <details>
 <summary>Adiscope Versions</summary>
 <div markdown="1">  
 
-| SDK                                 | 5.0.3 | 5.0.2 | 5.0.1 | 5.0.0 |
-|-------------------------------------|-------|-------|-------|-------|
-| Adiscope                            | 5.0.3 | 5.0.2 | 5.0.1 | 5.0.0 |
-| AdiscopeLuckyEvent                  | 5.0.3 |       |       |       |
-| AdiscopeMediaAdManager              | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaAdMob                  | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaChartBoost             | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaPangle                 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaVungle                 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMax                    | 5.0.2 | 5.0.2 | 5.0.1 | 5.0.0 |
-| AdiscopeMediaMaxAdapterAdManager    | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterAdMob        | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterAmazon       | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterBidMachine   | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterChartBoost   | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterDTExchange   | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterFan          | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterInMobi       | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterIronSource   | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterMobVista     | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterMoloco       | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterOgury        | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterPangle       | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterUnityAds     | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
-| AdiscopeMediaMaxAdapterVungle       | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| SDK                                 | 5.2.0 | 5.0.3 | 5.0.2 | 5.0.1 | 5.0.0 |
+|-------------------------------------|-------|-------|-------|-------|-------|
+| Adiscope                            | 5.2.0 | 5.0.3 | 5.0.2 | 5.0.1 | 5.0.0 |
+| AdiscopeCore                        | 5.2.0 |       |       |       |       |
+| AdiscopeLuckyEvent                  | 5.2.0 | 5.0.3 |       |       |       |
+| AdiscopeMediaAdManager              | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaAdMob                  | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaChartBoost             | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaPangle                 | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaVungle                 | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMax                    | 5.2.0 | 5.0.2 | 5.0.2 | 5.0.1 | 5.0.0 |
+| AdiscopeMediaMaxAdapterAdManager    | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterAdMob        | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterAmazon       | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterBidMachine   | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterChartBoost   | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterDTExchange   | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterFan          | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterInMobi       | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterIronSource   | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterMobVista     | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterMoloco       | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterOgury        | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterPangle       | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterUnityAds     | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
+| AdiscopeMediaMaxAdapterVungle       | 5.2.0 | 5.0.2 | 5.0.0 | 5.0.0 | 5.0.0 |
 
 </div>
 </details>
 
+#### 필수
 ```html
-https://github.com/adiscope/Adiscope-SwiftPackageManager.git
+https://github.com/adiscope/AdiscopeCore-SwiftPackageManager.git
 ```
+
+#### 선택
 ```html
 https://github.com/adiscope/AdiscopeLuckyEvent-SwiftPackageManager.git
 ```

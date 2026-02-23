@@ -1,32 +1,36 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-5.0.3-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-5.1.2-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-5.0.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.0.3-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.0.2-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-5.2.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-5.2.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-5.2.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.2.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.2.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +**
 <details>
 <summary>Networks Version</summary>
 <div markdown="1">  
 
-| Ad Network          | iOS Version |
-|---------------------|-------------|
-| AdMob               | 12.11.0     |
-| Amazon              | 5.3.1       |
-| AppLovin            | 13.4.0      |
-| BidMachine          | 3.4.0       |
-| Chartboost          | 9.9.2       |
-| DT Exchange         | 8.3.8       |
-| InMobi              | 10.8.6      |
-| ironSource	      | 8.10.0.0    |
-| Liftoff(Vungle)     | 7.5.2       |
-| Meta(Fan)           | 6.20.1      |
-| Mintegral(Mobvista) | 7.7.9       |
-| Moloco              | 3.12.1      |
-| Ogury               | 5.1.1       |
-| Pangle              | 7.4.1.1     |
-| Unity Ads           | 4.16.1      |
+| Ad Network          | iOS Version  |
+|---------------------|--------------|
+| AdMob               | 12.14.0      |
+| Amazon              | 5.3.3        |
+| AppLovin            | 13.5.1       |
+| BidMachine          | 3.5.1        |
+| Bigo                | 5.0.0        |
+| Chartboost          | 9.11.0       |
+| DT Exchange         | 8.4.3        |
+| InMobi              | 11.0.0       |
+| ironSource	      | 9.2.0.0      |
+| Liftoff(Vungle)     | 7.6.3        |
+| Line                | 2.9.20251119 |
+| Meta(Fan)           | 6.20.1       |
+| Mintegral(Mobvista) | 8.0.4        |
+| Moloco              | 4.2.0        |
+| Ogury               | 5.1.1        |
+| Pangle              | 7.8.5.5      |
+| PubMatic            | 4.11.0       |
+| TnkPub              | 1.24         |
+| Unity Ads           | 4.16.5       |
 
 </div>
 </details>
@@ -76,11 +80,11 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '5.0.3'
+    pod 'Adiscope', '5.2.0'
 end
 ```
 <details>
-<summary>네트워크 선택 추가 방법</summary>
+<summary>네트워크 개별 선택 추가 방법</summary>
 <div markdown="1">  
 
 ```ruby
@@ -89,27 +93,31 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope/LuckyEvent', '5.0.3'
-    pod 'Adiscope/AdManager', '5.0.3'
-    pod 'Adiscope/AdMob', '5.0.3'
-    pod 'Adiscope/ChartBoost', '5.0.3'
-    pod 'Adiscope/Pangle', '5.0.3'
-    pod 'Adiscope/Vungle', '5.0.3'
-    pod 'Adiscope/MaxMediaAdManager', '5.0.3'
-    pod 'Adiscope/MaxMediaAdMob', '5.0.3'
-    pod 'Adiscope/MaxMediaAmazon', '5.0.3'
-    pod 'Adiscope/MaxMediaBidMachine', '5.0.3'
-    pod 'Adiscope/MaxMediaChartBoost', '5.0.3'
-    pod 'Adiscope/MaxMediaDTExchange', '5.0.3'
-    pod 'Adiscope/MaxMediaFan', '5.0.3'
-    pod 'Adiscope/MaxMediaInMobi', '5.0.3'
-    pod 'Adiscope/MaxMediaIronSource', '5.0.3'
-    pod 'Adiscope/MaxMediaMobVista', '5.0.3'
-    pod 'Adiscope/MaxMediaMoloco', '5.0.3'
-    pod 'Adiscope/MaxMediaOgury', '5.0.3'
-    pod 'Adiscope/MaxMediaPangle', '5.0.3'
-    pod 'Adiscope/MaxMediaUnityAds', '5.0.3'
-    pod 'Adiscope/MaxMediaVungle', '5.0.3'
+    pod 'Adiscope/LuckyEvent', '5.2.0'
+    pod 'Adiscope/AdManager', '5.2.0'
+    pod 'Adiscope/AdMob', '5.2.0'
+    pod 'Adiscope/ChartBoost', '5.2.0'
+    pod 'Adiscope/Pangle', '5.2.0'
+    pod 'Adiscope/TnkPub', '5.2.0'
+    pod 'Adiscope/Vungle', '5.2.0'
+    pod 'Adiscope/MaxMediaAdManager', '5.2.0'
+    pod 'Adiscope/MaxMediaAdMob', '5.2.0'
+    pod 'Adiscope/MaxMediaAmazon', '5.2.0'
+    pod 'Adiscope/MaxMediaBidMachine', '5.2.0'
+    pod 'Adiscope/MaxMediaBigo', '5.2.0'
+    pod 'Adiscope/MaxMediaChartBoost', '5.2.0'
+    pod 'Adiscope/MaxMediaDTExchange', '5.2.0'
+    pod 'Adiscope/MaxMediaFan', '5.2.0'
+    pod 'Adiscope/MaxMediaInMobi', '5.2.0'
+    pod 'Adiscope/MaxMediaIronSource', '5.2.0'
+    pod 'Adiscope/MaxMediaLine', '5.2.0'
+    pod 'Adiscope/MaxMediaMobVista', '5.2.0'
+    pod 'Adiscope/MaxMediaMoloco', '5.2.0'
+    pod 'Adiscope/MaxMediaOgury', '5.2.0'
+    pod 'Adiscope/MaxMediaPangle', '5.2.0'
+    pod 'Adiscope/MaxMediaPubMatic', '5.2.0'
+    pod 'Adiscope/MaxMediaUnityAds', '5.2.0'
+    pod 'Adiscope/MaxMediaVungle', '5.2.0'
 end
 ```
 
@@ -171,7 +179,7 @@ pod install --repo-update
 ```
 <br/>
 
-#### D. Admob, Max의 Admob 사용 시 추가
+#### D. Admob 또는 Max의 Admob 사용 시 추가
 - "GADIsAdManagerApp" 설정 및 GADApplicationIdentifier의 Key 설정
 ```xml
 <key>GADIsAdManagerApp</key>
