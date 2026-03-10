@@ -1,7 +1,7 @@
 # Adiscope for iOS Integration
 [![GitHub package.json version](https://img.shields.io/badge/iOS-5.2.0-blue)](../../releases)
 [![GitHub package.json version](https://img.shields.io/badge/Android-5.2.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-5.2.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-5.2.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
 [![GitHub package.json version](https://img.shields.io/badge/Flutter-5.2.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
 [![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.2.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
@@ -146,7 +146,7 @@ pod install --repo-update
 
 ## Setup Xcode
 ### 1. info.plist 수정
-#### A. AdiscopeMediaId, AdiscopeMediaSecret 추가 (필수)
+#### A. [필수] AdiscopeMediaId, AdiscopeMediaSecret 추가
 ```xml
 <key>AdiscopeMediaId</key>
 <string></string>
@@ -155,7 +155,7 @@ pod install --repo-update
 ```
 <br/>
 
-#### B. App Tracking Permission 추가 (필수)
+#### B. [필수] App Tracking Permission 추가
 ```xml
 <key>NSUserTrackingUsageDescription</key>
 <string></string>
@@ -163,9 +163,9 @@ pod install --repo-update
 - ex : Some ad content may require access to the user tracking.
 <br/>
 
-#### C. SKAdNetwork 추가 (필수)
+#### C. [필수] SKAdNetwork 추가
 - Xcode 12.0 이상이면 SKAdNetwork Download File 내용 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.8.0/AdiscopeSkAdNetworks.plist))
-- 2025년 12월 19일에 마지막으로 파일 내용 추가
+- 2026년 3월 9일에 마지막으로 파일 내용 추가
 ```xml
 <dict>
     <key>SKAdNetworkItems</key>
@@ -179,7 +179,20 @@ pod install --repo-update
 ```
 <br/>
 
-#### D. Admob 또는 Max의 Admob 사용 시 추가
+#### D. (선택) liftoff 사용 시 AdNetworkIdentifiers 추가
+- liftoff 사용하면서 AdAttributionKit 17.4+ 이면 AdNetwork Download File 내용 추가 ([Download](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/3.8.0/AdiscopeAdNetworks.plist))
+- 2026년 3월 9일에 마지막으로 파일 내용 추가
+```xml
+<dict>
+    <key>AdNetworkIdentifiers</key>
+    <array>
+	    <string></string>
+    </array>
+</dict>
+```
+<br/>
+
+#### E. (선택) Admob 또는 Max의 Admob 사용 시 추가
 - "GADIsAdManagerApp" 설정 및 GADApplicationIdentifier의 Key 설정
 ```xml
 <key>GADIsAdManagerApp</key>
