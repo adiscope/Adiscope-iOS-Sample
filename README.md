@@ -1,5 +1,5 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-5.2.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-5.2.2-blue)](../../releases)
 [![GitHub package.json version](https://img.shields.io/badge/Android-5.2.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
 [![GitHub package.json version](https://img.shields.io/badge/Unity-5.2.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
 [![GitHub package.json version](https://img.shields.io/badge/Flutter-5.2.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
@@ -80,7 +80,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '5.2.0'
+    pod 'Adiscope', '5.2.2'
 end
 ```
 <details>
@@ -93,7 +93,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope/LuckyEvent', '5.2.0'
+    pod 'Adiscope/LuckyEvent', '5.2.2'
     pod 'Adiscope/AdManager', '5.2.0'
     pod 'Adiscope/AdMob', '5.2.0'
     pod 'Adiscope/ChartBoost', '5.2.0'
@@ -285,6 +285,20 @@ AdiscopeInterface.sharedInstance().setLuckyEventAppId(EVENT_APP_ID, pubId: EVENT
 AdiscopeInterface.sharedInstance().showLuckyEvent()
 ```
 - [사용자 정보 설정](#3-사용자-정보-설정-필수)의 진행 완료 후 Show 호출
+<br/><br/><br/>
+
+### C. WebView interceptor callback
+```swift
+func adEventWebViewNavigated(_ url:NSURL!) -> Bool{
+    // url -
+    return false
+}
+```
+- `setMainDelegate(_:)`를 진행했다면 다음과 같은 응답을 수신할 수 있습니다.
+- 러키 이벤트 WebView에서 발생하는 모든 URL 정보를 수신하며, 전달된 URL에 대해 웹 프로세스를 계속 진행할지 여부를 결정합니다.
+- **`return true`** 의 경우 인터셉터 콜백에서 **해당 URL을 별도로 처리한 것으로 판단하여 기본 URL 프로세스를 진행하지 않습니다.**
+- 별도 스키마 처리가 필요한 경우에만 (예: `adiscope://custom_host?`) 형태의 이벤트 처리 용도로 사용하시기를 권장합니다.
+- 그 외의 모든 URL 스키마(`http`, `https` 등)는 **반드시 `return false`** 를 반환하여 **WebView의 기본 프로세스가 정상적으로 진행되도록 해야 합니다.**
 <br/><br/><br/>
 
 ## 5. RewardedVideo
