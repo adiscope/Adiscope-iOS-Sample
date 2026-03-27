@@ -5,6 +5,6 @@ target 'Adiscope-iOS-Sample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'Adiscope', '5.2.3'
+  pod 'Adiscope', '5.0.4'
 
 end
