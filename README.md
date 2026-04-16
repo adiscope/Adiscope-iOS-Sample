@@ -263,9 +263,9 @@ func onInitialized(_ isSuccess: Bool) {
 <br/><br/><br/>
 
 ## 3. 사용자 정보 설정 (필수)
-- `Offerwall`, `RewardedVideo`, `RewardedInterstitial`를 사용하기 위해 ${\color{red}필수}$ 설정
+- `Offerwall`, `RewardedVideo`, `Interstitial`, `RewardedInterstitial`를 사용하기 위해 ${\color{red}필수}$ 설정
 <details>
-<summary>Max의 `RewardedVideo`, `RewardedInterstitial`를 사용 시 앱이 4+, 9+ 일 경우</summary>
+<summary>Max의 `RewardedVideo`, `Interstitial`를 사용 하면서 앱이 4+, 9+ 일 경우 설정 방법</summary>
 <div markdown="1">  
 
 ```swift
