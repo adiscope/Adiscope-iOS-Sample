@@ -1,7 +1,7 @@
 # Adiscope for iOS Integration
 
 ## SDK Download
-- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.5/AdiscopeIosSdk-5.2.5.zip)
+- [최신 SDK 다운로드](https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.3.0/AdiscopeIosSdk-5.3.0.zip)
   - Releases에 이전 버전 다운로드 가능 ([이동](../../releases))
 
 ## Requirements

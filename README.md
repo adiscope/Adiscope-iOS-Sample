@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-5.2.5-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-5.2.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-5.2.1-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.2.5-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.2.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-5.3.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-5.3.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-5.3.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.3.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.3.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +**
 <details>
@@ -80,7 +80,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '5.2.5'
+    pod 'Adiscope', '5.3.0'
 end
 ```
 <details>
@@ -93,31 +93,31 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope/LuckyEvent', '5.2.5'
-    pod 'Adiscope/AdManager', '5.2.0'
-    pod 'Adiscope/AdMob', '5.2.4'
-    pod 'Adiscope/ChartBoost', '5.2.0'
-    pod 'Adiscope/Pangle', '5.2.0'
-    pod 'Adiscope/TnkPub', '5.2.0'
-    pod 'Adiscope/Vungle', '5.2.0'
-    pod 'Adiscope/MaxMediaAdManager', '5.2.0'
-    pod 'Adiscope/MaxMediaAdMob', '5.2.0'
-    pod 'Adiscope/MaxMediaAmazon', '5.2.0'
-    pod 'Adiscope/MaxMediaBidMachine', '5.2.0'
-    pod 'Adiscope/MaxMediaBigo', '5.2.0'
-    pod 'Adiscope/MaxMediaChartBoost', '5.2.0'
-    pod 'Adiscope/MaxMediaDTExchange', '5.2.0'
-    pod 'Adiscope/MaxMediaFan', '5.2.0'
-    pod 'Adiscope/MaxMediaInMobi', '5.2.0'
-    pod 'Adiscope/MaxMediaIronSource', '5.2.0'
-    pod 'Adiscope/MaxMediaLine', '5.2.0'
-    pod 'Adiscope/MaxMediaMobVista', '5.2.0'
-    pod 'Adiscope/MaxMediaMoloco', '5.2.0'
-    pod 'Adiscope/MaxMediaOgury', '5.2.0'
-    pod 'Adiscope/MaxMediaPangle', '5.2.0'
-    pod 'Adiscope/MaxMediaPubMatic', '5.2.0'
-    pod 'Adiscope/MaxMediaUnityAds', '5.2.0'
-    pod 'Adiscope/MaxMediaVungle', '5.2.0'
+    pod 'Adiscope/LuckyEvent', '5.3.0'
+    pod 'Adiscope/AdManager', '5.3.0'
+    pod 'Adiscope/AdMob', '5.3.0'
+    pod 'Adiscope/ChartBoost', '5.3.0'
+    pod 'Adiscope/Pangle', '5.3.0'
+    pod 'Adiscope/TnkPub', '5.3.0'
+    pod 'Adiscope/Vungle', '5.3.0'
+    pod 'Adiscope/MaxMediaAdManager', '5.3.0'
+    pod 'Adiscope/MaxMediaAdMob', '5.3.0'
+    pod 'Adiscope/MaxMediaAmazon', '5.3.0'
+    pod 'Adiscope/MaxMediaBidMachine', '5.3.0'
+    pod 'Adiscope/MaxMediaBigo', '5.3.0'
+    pod 'Adiscope/MaxMediaChartBoost', '5.3.0'
+    pod 'Adiscope/MaxMediaDTExchange', '5.3.0'
+    pod 'Adiscope/MaxMediaFan', '5.3.0'
+    pod 'Adiscope/MaxMediaInMobi', '5.3.0'
+    pod 'Adiscope/MaxMediaIronSource', '5.3.0'
+    pod 'Adiscope/MaxMediaLine', '5.3.0'
+    pod 'Adiscope/MaxMediaMobVista', '5.3.0'
+    pod 'Adiscope/MaxMediaMoloco', '5.3.0'
+    pod 'Adiscope/MaxMediaOgury', '5.3.0'
+    pod 'Adiscope/MaxMediaPangle', '5.3.0'
+    pod 'Adiscope/MaxMediaPubMatic', '5.3.0'
+    pod 'Adiscope/MaxMediaUnityAds', '5.3.0'
+    pod 'Adiscope/MaxMediaVungle', '5.3.0'
 end
 ```
 
@@ -264,6 +264,21 @@ func onInitialized(_ isSuccess: Bool) {
 
 ## 3. 사용자 정보 설정 (필수)
 - `Offerwall`, `RewardedVideo`, `RewardedInterstitial`를 사용하기 위해 ${\color{red}필수}$ 설정
+<details>
+<summary>Max의 `RewardedVideo`, `RewardedInterstitial`를 사용 시 앱이 4+, 9+ 일 경우</summary>
+<div markdown="1">  
+
+```swift
+let USER_ID = "";        // set unique user id to identify the user in reward information
+let CHILD = .none;		 // .none(미설정), .child(어린이), .adult(성인)
+AdiscopeInterface.sharedInstance().setUserId(USER_ID, child: .child)
+```
+
+</div>
+</details>
+<br/>
+
+- Max를 미사용 하거나 앱이 13+ 이상으로 설정 되어 있으면 하단만 사용 가능
 ```swift
 let USER_ID = "";        // set unique user id to identify the user in reward information
 AdiscopeInterface.sharedInstance().setUserId(USER_ID);
