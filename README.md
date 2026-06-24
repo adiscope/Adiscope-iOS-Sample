@@ -1,36 +1,35 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-5.2.6-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-5.2.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-5.2.6-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.2.6-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.2.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-5.4.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-5.4.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-5.4.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.4.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.4.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +**
 <details>
 <summary>Networks Version</summary>
 <div markdown="1">  
 
-| Ad Network          | iOS Version  |
-|---------------------|--------------|
-| AdMob               | 12.14.0      |
-| Amazon              | 5.3.3        |
-| AppLovin            | 13.5.1       |
-| BidMachine          | 3.5.1        |
-| Bigo                | 5.0.0        |
-| Chartboost          | 9.11.0       |
-| DT Exchange         | 8.4.3        |
-| InMobi              | 11.0.0       |
-| ironSource	      | 9.2.0.0      |
-| Liftoff(Vungle)     | 7.6.3        |
-| Line                | 2.9.20251119 |
-| Meta(Fan)           | 6.20.1       |
-| Mintegral(Mobvista) | 8.0.4        |
-| Moloco              | 4.2.0        |
-| Ogury               | 5.1.1        |
-| Pangle              | 7.8.5.5      |
-| PubMatic            | 4.11.0       |
-| TnkPub              | 1.24         |
-| Unity Ads           | 4.16.5       |
+| Ad Network          | iOS Version |
+|---------------------|-------------|
+| AdMob               | 13.2.0      |
+| AppLovin            | 13.6.2      |
+| BidMachine          | 3.6.1       |
+| Bigo                | 5.1.2       |
+| Chartboost          | 9.11.0      |
+| DT Exchange         | 8.4.6       |
+| InMobi              | 11.2.0      |
+| ironSource	      | 9.4.0.0     |
+| Liftoff(Vungle)     | 7.7.2       |
+| Line                | 3.0.1       |
+| Meta(Fan)           | 6.21.1      |
+| Mintegral(Mobvista) | 8.1.3       |
+| Moloco              | 4.5.1       |
+| Ogury               | 5.2.1       |
+| Pangle              | 8.0.0.9     |
+| PubMatic            | 5.1.0       |
+| TnkPub              | 1.24        |
+| Unity Ads           | 4.16.5      |
 
 </div>
 </details>
@@ -80,7 +79,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '5.3.1'
+    pod 'Adiscope', '5.4.0'
 end
 ```
 <details>
@@ -93,31 +92,30 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope/LuckyEvent', '5.3.1'
-    pod 'Adiscope/AdManager', '5.3.1'
-    pod 'Adiscope/AdMob', '5.3.1'
-    pod 'Adiscope/ChartBoost', '5.3.1'
-    pod 'Adiscope/Pangle', '5.3.1'
-    pod 'Adiscope/TnkPub', '5.3.1'
-    pod 'Adiscope/Vungle', '5.3.1'
-    pod 'Adiscope/MaxMediaAdManager', '5.3.1'
-    pod 'Adiscope/MaxMediaAdMob', '5.3.1'
-    pod 'Adiscope/MaxMediaAmazon', '5.3.1'
-    pod 'Adiscope/MaxMediaBidMachine', '5.3.1'
-    pod 'Adiscope/MaxMediaBigo', '5.3.1'
-    pod 'Adiscope/MaxMediaChartBoost', '5.3.1'
-    pod 'Adiscope/MaxMediaDTExchange', '5.3.1'
-    pod 'Adiscope/MaxMediaFan', '5.3.1'
-    pod 'Adiscope/MaxMediaInMobi', '5.3.1'
-    pod 'Adiscope/MaxMediaIronSource', '5.3.1'
-    pod 'Adiscope/MaxMediaLine', '5.3.1'
-    pod 'Adiscope/MaxMediaMobVista', '5.3.1'
-    pod 'Adiscope/MaxMediaMoloco', '5.3.1'
-    pod 'Adiscope/MaxMediaOgury', '5.3.1'
-    pod 'Adiscope/MaxMediaPangle', '5.3.1'
-    pod 'Adiscope/MaxMediaPubMatic', '5.3.1'
-    pod 'Adiscope/MaxMediaUnityAds', '5.3.1'
-    pod 'Adiscope/MaxMediaVungle', '5.3.1'
+    pod 'Adiscope/LuckyEvent', '5.3.3'
+    pod 'Adiscope/AdManager', '5.4.0'
+    pod 'Adiscope/AdMob', '5.4.0'
+    pod 'Adiscope/ChartBoost', '5.4.0'
+    pod 'Adiscope/Pangle', '5.4.0'
+    pod 'Adiscope/TnkPub', '5.2.0'
+    pod 'Adiscope/Vungle', '5.4.0'
+    pod 'Adiscope/MaxMediaAdManager', '5.4.0'
+    pod 'Adiscope/MaxMediaAdMob', '5.4.0'
+    pod 'Adiscope/MaxMediaBidMachine', '5.4.0'
+    pod 'Adiscope/MaxMediaBigo', '5.4.0'
+    pod 'Adiscope/MaxMediaChartBoost', '5.4.0'
+    pod 'Adiscope/MaxMediaDTExchange', '5.4.0'
+    pod 'Adiscope/MaxMediaFan', '5.4.0'
+    pod 'Adiscope/MaxMediaInMobi', '5.4.0'
+    pod 'Adiscope/MaxMediaIronSource', '5.4.0'
+    pod 'Adiscope/MaxMediaLine', '5.4.0'
+    pod 'Adiscope/MaxMediaMobVista', '5.4.0'
+    pod 'Adiscope/MaxMediaMoloco', '5.4.0'
+    pod 'Adiscope/MaxMediaOgury', '5.4.0'
+    pod 'Adiscope/MaxMediaPangle', '5.4.0'
+    pod 'Adiscope/MaxMediaPubMatic', '5.4.0'
+    pod 'Adiscope/MaxMediaUnityAds', '5.4.0'
+    pod 'Adiscope/MaxMediaVungle', '5.4.0'
 end
 ```
 
@@ -577,6 +575,7 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
 ```
 - Initialize와 사용자 정보 설정의 진행 완료 후 1회 설정 권장
 - 관리자가 설정된 활성화된 모든 유닛들을 Load 진행
+- PreLoad가 진행되면 `sendOnRewardedInterstitialAdLoaded`와 `sendOnRewardedInterstitialAdFailedToLoad 중 하나가 항상 호출
 <br/>
 
 ### B. Unit 지정 PreLoad
@@ -591,12 +590,49 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
 ```
 - Initialize와 사용자 정보 설정의 진행 완료 후 1회 설정 권장
 - 입력된 유닛들을 Load 진행
+- PreLoad가 진행되면 `sendOnRewardedInterstitialAdLoaded`와 `sendOnRewardedInterstitialAdFailedToLoad 중 하나가 항상 호출
 <br/>
 
-### C. Show
+### C. Load
+```swift
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    let UNIT_ID = "";       // 관리자를 통해 발급
+    AdiscopeInterface.sharedInstance().loadRewardedInterstitial(UNIT_ID)
+} else {
+    // Initialize 재시도
+}
+```
+- Initialize와 사용자 정보 설정의 진행 완료 후 1회 설정 권장
+- 입력된 유닛을 Load 진행
+- Load가 진행되면 `sendOnRewardedInterstitialAdLoaded`와 `sendOnRewardedInterstitialAdFailedToLoad 중 하나가 항상 호출
+<br/>
+
+### D. isLoad
+```swift
+if (AdiscopeInterface.sharedInstance().isInitialized()) {
+    let UNIT_ID = "";       // 관리자를 통해 발급
+    AdiscopeInterface.sharedInstance().isLoadedRewardedInterstitial(UNIT_ID)
+} else {
+    // Initialize 재시도
+}
+```
+- 광고가 Load 되었는지 상태를 확인
+<br/>
+
+### E. Show
 ```swift
 let UNIT_ID = "";      // 관리자를 통해 발급
 AdiscopeInterface.sharedInstance().showRewardedInterstitial(UNIT_ID)
+```
+- ShowRewardedInterstitial method는 중복하여 호출 할 수 없음
+- Show가 실행되면 (return값이 True일 경우) `onRewardedInterstitialAdSkip`와 `onRewardedInterstitialAdOpened`와 `onRewardedInterstitialAdFailedToShow` 중 하나가 항상 호출되고, `onRewardedInterstitialAdOpened`가 호출되었다면 이후 `onRewardedInterstitialAdClosed`가 항상 호출
+- `onRewardedInterstitialAdClosed`와 `onRewardedInterstitialAdFailedToShow`가 호출 되면 내부에서 해당 유닛을 자동 Load 시킴
+<br/>
+
+### F. Show With Alert
+```swift
+let UNIT_ID = "";      // 관리자를 통해 발급
+AdiscopeInterface.sharedInstance().showRewardedInterstitialWithPop(UNIT_ID)
 ```
 - 해당 유닛이 Load되어 있으면 안내 팝업을 보여 준 뒤 해당 광고를 사용자에게 보여줌
 - ShowRewardedInterstitial method는 중복하여 호출 할 수 없음
@@ -604,7 +640,7 @@ AdiscopeInterface.sharedInstance().showRewardedInterstitial(UNIT_ID)
 - `onRewardedInterstitialAdClosed`와 `onRewardedInterstitialAdFailedToShow`가 호출 되면 내부에서 해당 유닛을 자동 Load 시킴
 <br/>
 
-### D. Unit Status Info
+### G. Unit Status Info
 ```swift
 let UNIT_ID = "";      // 관리자를 통해 발급
 AdiscopeInterface.sharedInstance().getRewardedInterstitialUnitStatus(UNIT_ID);
@@ -612,7 +648,7 @@ AdiscopeInterface.sharedInstance().getRewardedInterstitialUnitStatus(UNIT_ID);
 - `onRewardedInterstitialResponsedUnitStatus`에서 해당 유닛의 수익화 여부, 활성화 여부를 알 수 있음
 <br/>
 
-### E. Callback Reward
+### H. Callback Reward
 ```swift
 func onRewardedInterstitialRewarded(_ unitID: String!, item: AdiscopeRewardItem!) {
     // unitID - 해당 RewardedInterstitial의 UNIT_ID (Show 시 입력한 값)
@@ -629,11 +665,17 @@ func onRewardedInterstitialRewarded(_ unitID: String!, item: AdiscopeRewardItem!
   - 이때는 Server를 통해 전달받은 정보를 기준으로 처리하고, `OnRewarded`를 통해 전달받은 정보는 검증용으로 사용하거나 무시하도록 함
 <br/>
 
-### F. Callback Others
+### I. Callback Others
 ```swift
 func onRewardedInterstitialResponsedUnitStatus(_ status: AdiscopeUnitStatus!) {
     // status.active - 활성화 여부
     // status.live - 수익화 여부
+}
+func onRewardedInterstitialAdLoaded(_ unitID: String!) {
+    // RewardedInterstitial Load Success
+}
+func onRewardedInterstitialAdFailed(toLoad unitID: String!, error: AdiscopeError!) {
+    // RewardedInterstitial Load Fail
 }
 func onRewardedInterstitialAdSkip(_ unitID: String!) {
     // RewardedInterstitial Skip for 안내 팝업
