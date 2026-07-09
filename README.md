@@ -320,6 +320,7 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
 }
 ```
 - Initialize와 사용자 정보 설정의 진행 완료 후 Load 호출
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 - Load 후 사용자 정보 설정을 호출할 경우 isLoaded Flag가 False로 반환(Load 취소)
 - 해당 유닛에 속한 ad 네크워크들의 광고를 Load
 - `onRewardedVideoAdLoaded` callback이 호출되면 Load가 완료
@@ -344,6 +345,7 @@ if (AdiscopeInterface.sharedInstance().isLoaded(UNIT_ID)) {
 }
 ```
 - 광고가 Load 되었는지 상태를 확인
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 <br/>
 
 ### C. Show
@@ -373,6 +375,7 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
 }
 ```
 - A(Load), C(Show)를 한번에 호출 하여 광고를 보여줌
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 - `setMainDelegate(_:)`추가 호출 없이 한번에 추가 되도록 처리
 - A(Load), C(Show)와 동일하게 호출 되며, `onRewardedVideoAdFailedToLoad` 대신 `onRewardedVideoAdFailedToShow`로 호출됨
 - 기본적으로 Load동안 기본 Indicator가 동작, 오류시 기본 알림 팝업 발생
@@ -458,6 +461,7 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
 }
 ```
 - Initialize 진행 완료 후 Load 호출
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 - 해당 유닛에 속한 ad 네크워크들의 광고를 Load
 - `onInterstitialAdLoaded` callback이 호출되면 Load가 완료
 - Interstitial의 `Load`와 `Show`는 pair로 호출
@@ -477,6 +481,7 @@ if (AdiscopeInterface.sharedInstance().isLoadedInterstitialUnitID(UNIT_ID)) {
 }
 ```
 - 광고가 Load 되었는지 상태를 확인
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 <br/>
 
 ### C. Show
@@ -506,6 +511,7 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
 }
 ```
 - A(Load), C(Show)를 한번에 호출 하여 광고를 보여줌
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 - `setMainDelegate(_:)`추가 호출 없이 한번에 추가 되도록 처리
 - A(Load), C(Show)와 동일하게 호출 되며, `onInterstitialAdFailedToLoad` 대신 `onInterstitialAdFailedToShow`로 호출됨
 - 기본적으로 Load동안 기본 Indicator가 동작, 오류시 기본 알림 팝업 발생
@@ -573,7 +579,6 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
     // Initialize 재시도
 }
 ```
-- Initialize와 사용자 정보 설정의 진행 완료 후 1회 설정 권장
 - 관리자가 설정된 활성화된 모든 유닛들을 Load 진행
 - PreLoad가 진행되면 `sendOnRewardedInterstitialAdLoaded`와 `sendOnRewardedInterstitialAdFailedToLoad 중 하나가 항상 호출
 <br/>
@@ -588,8 +593,8 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
     // Initialize 재시도
 }
 ```
-- Initialize와 사용자 정보 설정의 진행 완료 후 1회 설정 권장
 - 입력된 유닛들을 Load 진행
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 - PreLoad가 진행되면 `sendOnRewardedInterstitialAdLoaded`와 `sendOnRewardedInterstitialAdFailedToLoad 중 하나가 항상 호출
 <br/>
 
@@ -602,8 +607,8 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
     // Initialize 재시도
 }
 ```
-- Initialize와 사용자 정보 설정의 진행 완료 후 1회 설정 권장
 - 입력된 유닛을 Load 진행
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 - Load가 진행되면 `sendOnRewardedInterstitialAdLoaded`와 `sendOnRewardedInterstitialAdFailedToLoad 중 하나가 항상 호출
 <br/>
 
@@ -617,6 +622,7 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
 }
 ```
 - 광고가 Load 되었는지 상태를 확인
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 <br/>
 
 ### E. Show
@@ -625,8 +631,8 @@ let UNIT_ID = "";      // 관리자를 통해 발급
 AdiscopeInterface.sharedInstance().showRewardedInterstitial(UNIT_ID)
 ```
 - ShowRewardedInterstitial method는 중복하여 호출 할 수 없음
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 - Show가 실행되면 (return값이 True일 경우) `onRewardedInterstitialAdSkip`와 `onRewardedInterstitialAdOpened`와 `onRewardedInterstitialAdFailedToShow` 중 하나가 항상 호출되고, `onRewardedInterstitialAdOpened`가 호출되었다면 이후 `onRewardedInterstitialAdClosed`가 항상 호출
-- `onRewardedInterstitialAdClosed`와 `onRewardedInterstitialAdFailedToShow`가 호출 되면 내부에서 해당 유닛을 자동 Load 시킴
 <br/>
 
 ### F. Show With Alert
@@ -635,9 +641,9 @@ let UNIT_ID = "";      // 관리자를 통해 발급
 AdiscopeInterface.sharedInstance().showRewardedInterstitialWithPop(UNIT_ID)
 ```
 - 해당 유닛이 Load되어 있으면 안내 팝업을 보여 준 뒤 해당 광고를 사용자에게 보여줌
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 - ShowRewardedInterstitial method는 중복하여 호출 할 수 없음
 - Show가 실행되면 (return값이 True일 경우) `onRewardedInterstitialAdSkip`와 `onRewardedInterstitialAdOpened`와 `onRewardedInterstitialAdFailedToShow` 중 하나가 항상 호출되고, `onRewardedInterstitialAdOpened`가 호출되었다면 이후 `onRewardedInterstitialAdClosed`가 항상 호출
-- `onRewardedInterstitialAdClosed`와 `onRewardedInterstitialAdFailedToShow`가 호출 되면 내부에서 해당 유닛을 자동 Load 시킴
 <br/>
 
 ### G. Unit Status Info
@@ -646,6 +652,7 @@ let UNIT_ID = "";      // 관리자를 통해 발급
 AdiscopeInterface.sharedInstance().getRewardedInterstitialUnitStatus(UNIT_ID);
 ```
 - `onRewardedInterstitialResponsedUnitStatus`에서 해당 유닛의 수익화 여부, 활성화 여부를 알 수 있음
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 <br/>
 
 ### H. Callback Reward
@@ -706,6 +713,7 @@ if (AdiscopeInterface.sharedInstance().isInitialized()) {
     // Initialize 재시도
 }
 ```
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 - `Show`가 실행되면 (return값이 True일 경우) `onOfferwallAdOpened`와 `onOfferwallAdFailedToShow` 중 하나가 항상 호출되고, `onOfferwallAdOpened`가 호출되었다면 이후 `onOfferwallAdClosed`가 항상 호출
 <br/>
 
@@ -734,6 +742,7 @@ let OFFERWALL_URL = "";          // 관리자를 통해 확인
 AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_UNIT_ID, OFFERWALL_ITEM_ID)
 AdiscopeInterface.sharedInstance().showOfferwallDetail(OFFERWALL_URL)
 ```
+- 광고 유닛명은 반드시 대문자로 전달해야 함
 - [기타 옵션](./api_documentation.md#offerwall)
 <br/><br/><br/>
 
