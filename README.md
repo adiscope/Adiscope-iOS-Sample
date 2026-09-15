@@ -1,9 +1,9 @@
 # Adiscope for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-5.4.0-blue)](../../releases)
-[![GitHub package.json version](https://img.shields.io/badge/Android-5.4.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
-[![GitHub package.json version](https://img.shields.io/badge/Unity-5.4.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
-[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.4.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
-[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.4.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-5.5.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/Android-5.5.0-blue)](https://github.com/adiscope/Adiscope-Android-Sample)
+[![GitHub package.json version](https://img.shields.io/badge/Unity-5.5.0-blue)](https://github.com/adiscope/Adiscope-Unity-UPM)
+[![GitHub package.json version](https://img.shields.io/badge/Flutter-5.5.0-blue)](https://pub.dev/packages/adiscope_flutter_plugin)
+[![GitHub package.json version](https://img.shields.io/badge/ReactNative-5.5.0-blue)](https://www.npmjs.com/package/@adiscope.ad/adiscope-react-native)
 
 - 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +**
 <details>
@@ -26,7 +26,7 @@
 | Mintegral(Mobvista) | 8.1.3       |
 | Moloco              | 4.5.1       |
 | Ogury               | 5.2.1       |
-| Pangle              | 8.0.0.9     |
+| Pangle              | 8.2.1.0     |
 | PubMatic            | 5.1.0       |
 | TnkPub              | 1.24        |
 | Unity Ads           | 4.16.5      |
@@ -79,7 +79,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Adiscope', '5.4.0'
+    pod 'Adiscope', '5.5.0'
 end
 ```
 <details>
@@ -96,7 +96,7 @@ target '<Your Target Name>' do
     pod 'Adiscope/AdManager', '5.4.0'
     pod 'Adiscope/AdMob', '5.4.0'
     pod 'Adiscope/ChartBoost', '5.4.0'
-    pod 'Adiscope/Pangle', '5.4.0'
+    pod 'Adiscope/Pangle', '5.5.0'
     pod 'Adiscope/TnkPub', '5.2.0'
     pod 'Adiscope/Vungle', '5.4.0'
     pod 'Adiscope/MaxMediaAdManager', '5.4.0'
@@ -112,7 +112,7 @@ target '<Your Target Name>' do
     pod 'Adiscope/MaxMediaMobVista', '5.4.0'
     pod 'Adiscope/MaxMediaMoloco', '5.4.0'
     pod 'Adiscope/MaxMediaOgury', '5.4.0'
-    pod 'Adiscope/MaxMediaPangle', '5.4.0'
+    pod 'Adiscope/MaxMediaPangle', '5.5.0'
     pod 'Adiscope/MaxMediaPubMatic', '5.4.0'
     pod 'Adiscope/MaxMediaUnityAds', '5.4.0'
     pod 'Adiscope/MaxMediaVungle', '5.4.0'

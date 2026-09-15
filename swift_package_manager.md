@@ -21,35 +21,35 @@ https://github.com/adiscope/Adiscope-SwiftPackageManager.git
 <summary>Adiscope Versions</summary>
 <div markdown="1">  
 
-| SDK                                 | 5.4.0 | 5.3.3 | 5.3.2 | 5.3.1 | 5.3.0 |
+| SDK                                 | 5.5.0 | 5.4.0 | 5.3.3 | 5.3.2 | 5.3.1 |
 |-------------------------------------|-------|-------|-------|-------|-------|
-| Adiscope                            | 5.4.0 | 5.3.3 | 5.3.2 | 5.3.1 | 5.3.0 |
-| AdiscopeCore                        | 5.4.0 | 5.3.3 | 5.3.2 | 5.3.1 | 5.3.0 |
-| AdiscopeLuckyEvent                  | 5.3.3 | 5.3.3 | 5.3.2 | 5.3.1 | 5.2.6 |
-| AdiscopeMediaAdManager              | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaAdMob                  | 5.4.0 | 5.2.6 | 5.2.6 | 5.2.6 | 5.2.6 |
-| AdiscopeMediaChartBoost             | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaPangle                 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| Adiscope                            | 5.5.0 | 5.4.0 | 5.3.3 | 5.3.2 | 5.3.1 |
+| AdiscopeCore                        | 5.5.0 | 5.4.0 | 5.3.3 | 5.3.2 | 5.3.1 |
+| AdiscopeLuckyEvent                  | 5.3.3 | 5.3.3 | 5.3.3 | 5.3.2 | 5.3.1 |
+| AdiscopeMediaAdManager              | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaAdMob                  | 5.4.0 | 5.4.0 | 5.2.6 | 5.2.6 | 5.2.6 |
+| AdiscopeMediaChartBoost             | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaPangle                 | 5.5.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
 | AdiscopeMediaTnkPub                 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaVungle                 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMax                    | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterAdManager    | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterAdMob        | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterBidMachine   | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterBigo         | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterChartBoost   | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterDTExchange   | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterFan          | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterInMobi       | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterIronSource   | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterLine         | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterMobVista     | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterMoloco       | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterOgury        | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterPangle       | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterPubMatic     | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterUnityAds     | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
-| AdiscopeMediaMaxAdapterVungle       | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaVungle                 | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMax                    | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterAdManager    | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterAdMob        | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterBidMachine   | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterBigo         | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterChartBoost   | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterDTExchange   | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterFan          | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterInMobi       | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterIronSource   | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterLine         | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterMobVista     | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterMoloco       | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterOgury        | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterPangle       | 5.5.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterPubMatic     | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterUnityAds     | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
+| AdiscopeMediaMaxAdapterVungle       | 5.4.0 | 5.4.0 | 5.2.0 | 5.2.0 | 5.2.0 |
 
 </div>
 </details>
